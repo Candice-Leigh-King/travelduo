@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>{{page.title}}</title>
+</head>
+
+<body>
+    {{content}}
+    {% for item in page.content-blocks %}
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[{{ forloop.index0 }}]">
+        <span class="cms-editor-button"></span>
+      {% include {{item._section-type}}.html %}
+    {% endfor %}
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "linking"
+      type: "pages" 
+    values:
+      layout: "connect-tree" # overrides previous default layout
+  -
+    scope:
+      path: "/products"
+      type: "pages"
+    values:
+      layout: "product-pages"
+  -
+    scope:
+      path: "/affiliates"
+      type: "pages" 
+    values:
+      layout: "affiliates-page" # overrides previous default layout
+
+collections:
+  products:
+    enabled: true
+    output: true
+    icon: shopping_cart
+  affiliates:
+    enabled: true
+    output: true
+    icon: monetization_on
+
+_inputs:
+  textarea_html:
+    options:
+      blockquote: true
+      bold: true
+      format: p h1 h2 h3 h4 h5 h6
+      italic: true
+      strike: true
+      underline: true 
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      image: true
+      undo: true
+      redo: true
+
+page_blocks: []
+_array_structures:
+  content-blocks:
+    values:
+      - label: Hero
+        icon: star
+        value: 
+          _section-type: hero
+          image: 
+          textarea_html:
+      - label: Glamour Me
+        icon: art_track
+        value: 
+          _section-type: glamour-me
+          heading:
+          textarea_html:
+          button-cta:
+          button-link:
+          image:
+          content-block-link:
+      - label: Slide in from the Right 
+        icon: west
+        value: 
+          _section-type: slide-in-from-right
+          heading: 
+          textarea_html: 
+          image: 
+          icon: 
+          content-block-link:
+      - label: Slide in from the Left 
+        icon: west
+        value: 
+          _section-type: slide-in-from-left
+          heading: 
+          textarea_html: 
+          image: 
+          icon: 
+      - label: The Divine Fade
+        icon: auto_awesome
+        value:
+          _section-type: the-divine-fade
+          right-image: 
+            image: 
+            border-color: 
+            border-radius:
+            top-left-corner: 
+            top-right-corner: 
+            bottom-left-corner:
+            bottom-right-corner: 
+          left-image: 
+            image: 
+            border-color: 
+            border-radius:
+            top-left-corner: 
+            top-right-corner:
+            bottom-left-corner: 
+            bottom-right-corner:  
+          bottom-image: 
+            image: 
+            border-color:
+            border-radius:
+            top-left-corner:
+            top-right-corner: 
+            bottom-left-corner:
+            bottom-right-corner: 
+          text:
+            first-textarea_html: 
+            second-textarea_html:
+          button:
+            button-link: 
+            button-name:  
+          colors:  
+            background-color: 
+            heading-color: 
+            subheading-color: 
+            text-color:
+            button-color: 
+            button-hover-color:
+            button-text-color: 
+            button-text-hover-color: 
+          fonts:
+            heading-font: 
+            subheading-font: 
+            text-font: 
+            button-font:
+      - label: Space
+        icon: block
+        value: 
+          _section-type: space-block
+      - label: Newsletter Script
+        icon: forum
+        value:
+          _section-type: newsletter-script
+          insert-script-here: 
+      - label: Signature
+        icon: draw
+        value:
+          _section-type: signature
+          signature:
+          signature-color:
+          signature-font:
+          background-color:
+      - label: Carousel
+        icon: view_carousel
+        value:
+          _section-type: carousel
+          heading:
+          carousel:
+            - textarea_html:
+              symbols: 
+              ending:
+          background_image:          
+          colors:
+            background-color: 
+            heading-color:
+            textarea-background-color: 
+            border-color: 
+            subheading-color:
+            text-color: 
+            symbols-color: 
+            link-color: 
+            link-hover-color: 
+          border-radius:
+            laptop:
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner:
+            tablet: 
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+            mobile:
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner:    
+          fonts:
+            heading-font:
+            subheading-font:
+            text-font: 
+          content-block-link: reviews
+      - label: 3 Recent Blogs
+        icon: view_column
+        value:
+          _section-type: recent-blogs
+          heading:
+          colors:
+            background-color:
+            heading-color: 
+            blog-title-card-color:
+            blog-title-card-border-color: 
+            blog-hover-overlay-color: 
+            text-color:
+            subheading-color:
+            cta-color:
+          fonts:
+            text-font: 
+            heading-font: 
+            subheading-font: 
+            cta-font:
+      - label: Google Map
+        icon: place
+        value:
+          _section-type: google-map
+          heading:
+          insert-google-map-script-here:
+          border-radius:
+            laptop:  
+              top-left-corner:
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+            tablet: 
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+            mobile:
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+          fonts:
+            heading-font:
+          colors:
+            heading-color:
+            border-color:
+            background-color:  
+      - label: Blog Article
+        icon: view_headline
+        value:
+          _section-type: blog-article
+          textarea_html:
+          colors:
+            background-color:
+            text-color: 
+            heading-color: 
+            subheading-color: 
+          fonts:
+            heading-font: 
+            subheading-font: 
+            text-font:
+      - label: Text and Image (left) 
+        icon: west
+        value:
+          _section-type: text-and-image
+          image: 
+          textarea_html: 
+          colors:
+            background-color: 
+            text-color:
+            heading-color: 
+            subheading-color: 
+          fonts:
+            heading-font: 
+            subheading-font: 
+            text-font:
+      - label: Text and Image (right)
+        icon: east
+        value:
+          _section-type: right-text-and-image 
+          image: 
+          textarea_html: 
+          colors:
+            background-color: 
+            text-color:
+            heading-color: 
+            subheading-color: 
+          fonts:
+            heading-font: 
+            subheading-font: 
+            text-font:
+       - label: Text Area
+         icon: article
+         value:
+          _section-type: textarea
+          textarea_html:
+          subheading_html:
+          colors:
+            background-color: 
+            text-color: 
+            subheading-color: 
+            top-line-color: 
+            left-line-color:
+            link-color:
+            link-hover-color:
+          fonts:
+            subheading-font: 
+            text-font:  
+          content-block-link: 
+      - label: Gallery
+        icon: photo_camera
+        value:
+          _section-type: gallery
+          heading: Gallery
+          left:
+            top-image:  
+            bottom-image:  
+          middle:
+            top-image:
+            bottom-image: 
+          right:
+            top-image:
+            bottom-image: 
+          colors:
+            background-color:
+            heading-color:
+          fonts:
+            heading-font:
+          content-block-link:
+      - label: Form
+        icon: email
+        value:
+          _section-type: form
+          heading:
+          top:
+            subheading:
+            text-option-1:
+            text-option-2:
+            text-option-3:
+          bottom:
+            subheading: 
+            message:
+            option-box:
+              subject:
+              option-1: 
+              option-2: 
+              option-3:
+              option-4: 
+          button: 
+          background_image:        
+          colors:
+            background-color:
+            textarea-background-color: 
+            border-color: 
+            heading-color:
+            subheading-color:
+            text-color:
+            button-color: 
+            button-text-color:
+          border-radius:
+            laptop:  
+              top-left-corner:
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+            tablet: 
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+            mobile:
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+          fonts:
+            heading-font:
+            subheading-font:
+            text-font:
+            button-font:
+          content-block-link:
+fonts:
+_select_data:
+  fonts:
+    
