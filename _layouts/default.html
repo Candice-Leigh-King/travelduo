@@ -2,20 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <title>{{page.title}}</title>
+    <!-- Meta data for SEO purposes. -->
+ <title> {{page.seo.title}} </title>
+
+ <meta name="description" content="{{page.seo.description}}" />
+ <meta name="keywords" content="{{page.seo.keywords}}" />
+
+ <!-- meta data to tell the browser that your devide is responsive -->
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="robots" content="index, follow" />
+ <meta name="mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+ <!--  Social media sharing META Tags -->
+ <meta property="og:title" content="{{page.seo.title}}" />
+ <meta property="og:description" content="{{page.seo.description}}" />
+ <meta property="og:image" content="{{ page.seo.social-share_image }}" />
+ <meta property="og:url" content="{{page.seo.url}}" />
+ <meta name="twitter:card" content="{{page.seo.description}}" />
+ <meta name="og:site_name" content="{{page.seo.title}}" />
+
+ <!-- twitter card -->
+ <meta name="twitter:card" content="{{page.seo.description}}" />
+ <meta name="twitter:description" content="{{page.seo.description}}" />
+ <meta name="twitter:title" content="{{page.seo.title}}" />
+ <meta name="twitter:site" content="{{page.seo.url}}" />
+ <meta name="twitter:creator" content="{{page.seo.social-alt}}" />
+
+ <meta name="twitter:image:alt" content="{{page.seo.social-share_image}}" />
+
+ <!-- link to browser icon tag -->
+ <link rel="icon" href="{{site.data.general.basics.browser-tag_image}}" type="image/x-icon" />
+ <link rel="apple-touch-icon" sizes="180x180" href="{{site.data.general.basics.browser-tag_image}}" />
+ <link rel="icon" type="image/x-icon" sizes="32x32" href="{{site.data.general.basics.browser-tag_image}}" />
+ <link rel="icon" type="image/x-icon" sizes="16x16" href="{{site.data.general.basics.browser-tag_image}}" />
+ <link rel="manifest" href="/site.webmanifest" />
+
+  
+  <!-- Gridlex -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <!-- fanceybox gallery -->
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" /> 
+
+  <link rel="stylesheet" href="/slick/slick.css" />
+  <link rel="stylesheet" href="/slick/slick-theme.css" />
+  <!-- Google Fonts Icon -->
+  
+
+  <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://kit.fontawesome.com/0379688db4.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+
+  
+  
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+  {{site.data.head.frist-script-to-go-in-the-head}}
+  {{site.data.head.second-script-to-go-in-the-head}}
+  {{site.data.head.thrid-script-to-go-in-the-head}}
+
 </head>
 
+
 <body>
+
+    <!-- Header Styles -->
+
+
     {{content}}
     {% for item in page.content-blocks %}
     <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[{{ forloop.index0 }}]">
         <span class="cms-editor-button"></span>
       {% include {{item._section-type}}.html %}
     {% endfor %}
+        <!-- Footer Styles -->
+
+
+
+     <!-- FooterTs & Cs links -->
+     <div class="col-12-middle text-center built bg-blue padded-t-1 padded-b-1 shop-requirements">
+        <p> 
+         <a href="{{site.data.footer.shop-requirements.privacy-link}}" class="padded-sides"> {{site.data.footer.shop-requirements.privacy-heading}} </a><a href="{{site.data.footer.shop-requirements. terms-and-conditions-link}}" class="padded-sides"><br class="desktop-hide"> {{site.data.footer.shop-requirements. terms-and-conditions-heading}} </a><a href="/" class="padded-right"><br class="desktop-hide"> © {{site.data.general.basics.your-brand-name}}</a><a href="https://www.kingcode.uk" class="padded-sides"><br class="desktop-hide"> Website by King Code </a>
+       </p>
+     </div>
+   <!-- SCRIPTS GO HERE  -->
+   <!-- JQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+
+   <!-- epic gallery -->
+   <script>
+     $('[data-fancybox="gallery"]').fancybox({
+       loop: true,
+       buttons: [
+         "zoom",
+         "slideShow",
+         "thumbs",
+         "close"
+         ],
+         animationEffect: "zoom",
+        transitionEffect: "zoom-in-out",
+     });
+
+     </script>
+   
+     <!-- Iconify -->
+     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+     <!-- LightWidget WIDGET -->
+     <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+
+     <!-- Connect JS file -->
+     <script src="/main.js" type="text/javascript"></script>
+     <!-- Slick -->
+     <script src="/slick/slick.min.js"></script>
 </body>
+
+</html>
+
+</body>
+
 
 </html>
