@@ -77,7 +77,15 @@
 <body>
 
     <!-- Header Styles -->
-
+    <header class = "grid"> 
+            <nav class = "col-8_sm-12-center grid center" style="justify-content: center;">
+                <p>{{site.data.navigation.textarea_html}}</p>
+            </nav>
+            <div class = "col-3-left">
+                <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
+                <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
+            </div>
+    </header>
 
     {{content}}
     {% for item in page.content-blocks %}
