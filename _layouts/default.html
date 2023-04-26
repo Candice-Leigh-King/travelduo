@@ -78,13 +78,17 @@
 
     <!-- Header Styles -->
     <header class = "grid"> 
-            <nav class = "col-8_sm-12-center grid center" style="justify-content: center;">
+        <div class = "col-3">
+
+        </div>
+            <nav class = "col-6_sm-12-center grid center" style="justify-content: center;">
                 <p>{{site.data.navigation.textarea_html}}</p>
             </nav>
-            <div class = "col-3-left">
+            <div class = "col-3 right padded-sides">
                 <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
                 <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
             </div>
+            
     </header>
 
     {{content}}
@@ -93,16 +97,36 @@
         <span class="cms-editor-button"></span>
       {% include {{item._section-type}}.html %}
     {% endfor %}
-        <!-- Footer Styles -->
+    <!-- Footer Styles -->
 
-
+        <footer class = "grid-middle bg-beige">
+            <div class = "col-3 padded-sides">
+                <img src="/images/logos/secondary-logo.png" width = "50%">
+            </div>
+                <nav class = "col-6_sm-12-center grid center" style="justify-content: center;">
+                    <p>{{site.data.navigation.textarea_html}}</p>
+                </nav>
+                <div class = "col-3 right padded-sides">
+                    <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
+                    <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
+                </div>
+        </footer>
 
      <!-- FooterTs & Cs links -->
-     <div class="col-12-middle text-center built bg-blue padded-t-1 padded-b-1 shop-requirements">
-        <p> 
-         <a href="{{site.data.footer.shop-requirements.privacy-link}}" class="padded-sides"> {{site.data.footer.shop-requirements.privacy-heading}} </a><a href="{{site.data.footer.shop-requirements. terms-and-conditions-link}}" class="padded-sides"><br class="desktop-hide"> {{site.data.footer.shop-requirements. terms-and-conditions-heading}} </a><a href="/" class="padded-right"><br class="desktop-hide"> © {{site.data.general.basics.your-brand-name}}</a><a href="https://www.kingcode.uk" class="padded-sides"><br class="desktop-hide"> Website by King Code </a>
-       </p>
-     </div>
+     <section class = "grid bg-beige">
+        <div class="col-12-middle-center center built bg-blue padded-t-1 padded-b-1 shop-requirements">
+            
+             <a href="{{site.data.footer.shop-requirements.privacy-link}}" class="padded-sides"> {{site.data.footer.shop-requirements.privacy-heading}} </a>
+             
+             <a href="{{site.data.footer.shop-requirements. terms-and-conditions-link}}" class="padded-sides"> {{site.data.footer.shop-requirements. terms-and-conditions-heading}} </a>
+             
+             <a href="/" class="padded-right"> © {{site.data.general.basics.your-brand-name}}</a>
+             
+             <a href="https://www.kingcode.uk" class="padded-sides"> Website by King Code </a>
+           
+         </div>
+     </section>
+     
    <!-- SCRIPTS GO HERE  -->
    <!-- JQuery -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

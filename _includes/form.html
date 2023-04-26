@@ -1,5 +1,38 @@
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "" id = "{{item.content-block-id}}">
-        
+    <section class = "grid form" id = "{{item.content-block-id}}">
+        <div class = "col-8 padded-sides-lg margin-t-2">
+            <h1>Contact Us</h1>
+            <hr>
+            <div class = "margin-tb ">
+                <h3>Let's Connect</h3>
+                <p>You can mail directly to hello@trendytravelduo.comor fill the contact form below.</p>
+            </div>
+            <!---------- Simple Contact Form Elements  ------------->
+            <form method="post" action="/success.html">
+
+                <label for="name">Name</label><br>       
+                <input type="text" name="name" id="name" required=""/><br>   
+            
+                <label for="_replyto">Email</label><br>   
+                <input type="email" name="_replyto" id="_replyto"  required=""/><br>   
+                
+                <label for="subject">Subject</label><br>   
+                <textarea name="subject" id="subject" placeholder="{{item.label_4}}"></textarea><br>   
+
+                <label for="message">Message</label><br>   
+                <textarea name="message" id="message" placeholder="{{item.label_4}}"></textarea><br>   
+
+                <input type="hidden" name="inbox_key" value="#">
+                <input type="text" name="_gotcha" style="display: none;" />
+                <button class = "button huge-left-margin right" type="submit"> Submit </button>
+                
+            </form>
+            
+
+
+        </div>
+         <!-- Image Block -->
+        <!-- Oval class temporary -->
+        <div class = "col-3 oval padded text-image background-image" style = "margin: 2%; background-image: url('/images/about-us.webp');"></div>
     </section>
 </section>
