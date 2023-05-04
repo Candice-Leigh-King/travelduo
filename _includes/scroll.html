@@ -1,5 +1,17 @@
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "" id = "{{item.content-block-id}}">
-        
+        <section class="grid-center-middle scroll-block padded-sides-lg" id="{{item.content-block-link}}">
+            <div class="col-12 center ">
+                <h4 class = "featured" style = "margin-bottom: 0rem;">What they're saying about us:</h4>
+            </div>
+            <div class=" grid-center col-9_sm-12-center background-color border-left single-item" style = "padding: 2.5%;">
+                {% for scroll in item.scroll %}
+                <div class="grid-middle text-center scroll col-12_md-8 center">
+                  {{scroll.textarea_html}}
+                </div>
+                {% endfor %}
+              </div>
+            
+        </section>
     </section>
 </section>

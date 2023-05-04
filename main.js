@@ -15,6 +15,8 @@ $(document).ready(function() {
 			});
 
 			// end hamburger menu
-  
+//   Slick Slider Elements
+
+	$('.single-item').slick();
 //   End .js
 });
