@@ -7,7 +7,8 @@
 
 /* To be Deleted */ 
 
-div, section, nav, header, footer {border: 1px solid red;}
+div, nav, header, footer {border: 1px solid red;}
+section{border: 1px solid green;}
 h3, h4, h5, h6 {border: 1px solid yellow;}
 h1, h2 {border: 1px solid grey;}
 p, a{border: 1px solid pink;}
@@ -164,6 +165,7 @@ html
 .margin-r-0 { margin-right: 0; }
 
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-tb-sm { margin-top: 1%; margin-bottom: 1%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 .margin-lr-sm { margin-left: 1%; margin-right: 1%; }
 
@@ -216,6 +218,9 @@ p:last-child {
 
 /* General classes */
 
+.border-bottom{
+    border-bottom: 2px solid #848282;
+}
 .button{
     background-color: #ECE2D9;
     border-radius: 20rem;

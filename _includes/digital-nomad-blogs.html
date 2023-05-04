@@ -1,5 +1,22 @@
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "" id = "{{item.content-block-id}}">
-        
+        <section class="grid-center padded-sides">
+            <div class="">
+              <h1 class = "center">Explore Our Digital Nomad Blogs</h1>
+                {% for post in site.categories.digital-nomad %}
+                <div class= "border-bottom">
+                    <a class="grid-center margin-tb-sm"href="{{post.url}}">
+                      <div class = "col-2 padded-sides background-image margin-lr" style="background-image:url('{{post.blog_image}}');">
+                      </div>
+                      <div class = "col-8">
+                        <h1>{{post.title}}</h1>
+                        <p>{{post.blog-summary}}</p>
+                      </div>
+                    </a>
+                  </div>
+                {% endfor %}
+              </div>
+          </section> 
     </section>
 </section>
+

@@ -6,34 +6,11 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-  -
-    scope:
-      path: "linking"
-      type: "pages" 
-    values:
-      layout: "connect-tree" # overrides previous default layout
-  -
-    scope:
-      path: "/products"
-      type: "pages"
-    values:
-      layout: "product-pages"
-  -
-    scope:
-      path: "/affiliates"
-      type: "pages" 
-    values:
-      layout: "affiliates-page" # overrides previous default layout
 
-collections:
-  products:
-    enabled: true
-    output: true
-    icon: shopping_cart
-  affiliates:
-    enabled: true
-    output: true
-    icon: monetization_on
+categories:
+- digital-nomad
+- travel
+- hotspots
 
 _inputs:
   textarea_html:
