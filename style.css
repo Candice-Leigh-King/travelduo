@@ -182,14 +182,22 @@ body {
 }
 h1, h2{
     font-family: Tan Meringue;
+    color: #444444
 }
 h3, h4, h5, h6 {
     font-family: Bold Grand Font;
+    color: #444444
 }
 
 a{
     font-family: Bold Grand Font;
 }
+
+/* Sizes and general font settings */
+
+h1{font-size: 5rem;}
+h2{font-size: 4rem;}
+h3,h4,h5,h6{font-size: 3rem;}
 
 h2, h3, h4, h5, h6 {
     line-height: 1.1;

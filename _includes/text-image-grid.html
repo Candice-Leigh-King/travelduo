@@ -2,11 +2,13 @@
     <section class = "" id = "{{item.content-block-id}}">
         <!-- image Grid -->
         <div class = "grid-center">
-            <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-1.jpg');"></div>
-            <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-2.jpg');"></div>
+            {% for grid in item.grid %}
+                <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{grid.image}}');"></div>
+            {% endfor %}
+            <!-- <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-2.jpg');"></div>
             <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-3.jpg');"></div>
             <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-4.jpg');"></div>
-            <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-5.jpg');"></div>
+            <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-5.jpg');"></div> -->
         </div>
 
         <div class = "grid-middle margin-t-2 center">
