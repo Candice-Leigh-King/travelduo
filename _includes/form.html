@@ -1,6 +1,48 @@
+<style>
+        #content-blocks-{{forloop.index0}} input,
+        #content-blocks-{{forloop.index0}} textarea
+        {
+            width: 80%;
+        }
+
+        #content-blocks-{{forloop.index0}} .button{
+            margin-left: 40%;
+            border: none;
+        }
+        
+
+       #content-blocks-{{forloop.index0}} .text-image
+        {
+            padding-bottom: 50%;
+            border-radius: 65% 0% 44% 55% / 60% 10% 16% 39%;
+        } 
+
+        #content-blocks-{{forloop.index0}} .form hr{
+            border-top: 10px solid #F5F0EB;
+            width: 200%;
+            translate: -13% 0%;
+            z-index: -1;
+            position: relative;
+        }
+
+        @media(max-width:768px){
+            #content-blocks-14 .form hr 
+                {
+                    width: 179%;
+                    translate: -24% 0%;
+                }
+            #content-blocks-{{forloop.index0}} .text-image
+                {
+                    border-radius: 75% 25% 66% 36% / 73% 35% 59% 24% ;
+                    /* margin-top: -10%; */
+                } 
+        }
+</style>
+
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "grid form" id = "{{item.content-block-id}}">
-        <div class = "col-8 padded-sides-lg margin-t-2">
+    <section class = "grid-center form" id = "{{item.content-block-id}}">
+        
+        <div class = "col-6_sm-10-center padded-sides-lg margin-t-2">
             <h1>Contact Us</h1>
             <hr>
             <div class = "margin-tb ">
@@ -33,6 +75,6 @@
         </div>
          <!-- Image Block -->
         <!-- Oval class temporary -->
-        <div class = "col-3 padded text-image background-image" style = "margin: 2%; background-image: url('/images/about-us.webp'); border-radius: 55% 0% 49% 38% / 72% 10% 63% 34% "></div>
+        <div class = "col-6_sm-9-center padded text-image background-image margin-b-1" style = " background-image: url('/images/about-us.webp'); "></div>
     </section>
 </section>
