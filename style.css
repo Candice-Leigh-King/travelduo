@@ -213,6 +213,12 @@ p {
     font-size: 1.3rem;
 }
 
+li{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
 a{
     text-decoration: none;
     color: black;

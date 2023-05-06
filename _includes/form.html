@@ -3,13 +3,21 @@
         #content-blocks-{{forloop.index0}} textarea
         {
             width: 80%;
+            border: 0.5px solid #848282;
+            border-radius: 0.5rem;
+            min-height: 2rem;
         }
+
+        #content-blocks-{{forloop.index0}} label{
+            font-family: Bold Grand Font;}
 
         #content-blocks-{{forloop.index0}} .button{
             margin-left: 40%;
             border: none;
+            font-family: Bold Grand Font;
         }
         
+
 
        #content-blocks-{{forloop.index0}} .text-image
         {
@@ -19,7 +27,7 @@
 
         #content-blocks-{{forloop.index0}} .form hr{
             border-top: 10px solid #F5F0EB;
-            width: 200%;
+            width: 260%;
             translate: -13% 0%;
             z-index: -1;
             position: relative;
@@ -28,7 +36,7 @@
         @media(max-width:768px){
             #content-blocks-14 .form hr 
                 {
-                    width: 179%;
+                    width: 154%;
                     translate: -24% 0%;
                 }
             #content-blocks-{{forloop.index0}} .text-image

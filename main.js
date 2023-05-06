@@ -17,6 +17,19 @@ $(document).ready(function() {
 			// end hamburger menu
 //   Slick Slider Elements
 
-	$('.single-item').slick();
+	$('.single-item').slick(
+		{
+			dots: true,
+			speed: 500,
+			arrows: true,
+			infinite: true,
+			pauseOnFocus: true,
+			pauseOnDotsHover: true,
+			autoplay: true
+		
+
+		}
+
+	);
 //   End .js
 });
