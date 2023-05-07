@@ -1,14 +1,13 @@
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "" id = "{{item.content-block-id}}">
-        <section class = "grid-middle-center background-image padded-sides" 
+        <section class = "padded-tb-sm grid-middle-center background-image padded-sides" 
         style="
-        min-height: 30vh;
-        background-image: url('/images/placeholder-5.jpg');"
+        min-height: 15vh;
+        background-image: url('{{item.background_image}}'); background-color: {{item.background-color}};"
         id = "{{item.content-block-id}}">
             <div class = "col-5-center-middle center">
-                <a href = "#" class = "blue-button">Inquire</a>
+                <a href = "{{item.cta-link}}" class = "blue-button">{{item.cta}}</a>
             </div>
-            
     </section>
     </section>
 </section>

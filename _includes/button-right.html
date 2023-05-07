@@ -1,9 +1,10 @@
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "grid-right-middle background-image padded-sides" 
     style="
-    min-height: 40vh;
-    background-image: url('/images/placeholder-5.jpg');"
-     id = "{{item.content-block-id}}">
-        <a href = "#" class = "button">Inquire</a>
+    min-height: 25vh;
+    background-image: url('{{item.background_image}}');
+    background-color: {{item.background-color}};"
+     id = "{{item.content-block-link}}">
+        <a href = "{{item.cta-link}}" class = "button">{{item.cta}}</a>
     </section>
 </section>

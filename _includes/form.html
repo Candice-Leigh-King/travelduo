@@ -38,18 +38,28 @@
             position: relative;
         }
 
+        @media(max-width:990px){
+            #content-blocks-{{forloop.index0}} .form hr 
+                {
+                    width: 200%;
+                    translate: -24% 0%;
+                }
+            }
+
         @media(max-width:768px){
-            #content-blocks-14 .form hr 
+            #content-blocks-{{forloop.index0}} .form hr 
                 {
                     width: 154%;
                     translate: -24% 0%;
                 }
+            
             #content-blocks-{{forloop.index0}} .text-image
                 {
                     border-radius: 75% 25% 66% 36% / 73% 35% 59% 24% ;
                     /* margin-top: -10%; */
                 } 
-        }
+            }
+        
 </style>
 
 <section class = "" id="content-blocks-{{forloop.index0}}">

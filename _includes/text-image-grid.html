@@ -1,25 +1,34 @@
+<style>
+    #content-blocks-{{forloop.index0}} img{
+        margin: -22% -122% 0 0;
+        width: 30%;
+    }
+
+    @media(max-width: 990px){
+        #content-blocks-{{forloop.index0}} img{
+            margin: -11% -103% 0 0;
+            width: 13%;
+    }
+    }
+</style>
+
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "" id = "{{item.content-block-id}}">
+    <section class = "" id = "{{item.content-block-link}}">
         <!-- image Grid -->
         <div class = "grid-center">
             {% for grid in item.grid %}
                 <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{grid.image}}');"></div>
             {% endfor %}
-            <!-- <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-2.jpg');"></div>
-            <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-3.jpg');"></div>
-            <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-4.jpg');"></div>
-            <div class = "col-2 margin-lr-sm square-sm background-image" style = "background-image: url('/images/placeholder-5.jpg');"></div> -->
         </div>
 
         <div class = "grid-middle margin-t-2 center">
             <div class = "col-3_sm-2"><hr></div>
-            <div class = "col-6_sm-8"><h1>Work With Us</h1></div>
+            <div class = "col-6_sm-8">{{item.textarea_html.heading}}</div>
             <div class = "col-3_sm-2"><hr></div>
         </div>
         <div class = "padded-sides-xlg padded-tb-sm center">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda odit maxime recusandae fugiat, tempora sapiente quidem dicta modi quasi, ad doloribus ullam? Eaque reprehenderit optio cum quas adipisci dolores sed? </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit pariatur nihil id. Voluptatum incidunt minima sed reiciendis alias, dignissimos nostrum dolorum. Reprehenderit odit nisi eos delectus officia unde alias earum!</p>
+            {{item.textarea_html.body}}
+            <img class = "tablet-hide" src = "{{item.icon_image}}">
         </div>
     </section>
 </section>

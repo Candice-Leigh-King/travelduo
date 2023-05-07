@@ -10,25 +10,23 @@
 
 </style>
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "grid-center" id = "{{item.content-block-id}}">
+    <section class = "grid-center" id = "{{item.content-block-id}}" style = "background-color: {{item.background-color}};">
         <div class = "grid-middle col-12 margin-t-2 center">
             <div class = "col-3_sm-2"><hr></div>
-            <div class = "col-6_sm-8"><h1>Our Mission</h1></div>
+            <div class = "col-6_sm-8">{{item.textarea_html.heading}}</div>
             <div class = "col-3_sm-2"><hr></div>
         </div>
         <section class = "padded-sides grid-center col-12">
                 <!-- text block -->
             <div class = "col-7-middle_md-9 padded-sides">
-                <h3>As Content Creators,</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, soluta inventore. Repudiandae quidem est quod repellat mollitia asperiores. Ratione velit ducimus eveniet accusantium quidem inventore fugit nihil, itaque sed neque? <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur corrupti nobis dolorum eos nam distinctio rerum, suscipit fugiat optio ut magni laboriosam quas quidem voluptatibus totam harum cum? Minima, error? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                {{item.textarea_html.body}}
             </div>
 
             <!-- Image Block -->
-            <!-- Oval class temporary -->
-            <div class = "col-4_md-9 padded text-image background-image" style = "margin: 2%; background-image: url('/images/about-us.webp'); border-radius: 50% 50% 54% 46% / 74% 63% 37% 26%;"></div>
+            <div class = "col-4_md-9 padded text-image background-image" style = "margin: 2%; background-image: url('{{item.image}}'); border-radius: 50% 50% 54% 46% / 74% 63% 37% 26%;"></div>
         </section>
-        <section class = "col-9-center margin-tb">
-            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dicta non doloremque et consequatur soluta, deserunt natus voluptatum, magni saepe necessitatibus! Consequuntur corporis magni aspernatur doloribus perferendis libero, id mollitia."</p>
+        <section class = "col-9-center margin-tb quote">
+            {{item.textarea_html.quote}}
         </section>
     </section>
 </section>

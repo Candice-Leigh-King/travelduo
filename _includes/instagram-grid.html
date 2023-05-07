@@ -1,12 +1,12 @@
-<section id="content-blocks-{{forloop.index0}}">
-    <section class = "" id = "{{item.content-block-id}}">
+<section id="content-blocks-{{forloop.index0}}" style = "background-color: {{item.background-color}};">
+    <section class = "" id = "{{item.content-block-id}}" >
         <div class = "padded-sides-lg center">
-            <h2>Follow our Adventures!</h2>
-            <a class = "button"> <span class = "underline">Follow on instagram</span></a>
+            <h2 >{{item.heading}}</h2>
+            <a class = "button" href = "{{item.cta-link}}"> <span class = "underline">{{item.cta}}</span></a>
         </div>
-        <section class = "margin-tb">
+        <section class = "padded-tb center" style = "background-color: {{item.background-color}};">
             <!-- LightWidget WIDGET -->
-            <iframe src="//lightwidget.com/widgets/6451f0f77d9059d982cb9e368fc19c0b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            {{site.data.general.instagram-widget}}
         </section>
        
     </section>
