@@ -79,19 +79,40 @@
 
 
 <body>
-
+<!--  -->
     <!-- Header Styles -->
-    <header class = "grid"> 
-        <div class = "col-3">
-
-        </div>
-            <nav class = "col-6_sm-12-center grid center" style="justify-content: center;">
-                <p>{{site.data.navigation.textarea_html}}</p>
-            </nav>
-            <div class = "col-3 right padded-sides">
-                <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
-                <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
+    <header class = "grid-middle page-header header-wrapper"> 
+     
+            <div class = "col-3 center" >
+                <img src="/images/logos/submark-2.png"  width = "30%">
             </div>
+                <nav class = "col-6_sm-12-center grid-middle center" style="justify-content: center;">
+                    <div class="dropdown">
+                        <a class="dropdown-title hamburger"> Blog &#8744;</a>
+                        <div class="dropdown-content mobile-menu page-nav exit">
+                          
+                          <a href="#"> All</a>
+                          
+                          <a href="#"> Digital Nomad</a>
+                          
+                          <a href="#"> Hotspots </a>
+                          
+                          <a href="#"> Travel </a>
+                
+                        </div> 
+                      </div>
+                    <a href = "#">Work With Us</a>
+                    <a href = "#">About</a>
+                    <a href = "#">Contact</a>
+    
+                    <!-- <p>{{site.data.navigation.textarea_html}}</p> -->
+                </nav>
+                <div class = "col-3 right padded-sides ">
+                    <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
+                    <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
+                </div>
+ 
+        
             
     </header>
 
@@ -105,7 +126,7 @@
 
         <footer class = "grid-middle bg-beige">
             <div class = "col-3 padded-sides">
-                <img src="/images/logos/secondary-logo.png" width = "50%">
+                <img src="/images/logos/submark-2.png" width = "50%">
             </div>
                 <nav class = "col-6_sm-12-center grid center" style="justify-content: center;">
                     <p>{{site.data.navigation.textarea_html}}</p>
