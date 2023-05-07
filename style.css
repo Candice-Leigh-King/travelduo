@@ -7,12 +7,12 @@
 
 /* To be Deleted */ 
 
-div, nav, header, footer {border: 1px solid red;}
+/* div, nav, header, footer {border: 1px solid red;}
 section{border: 1px solid green;}
 h3, h4, h5, h6 {border: 1px solid yellow;}
 h1, h2 {border: 1px solid grey;}
 p, a{border: 1px solid pink;}
-hr, img{border: 1px solid blue;} 
+hr, img{border: 1px solid blue;}  */
 
 /* General Code Starts here */
 * {
@@ -110,6 +110,7 @@ html
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
 
+.padded-sides-sm {padding: 0% 2.5%;}
 .padded-sides {padding: 0% 5%;}
 .padded-sides-lg {padding: 0% 10%;}
 .padded-sides-xlg {padding: 0% 25%;}
@@ -426,6 +427,20 @@ header{
   } */
 
 
+  /* Blog Categories Layout */
+.blog-header{
+    margin-top: 10%;
+    border-bottom: 2px solid #848482;
+    }
+.blog-header nav a{
+    display: inline-block;
+    padding: 1% 2%;
+    margin: 1%;
+    text-transform: uppercase;
+        
+    }
+
+
 
 /* ---------------------------------//---------------------------- Mobile Settings ---------------------------------//---------------------------- */
 /* ".mob-" = mobile settings < 500px*/
@@ -463,6 +478,12 @@ header{
         width: 120%;
     }
 
+}
+
+@media(max-width: 1250px){
+    .blog-header{
+        margin-top: 15%;
+        }
 }
 /* Large Screen: Larger than typical laptop */
 @media(max-width:990px){
@@ -510,12 +531,12 @@ header{
 @media(max-width:770px){
 
     /* Padding utility classes */
-
+    .padded-sides-sm {padding: 0% 1.5%;}
     .padded-sides {padding: 0% 2%;}
     .padded-sides-lg {padding: 0% 4%;}
     .padded-sides-xlg {padding: 0% 8%;}
 
-
+/* Blogs  */
     .blog-masonry 
     {
     columns: 1;
@@ -526,6 +547,9 @@ header{
   
     }
 
+    .blog-header {
+        margin-top: 21%;
+    }
     }
 
 /* Small Screen - Mobile */
@@ -541,6 +565,14 @@ header{
     p, a{
         font-size: 1rem;
     }
+
+    /* Blog */
+
+    .blog-header nav a{
+        padding: 0.5% 1%;
+        margin: 0.5%;
+            
+        }
 }
 
 /* Extra Small*/

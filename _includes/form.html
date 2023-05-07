@@ -1,4 +1,9 @@
 <style>
+
+        #content-blocks-{{forloop.index0}} .form{
+            margin-top: 3rem;
+        }
+
         #content-blocks-{{forloop.index0}} input,
         #content-blocks-{{forloop.index0}} textarea
         {
@@ -47,34 +52,33 @@
         }
 </style>
 
-<section id="content-blocks-{{forloop.index0}}">
-    <section class = "grid-center form" id = "{{item.content-block-id}}">
+<section class = "" id="content-blocks-{{forloop.index0}}">
+    <section class = "grid-center form " id = "{{item.content-block-id}}">
         
-        <div class = "col-6_sm-10-center padded-sides-lg margin-t-2">
-            <h1>Contact Us</h1>
+        <div class = "col-7_sm-10-center padded-sides-lg margin-t-2">
+            <h1>{{item.heading}}</h1>
             <hr>
             <div class = "margin-tb ">
-                <h3>Let's Connect</h3>
-                <p>You can mail directly to hello@trendytravelduo.comor fill the contact form below.</p>
+                {{item.textarea_html}}
             </div>
             <!---------- Simple Contact Form Elements  ------------->
             <form method="post" action="/success.html">
 
-                <label for="name">Name</label><br>       
+                <label for="name">{{item.form.label-1}}</label><br>       
                 <input type="text" name="name" id="name" required=""/><br>   
             
-                <label for="_replyto">Email</label><br>   
+                <label for="_replyto">{{item.form.label-2}}</label><br>   
                 <input type="email" name="_replyto" id="_replyto"  required=""/><br>   
                 
-                <label for="subject">Subject</label><br>   
-                <textarea name="subject" id="subject" placeholder="{{item.label_4}}"></textarea><br>   
+                <label for="subject">{{item.form.label-3}}</label><br>   
+                <textarea name="subject" id="subject"></textarea><br>   
 
-                <label for="message">Message</label><br>   
-                <textarea name="message" id="message" placeholder="{{item.label_4}}"></textarea><br>   
+                <label for="message">{{item.form.label-4}}</label><br>   
+                <textarea name="message" id="message"></textarea><br>   
 
                 <input type="hidden" name="inbox_key" value="#">
                 <input type="text" name="_gotcha" style="display: none;" />
-                <button class = "button huge-left-margin right" type="submit"> Submit </button>
+                <button class = "button huge-left-margin right" type="submit"> {{item.form.button}} </button>
                 
             </form>
             
@@ -83,6 +87,6 @@
         </div>
          <!-- Image Block -->
         <!-- Oval class temporary -->
-        <div class = "col-6_sm-9-center padded text-image background-image margin-b-1" style = " background-image: url('/images/about-us.webp'); "></div>
+        <div class = "col-5_sm-9-center padded text-image background-image margin-b-1" style = " background-image: url('{{item.image}}'); "></div>
     </section>
 </section>

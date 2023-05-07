@@ -1,8 +1,14 @@
 --- 
 layout: blog-categories
 --- 
+<style>
+  .blog-hero{border-radius: 27% 37% 57% 40% / 31% 26% 57% 58% ;}
 
-<section class = "grid  background-image oval blog-hero" style = "background-image: url('{{page.blog_image}}'); min-height: 50vh; border-radius: 27% 37% 57% 40% / 31% 26% 57% 58% ;"id = "{{item.content-block-id}}">
+  @media(max-width:770px){
+    .blog-hero{border-radius: 0% ;}
+  }
+</style>
+<section class = "grid  background-image blog-hero" style = "background-image: url('{{page.blog_image}}'); min-height: 50vh; "id = "{{item.content-block-id}}">
 </section>
 <section class = "grid-left">
     <div class = "col-2">

@@ -1,16 +1,10 @@
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "padded-sides-lg padded-tb-sm  grid-center bg-beige" id = "{{item.content-block-id}}">
+    <section class = "padded-sides-lg padded-tb-sm  grid-center bg-pale" id = "{{item.content-block-id}}">
         <div class = "col-10 center">
-            <h5 class = "center">We Offer the following Services:</h5>
+            <h5 class = "center">{{item.heading}}</h5>
         </div>
         <div class = "col-7-center padded-sides">
-            <ul class>
-                <li>Content creation: photos and videos</li>
-                <li>Content creation: photos and videos</li>
-                <li>Content creation: photos and videos</li>
-                <li>Content creation: photos and videos</li>
-                <li>Content creation: photos and videos</li>
-            </ul>
+            {{item.textarea_html}}
         </div>
         
     </section>

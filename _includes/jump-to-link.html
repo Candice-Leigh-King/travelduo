@@ -1,20 +1,18 @@
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "" id = "{{item.content-block-id}}">
+    <section class = "" id = "{{item.content-block-link}}">
         <div class = "grid-middle margin-t-2 center">
             <div class = "col-3_sm-2"><hr></div>
-            <div class = "col-6_sm-8"><h1>Work With Us</h1></div>
+            <div class = "col-6_sm-8"><h1>{{item.heading}}</h1></div>
             <div class = "col-3_sm-2"><hr></div>
         </div>
         <div class = "padded-sides-xlg padded-tb-sm center">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda odit maxime recusandae fugiat, tempora sapiente quidem dicta modi quasi, ad doloribus ullam? Eaque reprehenderit optio cum quas adipisci dolores sed? </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit pariatur nihil id. Voluptatum incidunt minima sed reiciendis alias, dignissimos nostrum dolorum. Reprehenderit odit nisi eos delectus officia unde alias earum!</p>
+            {{item.textarea_html}}
         </div>
         <div class = "padded-sided-xlg grid-center padded-tb-sm center">
             <nav class = "padded-sides-sm col-8-center" style = "display: block;">
-                <a href = "#" class = "blue-button padded-sides-sm margin-lr-sm">Inquire</a> 
+                <a href = "{{item.jump-to.blue-cta-link}}" class = "blue-button padded-sides-sm margin-lr-sm">{{item.jump-to.blue-cta}}</a> 
                 <a class = "padded-sides-sm margin-lr-sm">OR</a>
-                <a class = "underline padded-sides-sm margin-lr-sm" href = "#">Jump to Portfolio</a></nav>
+                <a class = "underline padded-sides-sm margin-lr-sm" href = "{{item.jump-to.plain-cta-link}}">{{item.jump-to.plain-cta}}</a></nav>
         </div>
     </section>
 </section>
