@@ -259,6 +259,16 @@ p:last-child {
     border-radius: 50%;
 }
 
+.tall-30{min-height: 30vh;}
+.tall-40{min-height: 40vh;}
+.tall-50{min-height: 50vh;}
+.tall-60{min-height: 60vh;}
+.tall-70{min-height: 70vh;}
+.tall-80{min-height: 80vh;}
+.tall-90{min-height: 90vh;}
+.tall-100{min-height: 100vh;}
+.tall-120{min-height: 120vh;}
+
 /* Background Styles */
 .background-image{
     background-size: cover;

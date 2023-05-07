@@ -1,27 +1,91 @@
+<style>
+    #content-blocks-{{forloop.index0}} .text-image{
+
+        border-radius: 67% 0% 40% 63% / 59% 22% 35% 46%;
+        /* margin-top: -35%; */
+        padding: 18rem 8rem; 
+
+    }
+
+    #content-blocks-{{forloop.index0}} .blog-nav a{
+        display: block;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-decoration: underline;
+        font-weight: 100;
+        margin-bottom: 0.5rem;
+    }
+
+
+    @media(min-width:1920px){
+
+        #content-blocks-{{forloop.index0}} .text-image{
+            padding: 22rem 8rem; 
+        }
+
+    }
+
+    @media(max-width:990px){
+
+        #content-blocks-{{forloop.index0}} .text-image{
+            padding: 18rem 8rem; 
+        }
+
+    }
+
+    @media(max-width:770px){
+
+        #content-blocks-{{forloop.index0}} .text-image{
+            margin-top: 5%;
+            border-radius: 27% 37% 20% 80% / 31% 26% 57% 58%;
+            padding: 15rem 21rem;
+        }
+
+    }
+    @media(max-width:700px){
+
+        #content-blocks-{{forloop.index0}} .text-image{
+            margin-top: 5%;
+            border-radius: 27% 37% 20% 80% / 31% 26% 57% 58%;
+            padding: 15rem 10rem;
+        }
+
+    }
+    @media(max-width:550px){
+
+        #content-blocks-{{forloop.index0}} .text-image{
+            margin-top: 5%;
+            border-radius: 0%;
+            padding: 15rem 10rem;
+        }
+
+    }
+    
+
+</style>
+
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "grid" id = "{{item.content-block-id}}">
         <!-- Text Block -->
-        <section class = "col-12">
-            <section class = "grid-left">
-                <div class = "col-7-left padded-sides">
-                    <h1> Let's Travel together!</h1>
+        <section class = "col-12 ">
+            <section class = "grid margin-b-2">
+                <div class = "col-7_md-6_sm-10-left padded-sides margin-t-2 ">
+                    <h1> Travel </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus beatae iusto asperiores, est laborum quos repudiandae culpa aliquam eum, necessitatibus a aperiam distinctio ab ullam quidem id possimus placeat et! <br> 
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod similique illo ullam ratione, consequuntur dolores non ea? <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
                 </div>
+                <!-- image block -->
+                <section class = "col-5_md-6_sm-12-right background-image text-image" style = " background-image: url('/images/about-us.webp'); ">
+                </section>
             </section>
-            <section class = "padded-sides padded-tb-sm bg-beige">
-                <h4>Hot Topics</h4>
+            <section class = "padded-sides padded-tb-sm bg-beige blog-nav " style = "margin-top: -10%;">
+                <h4 class = "margin-t-1">Hot Topics</h4>
                 <a href = "#">link one</a>
                 <a href = "#">link one</a>
                 <a href = "#">link one</a>
             </section>
         </section>
         
-        <!-- Image Block -->
-        <section class = "col-12 grid-right">
-            <section class = "col-4-right background-image oval" style = "margin-top: -21%; background-image: url('/images/about-us.webp'); padding: 15rem 8rem; border-radius: 67% 0% 40% 63% / 59% 22% 35% 46% ">
-            </section>
-        </section>
+        
         
     </section>
 </section>
