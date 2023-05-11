@@ -2,15 +2,15 @@
     <section class = "" id = "{{item.content-block-link}}">
         <section class="grid-center padded-sides">
             <div class="">
-              <h1 class = "center">Explore Our HotSpots Blogs</h1>
+              <h1 class = "center margin-b-2">Explore Our HotSpots Blogs</h1>
                 {% for post in site.categories.hotspots %}
                 <div class= "border-bottom">
                     <a class="grid-center margin-tb-sm"href="{{post.url}}">
                       <div class = "col-3_sm-8 padded-sides background-image tall-30 margin-lr-sm" style="background-image:url('{{post.blog_image}}');">
                       </div>
-                      <div class = "col-8">
-                        <h1>{{post.title}}</h1>
-                        <p>{{post.blog-summary}}</p>
+                      <div class = "col-8-middle">
+                        <h5>{{post.title}}</h5>
+                        <p class = "margin-tb-sm">{{post.blog-summary}}</p>
                       </div>
                     </a>
                   </div>

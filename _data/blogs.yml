@@ -6,5 +6,13 @@ dropdown:
     href="/blog-categories/hotspots">Hotspots</a></p><p><a
     href="/blog-categories/travel">Travel</a></p>
 blog-hot-topics:  
-  textarea_html: 
-    <p><a href = "#">link one</a></p><p><a href = "#">link two</a></p><p><a href = "#">link three</a></p>
+  blog-link: 
+    link-one: 
+    link-two:
+    link-three:
+  blog-name: 
+    blog-name-one: link one
+    blog-name-two: link two
+    blog-name-three: link three
+
+

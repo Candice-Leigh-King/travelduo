@@ -73,12 +73,14 @@
                     <p>{{item.textarea_html}}</p>
                 </div>
                 <!-- image block -->
-                <section class = "col-5_md-6_sm-12-right background-image text-image" style = " background-image: url('/images/about-us.webp'); ">
+                <section class = "col-5_md-6_sm-12-right background-image text-image" style = " background-image: url('{{item.image}}'); ">
                 </section>
             </section>
             <section class = "padded-sides padded-tb-sm bg-beige blog-nav " style = "margin-top: -3%;">
                 <h4 class = "margin-t-1">{{item.sub-heading}}</h4>
-                <p>{{site.blogs.blog-hot-topics.textarea_html}}</p>
+                <a href = "{{site.data.blogs.blog-hot-topics.blog-link.link-one}}"> {{site.data.blogs.blog-hot-topics.blog-name.blog-name-one}}</a>
+                <a href = "{{site.data.blogs.blog-hot-topics.blog-link.link-two}}"> {{site.data.blogs.blog-hot-topics.blog-name.blog-name-two}}</a>
+                <a href = "{{site.data.blogs.blog-hot-topics.blog-link.link-three}}"> {{site.data.blogs.blog-hot-topics.blog-name.blog-name-three}}</a>
             </section>
         </section>
         
