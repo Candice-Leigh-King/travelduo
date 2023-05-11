@@ -1,0 +1,10 @@
+dropdown-navigation-name: Blog &#8744;
+dropdown:
+  textarea_html: >-
+    <p><a href="/blog-categories/blogs">All</a></p><p><a
+    href="/blog-categories/digital-nomad">Digital Nomad</a></p><p><a
+    href="/blog-categories/hotspots">Hotspots</a></p><p><a
+    href="/blog-categories/travel">Travel</a></p>
+blog-hot-topics:  
+  textarea_html: 
+    <p><a href = "#">link one</a></p><p><a href = "#">link two</a></p><p><a href = "#">link three</a></p>

@@ -64,24 +64,21 @@
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "grid" id = "{{item.content-block-link}}">
+    <section class = "grid fadeIn animatedFadeIn animated fade-right" id = "{{item.content-block-link}}">
         <!-- Text Block -->
         <section class = "col-12 ">
             <section class = "grid margin-b-2">
                 <div class = "col-7_md-6_sm-10-left padded-sides margin-t-2 ">
-                    <h1> Travel </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus beatae iusto asperiores, est laborum quos repudiandae culpa aliquam eum, necessitatibus a aperiam distinctio ab ullam quidem id possimus placeat et! <br> 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod similique illo ullam ratione, consequuntur dolores non ea? <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                    <h1> {{item.heading}}</h1>
+                    <p>{{item.textarea_html}}</p>
                 </div>
                 <!-- image block -->
                 <section class = "col-5_md-6_sm-12-right background-image text-image" style = " background-image: url('/images/about-us.webp'); ">
                 </section>
             </section>
-            <section class = "padded-sides padded-tb-sm bg-beige blog-nav " style = "margin-top: -10%;">
-                <h4 class = "margin-t-1">Hot Topics</h4>
-                <a href = "#">link one</a>
-                <a href = "#">link one</a>
-                <a href = "#">link one</a>
+            <section class = "padded-sides padded-tb-sm bg-beige blog-nav " style = "margin-top: -3%;">
+                <h4 class = "margin-t-1">{{item.sub-heading}}</h4>
+                <p>{{site.blogs.blog-hot-topics.textarea_html}}</p>
             </section>
         </section>
         
