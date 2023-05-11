@@ -33,25 +33,25 @@ _array_structures:
   content-blocks:
     values:
       - label: One Image grid
-        icon: 
+        icon: image
         value: 
           _section-type: 1-image-block
           1_image: /images/mission.jpg
           content-block-link:
       - label: two image grid
-        icon:
+        icon: photo_library
         value: 
           _section-type: 2-image-block
           1_image: /images/mission.jpg
           2_image: /images/mission.jpg
           content-block-link:
       - label: All Blogs 
-        icon: 
-        value:
+        icon: edit_note
+        value: 
           _section-type: all-blogs
           heading: Explore our blogs
       - label: Blog Article
-        icon:
+        icon: edit_note
         value:
           _section-type: blog-article
           textarea_html: Add block of text here
@@ -65,7 +65,7 @@ _array_structures:
             heading-font:
             subheading-font:
       - label: Blog Category Introduction Section
-        icon:
+        icon: article
         value:
           _section-type: blog-cat-intro
           heading: Travel Blogs
@@ -74,7 +74,7 @@ _array_structures:
           sub-heading: Hot Topics
           content-block-link:
       - label: Button in the center
-        icon:
+        icon: smart_button
         value:
           _section-type: button-center
           cta-link: /contact-us
@@ -83,7 +83,7 @@ _array_structures:
           background-color: '#FFFFFF'
           content-block-link:
       - label: Button on the right
-        icon:
+        icon: smart_button
         value:
           _section-type: button-right
           background_image: /images/side-button.webp 
@@ -92,13 +92,13 @@ _array_structures:
           cta-link: /work-with-us
           content-block-link:
       - label: Digital Nomad Blogs
-        icon:
+        icon: article
         value:
           _section-type: digital-nomad-blogs
           heading: Digital Nomad Blogs
           content-block-link:
-      - label: 
-        icon:
+      - label: Contact Form
+        icon: assignment
         value:
           _section-type: form  
           heading: Contact Us
@@ -111,8 +111,8 @@ _array_structures:
             label-4: Message
             button: Submit
           content-block-link:
-      - label: 
-        icon:
+      - label: Gallery
+        icon: grid_on
         value:
           _section-type: gallery
           background-color: '#FFFFFF'
@@ -132,13 +132,13 @@ _array_structures:
           logo_image: /images/logos/primary-logo.png
           content-block-link:
       - label: Hotspots Blogs
-        icon:
+        icon: article
         value:
           _section-type: hotspots-blog
           heading: Hotspots blogs
           content-block-link:
       - label: Instagram Grid
-        icon:
+        icon: face_retouching_natural
         value:
           _section-type: instagram-grid
           heading: Follow our adventure!
@@ -146,7 +146,7 @@ _array_structures:
           background-color: '#F5F0EB'
           content-block-link:
       - label: Jump to Link
-        icon:
+        icon: add_link
         value:
           _section-type: jump-to-link
           heading: Work With Us
@@ -159,13 +159,13 @@ _array_structures:
             plain-cta-link: /work-with-us#portfolio
           content-block-link:
       - label: Recent Blogs 
-        icon:
+        icon: article
         value:
           _section-type: recent-blogs
           heading: latest blogs
           content-block-link:
       - label: Scroll
-        icon:
+        icon: person
         value:
           _section-type: scroll
           heading: What they're saying about us
@@ -173,19 +173,19 @@ _array_structures:
             textarea_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem est, soluta modi quam pariatur placeat vitae voluptate veniam fugit. Eos eligendi eum ut dolorum a, laboriosam quasi modi optio! <br> Name and surname</p>
           content-block-link:
       - label: Space Block
-        icon:
+        icon: check_box_outline_blank
         value:
           _section-type: space-block
           background-color: '#EEEEEE'
       - label: Heading with lines
-        icon:
+        icon: title
         value:
           _section-type: special-heading
           background-color:
           textarea_html: <h6>Heading</h6>
           content-block-link:
       - label: Centered Text
-        icon:
+        icon: format_align_center
         value:
           _section-type: text-center
           heading: We Offer the following services
@@ -193,7 +193,7 @@ _array_structures:
             <ul><li>Content creation: photos and videos</li><li>Exclusive conten creation: drone & underwater footage</li><li>Sponsored contenton our instagram page</li><li>Brand Colalborations</li><li>Press Trips & Marketing Campaigns</li></ul>
           content-block-link:
       - label: Text + Image grid
-        icon:
+        icon: auto_awesome
         value:
           _section-type: text-image-grid
           icon_image: /images/arrow-icon.png
@@ -208,7 +208,7 @@ _array_structures:
             - image: /images/work-with-us-5.webp 
           content-block-link:
       - label: Text on the left
-        icon:
+        icon: east
         value:
           _section-type: text-left 
           background-color: '#F5F0EB'
@@ -219,7 +219,7 @@ _array_structures:
           image: /images/mission.jpg
           content-block-link:
       - label: Text on the Right
-        icon:
+        icon: west
         value:
           _section-type: text-right 
           background-color: '#FFFFFF'
@@ -231,7 +231,7 @@ _array_structures:
           cta-link: /work-with-us
           content-block-link: about
       - label: Travel Blogs
-        icon:
+        icon: article
         value:
           _section-type: travel-blogs
           heading: Explore our travel blogs
