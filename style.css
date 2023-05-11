@@ -201,10 +201,11 @@ a{
 h1{font-size: 4rem;}
 h2{font-size: 3.5rem;}
 h3,h4,h5,h6{font-size: 3rem;}
+h5,h6{font-size: 2rem;}
 
 h2, h3, h4, h5, h6 {
     line-height: 1.1;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.2rem;
 }
 
 p {
@@ -214,11 +215,13 @@ p {
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
+ul{margin-bottom: 1.5rem;}
 
 li{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 300;
     font-size: 1.3rem;
+    
 }
 
 a{
@@ -236,7 +239,7 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-/* General classes */
+/* ---------------------------------//----------------------------General classes---------------------------------//----------------------------  */
 
 .border-bottom{
     border-bottom: 2px solid #848282;
@@ -257,7 +260,9 @@ p:last-child {
     padding: 2% 5%;
 }
 
-.quote{color: #856A52;}
+.quote p{ 
+    color: #856A52;
+    font-size: 2rem;}
 
 .tall-30{min-height: 30vh;}
 .tall-40{min-height: 40vh;}
@@ -310,10 +315,13 @@ p:last-child {
   }
 
 
-/* Default Layout */
+/* ---------------------------------//----------------------------Default Layout ---------------------------------//---------------------------- */
 
 /* Header Styles */
-
+/* 
+.logo-div{
+    display: none;
+} */
 .header-wrapper{
     position: fixed;
     top: 7rem;
@@ -330,8 +338,13 @@ p:last-child {
         position: fixed;
         transform: translate3d(0, -100%, 0);
       }
+      
       &.scroll-up {
         transform: translate3d(0, 0, 0);}
+}
+
+.hide{
+    display: none;
 }
 
 
@@ -387,11 +400,41 @@ nav a{
     padding: 1% 2%;
 }
 
-.dropdown-title, nav a{
+.dropdown-title, .header-wrapper nav a{
     font-family: Regular Grand Font;
     font-weight: lighter;
     color: white;
     font-size: 1.2rem;
+    transition: 1s all;
+}
+
+.header-wrapper .dropdown-content p{
+    display: block;
+}
+.header-wrapper .dropdown-content a {
+    font-family: Regular Grand Font;
+    font-weight: lighter;
+    display: block;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    color: #000000;
+}
+
+header nav p{
+    display: inline-block;
+    white-space: nowrap;
+    margin: 1%;
+    padding: 1% 2%;
+    transition: 1s all;
+}
+
+
+.dropdown-title:hover, .header-wrapper nav a:hover, footer nav a:hover{
+    color:#856A52
+}
+
+.header-wrapper nav a:active{
+    border-bottom: 1px solid #856A52;
 }
 
 .dropdown-content a {
@@ -406,10 +449,35 @@ nav a{
     color:#856A52;
     background-color: white;
     padding: 2%;
+    margin: 1%;
+    transition: 1s all;
+}
+
+.social-links:hover{
+    color: white;
+    background-color: #856A52;
 }
 /* Footer Styles */
 .shop-requirements{
     display: inline-block;
+}
+
+.shop-requirements a{
+    transition: 1s all;
+}
+.shop-requirements a:hover{
+    color: white;
+}
+
+footer nav a{
+    font-family: Regular Grand Font;
+    transition: 1s all;
+}
+footer nav p{
+    display: inline-block;
+    white-space: nowrap;
+    margin: 1%;
+    padding: 1% 2%;
 }
 
 /* header .social-icons-nav{
@@ -420,14 +488,14 @@ nav a{
 /* Text Right Content Block */
 
 
-/* Instagram grid */
+/* I---------------------------------//----------------------------nstagram grid ---------------------------------//----------------------------*/
 .underline{
     text-decoration: underline;
 }
 
 
 
-/* Gallery Content Block */
+/* ---------------------------------//----------------------------Gallery Content Block ---------------------------------//----------------------------*/
 
 .gallery-1{
     padding-bottom: 30rem;
@@ -441,7 +509,7 @@ nav a{
     padding-bottom: 25rem;
 }
 
-/* Blogs */
+/* ---------------------------------//----------------------------Blogs---------------------------------//---------------------------- */
 
 /* Recent Blogs Content Block*/
 .blog-loop .blog-item
@@ -529,6 +597,178 @@ nav a{
         
     }
 
+
+/* ---------------------------------//----------------------------Animations ---------------------------------//----------------------------*/
+
+
+/* on scroll */
+.reveal 
+  {
+  opacity: 0;
+  transition: 3s all ease;
+  }
+
+.reveal.active 
+  {opacity: 1;}
+/* ---------ANNIMATION--------- */
+
+
+
+/* IMAGE  */
+@keyframes fadeIn {
+  from {
+      /* transform: translate3d(0,40px,0) */
+  }
+
+  to {
+      /* transform: translate3d(0,0,0); */
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeIn {
+  opacity: 0
+}
+
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+
+/* TEXT  */
+@keyframes fadeInLong {
+  from {
+      /* transform: translate3d(0,40px,0) */
+  }
+
+  to {
+      /* transform: translate3d(0,0,0); */
+      opacity: 1
+  }
+}
+
+
+.animatedLong {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeIn {
+  opacity: 0
+}
+
+.fadeInLong {
+  opacity: 0;
+  animation-name: fadeInLong;
+  -webkit-animation-name: fadeInLong;
+}
+
+.active.fade-up {animation: fade-up 1s ease-in;}
+
+@keyframes fade-up 
+{
+  0%
+    {
+    transform: translateY(20px);
+    opacity: 0;
+    }
+  100%
+    {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.active.fade-down {animation: fade-down 1s ease-in;}
+
+@keyframes fade-down
+{
+  0%
+    {
+    transform: translateY(-20px);
+    opacity: 0;
+    }
+  100%
+    {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.active.fade-down-1 {animation: fade-down-1 1s ease-in;}
+
+@keyframes fade-down-1
+{
+  0%
+    {
+    transform: translateY(-20px);
+    opacity: 0;
+    }
+  50%
+    {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.active.fade-down-2 {animation: fade-down-2 1s ease-in;}
+
+@keyframes fade-down-2
+{
+  0%
+    {
+    transform: translateY(-20px);
+    opacity: 0;
+    }
+  75%
+    {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+
+.active.fade-left {animation: fade-left 1s ease-in;}
+
+@keyframes fade-left 
+{
+  0%
+    {
+    transform: translateX(-50px);
+    opacity: 0;
+    }
+  100%
+    {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.active.fade-right {animation: fade-right 1s ease-in;}
+
+@keyframes fade-right 
+{
+  0%
+    {
+    transform: translateX(50px);
+    opacity: 0;
+    }
+  100%
+    {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
 
 
 /* ---------------------------------//---------------------------- Mobile Settings ---------------------------------//---------------------------- */
@@ -653,6 +893,10 @@ nav a{
     h3,h4,h5,h6{font-size: 1.5rem;}
     p, a{
         font-size: 1rem;
+    }
+
+    .dropdown-title, nav a {
+        font-size: 0.9rem;
     }
 
     /* Blog */

@@ -19,6 +19,7 @@ $(document).ready(function() {
 // Reveal and hidee header
 
 const header = document.querySelector("header");
+const logo = document.getElementsByClassName("logo-div");
 let lastScroll = 0;
 
 const throttle = (func, time = 100) => {
@@ -38,8 +39,9 @@ const validateHeader = () => {
   if (windowY > windowH) {
     // We passed the first section, set a toggable class
     header.classList.add("is-fixed");
+    // logo.classList.add("show")
     // Determine is we ready to animate
-    if (windowY > windowH + 10) {
+    if (windowY > windowH +100) {
       header.classList.add("can-animate");
       if (windowY < lastScroll) {
         // Determine if we scrolling up
@@ -76,5 +78,28 @@ window.addEventListener("scroll", throttle(validateHeader, 40));
 		}
 
 	);
+// Animations
+  // on scroll
+			// on scroll
+			function reveal() {
+				let reveals = document.querySelectorAll(".reveal");
+	
+				for (let i = 0; i < reveals.length; i++) {
+				let windowHeight = window.innerHeight;
+				let elementTop = reveals[i].getBoundingClientRect().top;
+				let elementVisible = 150;
+	
+				if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add("active");
+				} else {
+				}
+				}
+				}
+	
+				window.addEventListener("scroll", reveal);
+
+
+			
+// End of JS
 //   End .js
 });

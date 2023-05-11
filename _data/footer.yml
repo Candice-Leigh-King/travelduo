@@ -3,4 +3,9 @@ shop-requirements:
   terms-and-conditions-link: /ts-cs.html
   privacy-heading: Privacy Policy
   privacy-link: /privacy-policy.html
+navigation:
+  textarea_html: >-
+    <p><a href="/blog-categories/blogs">Blog</a></p><p><a href="/work-with-us">Work With Us</a></p><p><a
+    href="/#about">About</a></p><p><a
+    href="/contact-us">Contact</a></p>
 
