@@ -18,47 +18,91 @@ $(document).ready(function() {
 
 // Reveal and hidee header
 
-const header = document.querySelector("header");
-const logo = document.getElementsByClassName("logo-div");
-let lastScroll = 0;
+// const header = document.querySelector("header");
+// const logo = document.getElementsByClassName("logo-div");
+// let lastScroll = 0;
 
-const throttle = (func, time = 100) => {
-  let lastTime = 0;
-  return () => {
-    const now = new Date();
-    if (now - lastTime >= time) {
-      func();
-      time = now;
-    }
-  };
-};
+// const throttle = (func, time = 100) => {
+//   let lastTime = 0;
+//   return () => {
+//     const now = new Date();
+//     if (now - lastTime >= time) {
+//       func();
+//       time = now;
+//     }
+//   };
+// };
 
-const validateHeader = () => {
-  const windowY = window.scrollY;
-  const windowH = window.innerHeight;
-  if (windowY > windowH) {
-    // We passed the first section, set a toggable class
-    header.classList.add("is-fixed");
-    // logo.classList.add("show")
-    // Determine is we ready to animate
-    if (windowY > windowH +100) {
-      header.classList.add("can-animate");
-      if (windowY < lastScroll) {
-        // Determine if we scrolling up
-        header.classList.add("scroll-up");
-      } else {
-        header.classList.remove("scroll-up");
-      }
-    } else {
-      header.classList.remove("scroll-up");
-    }
-  } else {
-    header.classList.remove("is-fixed", "can-animate");
-  }
-  lastScroll = windowY;
-};
+// const validateHeader = () => {
+//   const windowY = window.scrollY;
+//   const windowH = window.innerHeight;
+//   if (windowY > windowH) {
+//     // We passed the first section, set a toggable class
+//     header.classList.add("is-fixed");
+//     // logo.classList.add("show")
+//     // Determine is we ready to animate
+//     if (windowY > windowH + 5) {
+//       header.classList.add("can-animate");
+//       if (windowY < lastScroll) {
+//         // Determine if we scrolling up
+//         header.classList.add("scroll-up");
+//       } else {
+//         header.classList.remove("scroll-up");
+//       }
+//     } else {
+//       header.classList.remove("scroll-up");
+//     }
+//   } else {
+//     header.classList.remove("is-fixed", "can-animate");
+//   }
+//   lastScroll = windowY;
+// };
 
-window.addEventListener("scroll", throttle(validateHeader, 40));
+// window.addEventListener("scroll", throttle(validateHeader, 40));
+
+
+// New scroll function
+// Hide Header on on scroll down
+// var didScroll;
+// var lastScrollTop = 0;
+// var delta = 5;
+// var navbarHeight = $('header').outerHeight();
+
+// $(window).scroll(function(event){
+//     didScroll = true;
+// });
+
+// setInterval(function() {
+//     if (didScroll) {
+//         hasScrolled();
+//         didScroll = false;
+//     }
+// }, 250);
+
+// function hasScrolled() {
+//     var st = $(this).scrollTop();
+    
+//     // Make sure they scroll more than delta
+//     if(Math.abs(lastScrollTop - st) <= delta)
+//         return;
+    
+//     // If they scrolled down and are past the navbar, add class .nav-up.
+//     // This is necessary so you never see what is "behind" the navbar.
+//     if (st > lastScrollTop && st > navbarHeight){
+//         // Scroll Down
+//         $('header').removeClass('nav-down').addClass('nav-up');
+//     } else {
+//         // Scroll Up
+//         if(st + $(window).height() < $(document).height()) {
+//             $('header').removeClass('nav-up').addClass('nav-down');
+//         }
+//     }
+    
+//     lastScrollTop = st;
+// }
+
+
+
 
 
 
@@ -99,6 +143,19 @@ window.addEventListener("scroll", throttle(validateHeader, 40));
 				window.addEventListener("scroll", reveal);
 
 
+// New New Hide Show Header 
+
+var hideHeader =$(".header-to-hide");
+// var showHeader = $('.header-to-show');
+var pos =  hideHeader.postion();
+
+$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		if (windowpos >= pos.top & windowpos >=20) {
+			hideHeader.addClass("hide");
+		} else {
+			hideHeader.removeClass("hide");	
+		} });
 			
 // End of JS
 //   End .js
