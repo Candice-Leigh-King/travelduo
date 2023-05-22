@@ -81,7 +81,7 @@
 <body>
 <!--  -->
     <!-- Header Styles -->
-    <header class = "grid-middle-center page-header header-to-hide header-wrapper" style = "background-color: {{page.header-background-color}};"> 
+    <header class = "grid-middle-center page-header header-to-hide header-wrapper" style = "background-color: {{page.header-background-color}};" id = "hideHeader"> 
      
             <div class = "col-3-center center" >
               <a href = "/">
@@ -110,31 +110,7 @@
             
     </header>
 
-    <header class = "grid-middle-center page-header header-to-show header-wrapper" style = "background-color: {{page.header-background-color}};"> 
-     
-      <div class = "col-3-center center" >
-        <a href = "/">
-          <img src="{{site.data.general.basics.submark}}"  class = "logo-div" width = "40%">
-        </a>
-      </div>
-          <nav class = "col-6_sm-9-center grid-middle center" style="justify-content: center;" >
-              <div class="dropdown">
-                  <a class="dropdown-title hamburger"> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
-                  <div class="dropdown-content mobile-menu page-nav exit">
-                    
-                    <p>{{site.data.blogs.dropdown.textarea_html}}</p>
-          
-                  </div> 
-                </div>
-                <p>{{site.data.navigation.textarea_html}}</p>
-
-              <!-- <p>{{site.data.navigation.textarea_html}}</p> -->
-          </nav>
-          <div class = "col-3-center center  padded-sides ">
-              <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
-              <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
-          </div>
-        </header>
+   
 
     {{content}}
     {% for item in page.content-blocks %}

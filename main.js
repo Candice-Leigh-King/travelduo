@@ -145,18 +145,77 @@ $(document).ready(function() {
 
 // New New Hide Show Header 
 
-var hideHeader =$(".header-to-hide");
-// var showHeader = $('.header-to-show');
-var pos =  hideHeader.postion();
+// var hideHeader =$(".header-to-hide");
+// // var showHeader = $('.header-to-show');
+// var pos =  hideHeader.postion();
 
-$(window).scroll(function() {
-		var windowpos = $(window).scrollTop();
-		if (windowpos >= pos.top & windowpos >=20) {
-			hideHeader.addClass("hide");
-		} else {
-			hideHeader.removeClass("hide");	
-		} });
+// $(window).scroll(function() {
+// 		var windowpos = $(window).scrollTop();
+// 		if (windowpos >= pos.top & windowpos >=20) {
+// 			hideHeader.addClass("hide");
+// 		} else {
+// 			hideHeader.removeClass("hide");	
+// 		} });
+
+
+// When the user scrolls the page, execute myFunction
+
+// Fetch the header to hide on scroll and assign
+// var hideHeader = document.getElementById("hideHeader");
+// // Fetch the header to show on scroll up and assign
+// var showHeader = document.getElementById("showHeader");
+// // Set Last Scroll:
+// // var lastScroll = 0;
+
+// // Position of red header
+// var pos = hideHeader.position();
+// $(window).scroll(function() {
+// 	// var st = $(window).scrollTop();
+// 	var windowpos = $(window).scrollTop();
+// 	if (windowpos >= pos.top & windoepos >=20){
+// 		// downscroll code
+// 		hideHeader.addClass("hideHeader");
+// 	} else {
+// 		// upscroll code
+// 		hideHeader.removeClass("hideHeader");
+// 	}
+// 	lastScroll = st;
+//  });
+
+
+//  var hideLogo = $(".logo");
+// 	var pos = hideLogo.position();					   
+// 	$(window).scroll(function() {
+// 		var windowpos = $(window).scrollTop();
+// 		if (windowpos >= pos.top & windowpos >=20) {
+// 			hideLogo.addClass("hide");
+// 		} else {
+// 			hideLogo.removeClass("hide");	
+// 		}
+// 	});
+
 			
 // End of JS
+
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+var hideHeader = document.getElementById("hideHeader");
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+//   Scroll Down
+  if (prevScrollpos > currentScrollPos) {
+    hideHeader.style.top = "0";
+  } 
+//   Scroll Up
+  else {
+	// hideHeader.removeClass("bg-initial");
+	// hideHeader.addClass("bg-new");
+    hideHeader.style.top = "-190px";
+	
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 //   End .js
 });
