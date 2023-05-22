@@ -81,29 +81,34 @@
 <body>
 <!--  -->
     <!-- Header Styles -->
-    <header class = "grid-middle-center page-header header-to-hide header-wrapper" style = "background-color: {{page.header-background-color}};" id = "hideHeader"> 
+    <header class = "grid-middle page-header header-to-hide header-wrapper"  id = "hideHeader"> 
      
-            <div class = "col-3-center center" >
+            <div class = "col-3-left center" style=" z-index: 10;" >
               <a href = "/">
-                <img src="{{site.data.general.basics.submark}}"  class = "logo-div" width = "40%">
+                <img src="{{site.data.general.basics.submark}}" style = "background-color: {{page.header-background-color}};" class = "logo-div" width = "20%">
               </a>
             </div>
-                <nav class = "col-6_sm-9-center grid-middle center" style="justify-content: center;" >
+                <nav class = "col-12_sm-9-center grid-top center" style = "background-color: {{page.header-background-color}};  margin-top: -7rem; justify-content: center;" >
+                  <div class="col-3"></div>
+                  <div class="col-6">
                     <div class="dropdown">
                         <a class="dropdown-title hamburger"> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
                         <div class="dropdown-content mobile-menu page-nav exit">
                           
-                          <p>{{site.data.blogs.dropdown.textarea_html}}</p>
+                          {{site.data.blogs.dropdown.textarea_html}}
                 
                         </div> 
                       </div>
-                      <p>{{site.data.navigation.textarea_html}}</p>
-    
+                      {{site.data.navigation.textarea_html}}
+                      </div>
+                      <div class="col-3-middle">
+                        <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
+                        <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
+                      </div>
                     <!-- <p>{{site.data.navigation.textarea_html}}</p> -->
                 </nav>
-                <div class = "col-3-center center  padded-sides ">
-                    <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
-                    <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
+                <div class = "col-3-center center  padded-sides " >
+                   
                 </div>
  
         

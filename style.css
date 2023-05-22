@@ -382,20 +382,16 @@ p:last-child {
 .dropdown {
     position: relative;
     display: inline-block;
+    padding: 1% 2%;
     
 }
 .dropdown-title {
     
-    padding: 0.25rem 0.5rem;
     white-space: nowrap;
     display: inline-block;
     cursor: pointer;
 }
 
-.dropdown:hover,
-.dropdown-content{
-    display:block;
-}
 .dropdown-content a {
     display: block;
     padding: 0.2rem;
@@ -416,14 +412,14 @@ p:last-child {
 }
 nav a{
     display: inline-block;
-    margin: 1%;
-    padding: 1% 2%;
+    margin: 0%;
+    padding: 1% 2.5%;
 }
 
 .dropdown-title, .header-wrapper nav a{
     font-family: Regular Grand Font;
     font-weight: lighter;
-    color: white;
+    color: #4f4f4f;
     font-size: 1.2rem;
     transition: 1s all;
 }
@@ -443,19 +439,18 @@ nav a{
 header nav p{
     display: inline-block;
     white-space: nowrap;
-    margin: 1%;
-    padding: 1% 2%;
+    margin: 0%;
+    padding: 3% 5%;
     transition: 1s all;
 }
 
 
 .dropdown-title:hover, .header-wrapper nav a:hover, footer nav a:hover{
-    color:#856A52
-}
-
-.header-wrapper nav a:active{
+    color:#856A52;
     border-bottom: 1px solid #856A52;
 }
+
+
 
 .dropdown-content a {
     display: block;
