@@ -185,7 +185,7 @@ _array_structures:
           _section-type: space-block
           background-color: '#EEEEEE'
       - label: Heading with lines
-        icon: title
+        icon: block
         value:
           _section-type: special-heading
           background-color:
