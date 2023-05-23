@@ -206,12 +206,14 @@ window.onscroll = function() {
   // Scroll Down
   if (prevScrollpos > currentScrollPos) {
     hideHeader.style.top = "0";
+    hideHeader.classList.remove("bg-new");
+    hideHeader.classList.add("bg-initial");
   } 
   // Scroll Up
   else {
-    // hideHeader.removeClass("bg-initial");
-    // hideHeader.addClass("bg-new");
     hideHeader.style.top = "-190px";
+    hideHeader.classList.remove("bg-initial");
+    hideHeader.classList.add("bg-new");
   }
   prevScrollpos = currentScrollPos;
 };
