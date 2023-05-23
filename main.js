@@ -203,19 +203,18 @@ var prevScrollpos = window.pageYOffset;
 var hideHeader = document.getElementById("hideHeader");
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-//   Scroll Down
+  // Scroll Down
   if (prevScrollpos > currentScrollPos) {
     hideHeader.style.top = "0";
   } 
-//   Scroll Up
+  // Scroll Up
   else {
-	// hideHeader.removeClass("bg-initial");
-	// hideHeader.addClass("bg-new");
+    // hideHeader.removeClass("bg-initial");
+    // hideHeader.addClass("bg-new");
     hideHeader.style.top = "-190px";
-	
   }
   prevScrollpos = currentScrollPos;
-}
+};
 
 //   End .js
 });
