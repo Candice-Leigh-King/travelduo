@@ -21,20 +21,20 @@
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "grid padded-sides padded-tb-sm reveal fade-left" id = "{{item.content-block-link}}" style = "background-color: {{item.background-color}};">
+    <section class = "grid padded-sides padded-tb-sm" id = "{{item.content-block-link}}" style = "background-color: {{item.background-color}};">
         <!-- Top section -->
         <section class = "col-12 grid">
             <!-- Image 1 -->
-            <section class = "col-6_sm-12 gallery-1 gallery-border background-image gallery-label" style = "background-image: url('{{item.1_image}}');" data-fancybox="gallery" href = "{{item.1_image}}">
+            <section class = "col-6_sm-12 gallery-1 reveal fade-left gallery-border background-image gallery-label" style = "background-image: url('{{item.1_image}}');" data-fancybox="gallery" href = "{{item.1_image}}">
                 {{item.textarea_html}}
             </section>
             <section class = "grid col-6_sm-12" >
                 <!-- Image 2 -->
-                <section class = "col-12_sm-6 gallery-2 background-image gallery-border" style = "background-image: url('{{item.2_image}}');" data-fancybox="gallery" href = "{{item.2_image}}">
+                <section class = "col-12_sm-6 gallery-2 reveal fade-right background-image gallery-border" style = "background-image: url('{{item.2_image}}');" data-fancybox="gallery" href = "{{item.2_image}}">
                     
                 </section>
                 <!-- Image 3 -->
-                <section class = "col-12_sm-6 gallery-3 background-image gallery-border" style = "background-image: url('{{item.3_image}}');" data-fancybox="gallery" href = "{{item.3_image}}">
+                <section class = "col-12_sm-6 gallery-3 reveal fade-up background-image gallery-border" style = "background-image: url('{{item.3_image}}');" data-fancybox="gallery" href = "{{item.3_image}}">
                     
                 </section>
             </section>
@@ -43,15 +43,15 @@
 
         <section class = "col-12 grid">
             <!-- Image 4 -->
-            <section class = "col-4_sm-6 gallery-4 background-image gallery-border" style = "background-image: url('{{item.4_image}}');" data-fancybox="gallery" href = "{{item.4_image}}">
+            <section class = "col-4_sm-6 gallery-4 background-image reveal fade-left gallery-border" style = "background-image: url('{{item.4_image}}');" data-fancybox="gallery" href = "{{item.4_image}}">
                     
             </section>
             <!-- Image 5 -->
-            <section class = "col-4_sm-6 gallery-5 background-image gallery-border" style = "background-image: url('{{item.5_image}}');" data-fancybox="gallery" href = "{{item.5_image}}">
+            <section class = "col-4_sm-6 gallery-5 background-image gallery-border reveal fade-up" style = "background-image: url('{{item.5_image}}');" data-fancybox="gallery" href = "{{item.5_image}}">
                     
             </section>
             <!-- Image 6 -->
-            <section class = "col-4_sm-12 gallery-6 background-image gallery-border" style = "background-image: url('{{item.6_image}}');" data-fancybox="gallery" href = "{{item.6_image}}">
+            <section class = "col-4_sm-12 gallery-6 background-image gallery-border reveal fade-right" style = "background-image: url('{{item.6_image}}');" data-fancybox="gallery" href = "{{item.6_image}}">
                     
             </section>
         </section>
