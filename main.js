@@ -59,20 +59,20 @@ var hideHeader = document.getElementById("hideHeader");
 var logo = document.getElementById("logo");
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  // Scroll Down
+  // Scroll up
   if (prevScrollpos > currentScrollPos) {
-    hideHeader.style.top = "0";
-
-  } 
-  // Scroll Up
-  else {
-    // hideHeader.removeClass("bg-initial");
-    // hideHeader.addClass("bg-new");
-    hideHeader.style.top = "-190px";
+    hideHeader.style.top = "0rem";
 	hideHeader.classList.remove("headerBackgroundInitial");
 	hideHeader.classList.add("headerBackgroundNew");
 	logo.classList.remove("hide");
 	logo.classList.add("logo-show")
+  } 
+  // Scroll down
+  else {
+    // hideHeader.removeClass("bg-initial");
+    // hideHeader.addClass("bg-new");
+    hideHeader.style.top = "-13rem";
+	
   }
   prevScrollpos = currentScrollPos;
 };
