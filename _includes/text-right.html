@@ -50,12 +50,12 @@
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "reveal fade-right padded-sides grid-top" id = "{{item.content-block-link}}" style = "background-color: {{background-color}};">
+    <section class = "padded-sides grid-top" id = "{{item.content-block-link}}" style = "background-color: {{background-color}};">
     <!-- Image Block -->
-    <div class = "col-4_md-5_sm-9 padded text-image background-image" style = "margin-right: 2%; margin-bottom: 2rem; background-image: url('{{item.image}}'); "></div>
+    <div class = "col-4_md-5_sm-9 reveal fade-down  padded text-image background-image" style = "margin-right: 2%; margin-bottom: 2rem; background-image: url('{{item.image}}'); "></div>
 
     <!-- text block -->
-    <div class = "col-7_md-12 padded-sides center">
+    <div class = "col-7_md-12 padded-sides center reveal fade-right ">
         <h3>{{item.heading}}</h3>
         {{item.textarea_html}}
         <a href = "{{item.cta-link}}" class = "button">{{item.cta}}</a>
