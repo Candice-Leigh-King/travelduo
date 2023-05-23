@@ -1,4 +1,5 @@
 <style>
+#content-blocks-{{forloop.index0}} h3 {font-size: 2rem;}  
 
 #content-blocks-{{forloop.index0}} .text-image {
     padding-bottom: 25%;}
@@ -10,23 +11,23 @@
 
 </style>
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "grid-center reveal fade-left" id = "{{item.content-block-link}}" style = "background-color: {{item.background-color}};">
+    <section class = "grid-center " id = "{{item.content-block-link}}" style = "background-color: {{item.background-color}};">
         <div class = "grid-middle col-12 margin-t-2 center">
             <div class = "col-3_sm-2"><hr></div>
-            <div class = "col-6_sm-8">{{item.textarea_html.heading}}</div>
+            <div class = "col-6_sm-8 reveal fade-down">{{item.heading.textarea_html}}</div>
             <div class = "col-3_sm-2"><hr></div>
         </div>
         <section class = "padded-sides grid-center col-12">
                 <!-- text block -->
-            <div class = "col-7-middle_md-9 padded-sides">
-                {{item.textarea_html.body}}
+            <div class = "col-7-middle_md-9 padded-sides reveal fade-left">
+                {{item.body.textarea_html}}
             </div>
 
             <!-- Image Block -->
-            <div class = "col-4_md-9 padded text-image background-image" style = "margin: 2%; background-image: url('{{item.image}}'); border-radius: 50% 50% 54% 46% / 74% 63% 37% 26%;"></div>
+            <div class = "col-4_md-9 padded text-image background-image reveal fade-right" style = "margin: 2%; background-image: url('{{item.image}}'); border-radius: 50% 50% 54% 46% / 74% 63% 37% 26%;"></div>
         </section>
-        <section class = "col-9-center margin-tb quote">
-            {{item.textarea_html.quote}}
+        <section class = "col-9-center margin-tb quote reveal fade-up">
+            {{item.quote.textarea_html}}
         </section>
     </section>
 </section>

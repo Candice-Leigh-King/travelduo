@@ -1,21 +1,26 @@
 <style>
-    #content-blocks-{{forloop.index0}} img{
-        margin: -22% -122% 0 0;
-        width: 30%;
-    }
+    #content-blocks-{{forloop.index0}} img
+        {
+        margin: -7% 0% 0% 71%;
+        width: 17%;
+        }
+    
 
-    @media(max-width: 990px){
-        #content-blocks-{{forloop.index0}} img{
-            margin: -11% -103% 0 0;
-            width: 13%;
-    }
+    @media(max-width: 500px){
+        #content-blocks-{{forloop.index0}} img
+        {
+        margin: -34% 0% 0% 70%;
+        width: 34%;
+        rotate: 16deg;
+        }
+
     }
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "reveal fade-right" id = "{{item.content-block-link}}">
+    <section class = "" id = "{{item.content-block-link}}">
         <!-- image Grid -->
-        <div class = "grid-center">
+        <div class = "grid-center ">
             {% for grid in item.grid %}
                 <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{grid.image}}');"></div>
             {% endfor %}
@@ -23,12 +28,9 @@
 
         <div class = "grid-middle margin-t-2 center">
             <div class = "col-3_sm-2"><hr></div>
-            <div class = "col-6_sm-8">{{item.textarea_html.heading}}</div>
+            <div class = "col-6_sm-8 reveal fade-in">{{item.textarea_html}}</div>
             <div class = "col-3_sm-2"><hr></div>
-        </div>
-        <div class = "padded-sides-xlg padded-tb-sm center">
-            {{item.textarea_html.body}}
-            <img class = "tablet-hide" src = "{{item.icon_image}}">
+            <img class = "" src = "{{item.icon_image}}">
         </div>
     </section>
 </section>

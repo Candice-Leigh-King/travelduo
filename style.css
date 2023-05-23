@@ -262,7 +262,8 @@ p:last-child {
 
 .quote p{ 
     color: #856A52;
-    font-size: 2rem;}
+    font-size: 2rem;
+    font-family: 'Noto Serif', serif;}
 
 .tall-30{min-height: 30vh;}
 .tall-40{min-height: 40vh;}
