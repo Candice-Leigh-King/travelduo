@@ -7,12 +7,12 @@
 
 /* To be Deleted */ 
 
-/* div, nav, header, footer {border: 1px solid red;}
+div, nav, header, footer {border: 1px solid red;}
 section{border: 1px solid green;}
 h3, h4, h5, h6 {border: 1px solid yellow;}
 h1, h2 {border: 1px solid grey;}
 p, a{border: 1px solid pink;}
-hr, img{border: 1px solid blue;}  */
+hr, img{border: 1px solid blue;} 
 
 /* General Code Starts here */
 * {
@@ -319,66 +319,32 @@ p:last-child {
 
 /* ---------------------------------//----------------------------Default Layout ---------------------------------//---------------------------- */
 
-/* Header Styles */
-/* 
-.logo-div{
-    display: none;
-} */
-/* .header-wrapper{
-    position: fixed;
-    top: 7rem;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    height: 15vh;
-    margin-top: -7.2rem !important;
-    background-color: #ECE2D9;
-    transition: top 0.2s ease-in-out;
-    /* &.can-animate {
-        transition: transform 0.3s ease, visibility 0s 1s linear;
-      }
-      &.is-fixed {
-        background-color: #ECE2D9;
-        position: fixed;
-        transform: translate3d(0, -100%, 0);
-      }
-      
-      &.scroll-up {
-        transform: translate3d(0, 0, 0);} 
-} 
-*/
 
-.header-to-show{
-  background-color: blue;
-  display: none;
-}
 
 .header-to-hide{
   position: fixed;
+  top: 4rem;
   z-index: 2;
   width: 100%;
   transition: all 1s;
-}
-/* .nav-up {
-  top: -40px;
-} */
-
-
-.hide{
-    display: none;
+  /* padding: 0% 2%; */
 }
 
-
-/* header{
-    top: 7rem;
-    position: relative;
-    z-index: 2;
-    
-    background-color: #ECE2D9;
-    padding: 0% 0 2rem 0;
-    
-    
-} */
+.header-to-hide-new{
+  position: fixed;
+  top: 1rem;
+  z-index: 2;
+  width: 100%;
+  transition: all 1s;
+  /* padding: 0% 2%; */
+}
+.hide{display: none;}
+.show{display: block;}
+.logo-show{
+  display: block;
+  margin-left: 30%; 
+  /* translate: 0 40%; */
+}
 
 .dropdown {
     position: relative;

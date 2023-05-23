@@ -83,15 +83,24 @@
 
 <body>
 <!--  -->
+  <style>
+    .headerBackgroundInitial{background-color: {{page.default-background}};}
+    .headerBackgroundNew{background-color: {{page.scroll-background}};}
+    .header-to-hide nav a{color: {{page.navigation-text-color}};}
+
+  .header-to-hide nav a:hover{color: {{page.navigation-hover-text-color}};}
+
+  </style>
+
     <!-- Header Styles -->
-    <header class = "grid-middle page-header header-to-hide header-wrapper"  id = "hideHeader"> 
+    <header class = "headerBackgroundInitial grid-middle page-header header-to-hide header-wrapper"  id = "hideHeader"> 
      
-            <div class = "col-3-left center" style=" z-index: 10;" >
-              <a href = "/">
-                <img src="{{site.data.general.basics.submark}}" style = "background-color: {{page.header-background-color}};" class = "logo-div" width = "20%">
+            <div class = "col-3-left-middle center" style=" z-index: 10;" >
+              <a href = "/" class = "center">
+                <img src="{{site.data.general.basics.submark}}" style = "background-color: {{page.scroll-background}};" class = "hide" width = "30%" id = "logo">
               </a>
             </div>
-                <nav class = "col-12_sm-9-center grid-top center" style = "background-color: {{page.header-background-color}};  margin-top: -7rem; justify-content: center;" >
+                <nav class = "col-12_sm-9-center grid-top center" style = "margin-top: -7rem; justify-content: center;" >
                   <div class="col-3"></div>
                   <div class="col-6">
                     <div class="dropdown">
