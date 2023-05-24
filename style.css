@@ -220,9 +220,15 @@ ul{margin-bottom: 1.5rem;}
 li{
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.3rem;
-    
+    font-size: 1.3rem; 
 }
+
+hr  {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1.5px solid #444444;
+    }
 
 a{
     text-decoration: none;
@@ -819,7 +825,8 @@ footer nav p{
 
     header nav p {
       margin: 0 1%;
-      padding: 1% 1%;}
+      padding: 1% 1%;
+      font-size: 1rem;}
 
     .dropdown {
       padding: 1% 1%;}
@@ -856,7 +863,7 @@ footer nav p{
 
     /* Padding utility classes */
     .padded-sides-sm {padding: 0% 1.5%;}
-    .padded-sides {padding: 0% 2%;}
+    /* .padded-sides {padding: 0% 2%;} */
     .padded-sides-lg {padding: 0% 4%;}
     .padded-sides-xlg {padding: 0% 8%;}
 
@@ -869,9 +876,12 @@ footer nav p{
   }
 
   .logo-show {
-    margin: 0 43%;
+    /* margin: 0 43%;
     translate: 0 -1%;
-    width: 10%;
+    width: 10%; */
+    
+    translate: 0 90%;
+}
 }
 /* Blogs  */
     .blog-masonry 
