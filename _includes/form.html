@@ -17,7 +17,7 @@
             font-family: Bold Grand Font;}
 
         #content-blocks-{{forloop.index0}} .button{
-            margin-left: 40%;
+            /* margin-left: 40%; */
             border: none;
             font-family: Bold Grand Font;
         }
@@ -75,16 +75,16 @@
             <form method="post" action="/success.html">
 
                 <label for="name">{{item.form.label-1}}</label><br>       
-                <input type="text" name="name" id="name" required=""/><br>   
+                <input type="text" name="{{item.form.label-1}}" id="{{item.form.label-1}}" required=""/><br>   
             
                 <label for="_replyto">{{item.form.label-2}}</label><br>   
                 <input type="email" name="_replyto" id="_replyto"  required=""/><br>   
                 
                 <label for="subject">{{item.form.label-3}}</label><br>   
-                <textarea name="subject" id="subject"></textarea><br>   
+                <textarea name="{{item.form.label-3}}" id="subject"></textarea><br>   
 
                 <label for="message">{{item.form.label-4}}</label><br>   
-                <textarea name="message" id="message"></textarea><br>   
+                <textarea name="{{item.form.label-4}}" id="message"></textarea><br>   
 
                 <input type="hidden" name="inbox_key" value="#">
                 <input type="text" name="_gotcha" style="display: none;" />

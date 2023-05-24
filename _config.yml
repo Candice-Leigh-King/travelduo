@@ -160,8 +160,8 @@ _array_structures:
           textarea_html: >-
             <p>Hi, nice to (digitally) meet you! We are Roel and Eline, also known as Trendy Travel Duo on social media. We are a photo- and videographer couple who make content showcasing luxury hotels, products, and experiences around the world.</p><p>We don’t hesitate to set our alarm at 4AM to climb a mountain, swim in an ice cold pool or even shoot in a tropical storm and risk our equipment to get that perfect shot for you (true story)!</p> <p>Do you want high quality content for your business to post on our personal Instagram or to use on your (booking) websites and social media? Look no further!</p>
           jump-to: 
-            blue-cta: Inquire 
-            blue-cta-link: /contact-us
+            button-cta: Inquire 
+            button-cta-link: /contact-us
             plain-cta: Jump to Portfolio
             plain-cta-link: /work-with-us#portfolio
           content-block-link:
@@ -171,6 +171,11 @@ _array_structures:
           _section-type: recent-blogs
           heading: latest blogs
           content-block-link:
+      - label: Subscribe
+        icon:
+        value:
+          _section-type: subscribe
+          add-script-here:    
       - label: Scroll
         icon: person
         value:
