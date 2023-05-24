@@ -1,16 +1,7 @@
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "reveal fade-down" id = "{{item.content-block-link}}">
-        <div class = "grid-middle margin-t-2 center">
-            <div class = "col-3_sm-2"><hr></div>
-            <div class = "col-6_sm-8"><h1>{{item.heading}}</h1></div>
-            <div class = "col-3_sm-2"><hr></div>
-        </div>
-        <div class = "padded-sides-xlg padded-tb-sm center">
-            {{item.textarea_html}}
-        </div>
         <div class = "padded-sided-xlg grid-center padded-tb-sm center">
             <nav class = "padded-sides-sm col-8-center" style = "display: block;">
-                <a href = "{{item.jump-to.blue-cta-link}}" class = "blue-button padded-sides-sm margin-lr-sm">{{item.jump-to.blue-cta}}</a> 
+                <a href = "{{item.jump-to.button-cta-link}}" class = "blue-button padded-sides-sm margin-lr-sm">{{item.jump-to.button-cta}}</a> 
                 <a class = "padded-sides-sm margin-lr-sm">OR</a>
                 <a class = "underline padded-sides-sm margin-lr-sm" href = "{{item.jump-to.plain-cta-link}}">{{item.jump-to.plain-cta}}</a></nav>
         </div>

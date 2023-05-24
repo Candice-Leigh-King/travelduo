@@ -214,6 +214,13 @@ _array_structures:
             - image: /images/work-with-us-4.webp 
             - image: /images/work-with-us-5.webp 
           content-block-link:
+      - label: Not your plain Jane
+        icon: draw
+        value:
+          _section-type: not-your-plain-jane
+          heading: Work With Us
+          textarea_html: >-
+            <p>Hi, nice to (digitally) meet you! We are Roel and Eline, also known as Trendy Travel Duo on social media. We are a photo- and videographer couple who make content showcasing luxury hotels, products, and experiences around the world.</p><p>We don’t hesitate to set our alarm at 4AM to climb a mountain, swim in an ice cold pool or even shoot in a tropical storm and risk our equipment to get that perfect shot for you (true story)!</p> <p>Do you want high quality content for your business to post on our personal Instagram or to use on your (booking) websites and social media? Look no further!</p>
       - label: Text on the left
         icon: east
         value:

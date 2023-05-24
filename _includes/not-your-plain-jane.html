@@ -1,0 +1,11 @@
+<section id="content-blocks-{{forloop.index0}}">
+    <section class = "reveal fade-down" id = "{{item.content-block-link}}">
+        <div class = "grid-middle margin-t-2 center">
+            <div class = "col-3_sm-2"><hr></div>
+            <div class = "col-6_sm-8"><h1>{{item.heading}}</h1></div>
+            <div class = "col-3_sm-2"><hr></div>
+        </div>
+        <div class = "padded-sides-xlg padded-tb-sm center">
+            {{item.textarea_html}}
+        </div>
+</section>
