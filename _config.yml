@@ -172,7 +172,7 @@ _array_structures:
           heading: latest blogs
           content-block-link:
       - label: Subscribe
-        icon:
+        icon: newspaper
         value:
           _section-type: subscribe
           add-script-here:    
