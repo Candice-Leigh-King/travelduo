@@ -252,6 +252,8 @@ p:last-child {
     margin: 1rem 0;
 }
 
+.button:hover {background-color: #DEE9EA;}
+
 .blue-button{
     margin: 1%;
     background-color: #DEE9EA;
@@ -444,6 +446,7 @@ header nav p{
 
 .shop-requirements a{
     transition: 1s all;
+    font-size: 1rem;
 }
 .shop-requirements a:hover{
     color: white;
