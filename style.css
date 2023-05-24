@@ -411,10 +411,11 @@ header nav p{
     transition: 1s all;
 }
 
+.dropdown-title:hover, .header-wrapper nav a:hover, footer nav a {border-bottom: 1.7px solid transparent;}
 
 .dropdown-title:hover, .header-wrapper nav a:hover, footer nav a:hover{
     color:#856A52;
-    border-bottom: 1px solid #856A52;
+    border-bottom: 1.7px solid #856A52;
 }
 
 
@@ -573,10 +574,14 @@ footer nav p{
     margin: 1%;
     text-transform: uppercase;
     color: black;
+    border-bottom: 5px solid transparent;
     }
+
+.blog-header nav a:hover {border-bottom: 5px solid #ECE2D9;}
+
 .blog-header nav p {
     white-space: nowrap;
-    margin: 0 2%;
+    padding: 0% 4%;
 }
 
 /* ---------------------------------//----------------------------Animations ---------------------------------//----------------------------*/
