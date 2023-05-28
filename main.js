@@ -2,17 +2,26 @@ $(document).ready(function() {
 	//make sure the page is ready befor running the scripts
 	// This is the hamburger menu
 	$(".hamburger").click(function(){
-
 	  $(this).toggleClass('active');
 	  $(".mobile-menu").fadeToggle();
-		});
+	});
 
+	$(".exit").click(function(){
+		$(this).toggleClass('active');
+		$(".page-nav").fadeToggle();
+	});
+
+	$(".menu-button").click(function(){
+		$(this).toggleClass('active');
+		$(".menu").fadeToggle();
+	});
 // put class of exit on elements to make them navigate back to page-nav
-			$(".exit").click(function(){
+	
 
-				$(this).toggleClass('active');
-				$(".page-nav").fadeToggle();
-			});
+	$(".leave").click(function(){
+		$(this).toggleClass('active');
+		$(".navigation").fadeToggle();
+	});
 
 			// end hamburger menu
 
@@ -61,7 +70,7 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   // Scroll up
   if (prevScrollpos > currentScrollPos) {
-    hideHeader.style.top = "-2.6rem";
+    hideHeader.style.top = "-1.5rem";
 	hideHeader.classList.remove("headerBackgroundInitial");
 	hideHeader.classList.add("headerBackgroundNew");
 	logo.classList.remove("hide");
@@ -69,8 +78,6 @@ window.onscroll = function() {
   } 
   // Scroll down
   else {
-    // hideHeader.removeClass("bg-initial");
-    // hideHeader.addClass("bg-new");
     hideHeader.style.top = "-13rem";
 	
   }
