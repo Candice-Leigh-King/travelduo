@@ -11,17 +11,7 @@ $(document).ready(function() {
 		$(".page-nav").fadeToggle();
 	});
 
-	$(".menu-button").click(function(){
-		$(this).toggleClass('active');
-		$(".menu").fadeToggle();
-	});
 // put class of exit on elements to make them navigate back to page-nav
-	
-
-	$(".leave").click(function(){
-		$(this).toggleClass('active');
-		$(".navigation").fadeToggle();
-	});
 
 			// end hamburger menu
 

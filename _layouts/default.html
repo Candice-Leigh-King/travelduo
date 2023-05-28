@@ -116,39 +116,10 @@
 
         
               <!-- Hamburger -->
-              <div class = "col-9-middle right menu-button mob-show"> &#9776;</div>
+              <div class = "col-9-middle right hamburger menu-button mob-show" style = "color: {{page.navigation-text-color}};"> &#9776;</div>
 
-              <!-- Mobile Menu -->
-            <section class = "grid-right menu large-hide page-nav" style = "display: block;">
-              <div class = "col-12 right padded-sides-xlg">
-                <a href = "/" class = "exit" style = "display:block;">
-                  <img src="{{site.data.general.basics.submark}}"  width = "20%" >
-                </a>
-              </div>
-              <!-- first div -->
-              <div class = "grid-left-middle col-12" style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
-                <h2 class = "col-12" style="
-                translate: 0 67%;
-            ">{{site.data.general.mobile-menu.section-1-heading}}</h2>
-                <div class = "col-6  background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-1}}');    padding-bottom: 50%;"></div>
-                <div class = "col-6 padded-sides exit">{{site.data.blogs.dropdown.textarea_html}}</div>
-              </div>
-              <!-- second div -->
-              <div class = "grid-right-middle col-12"style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
-                <div class = "col-6 exit">{{site.data.navigation.textarea_html}}</div>
-                
-                <div class = "col-6 background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-2}}'); padding-bottom: 50%;"></div>
-                <h2 class = "col-12" style="
-                    translate: 60% -481%;
-            ">{{site.data.general.mobile-menu.section-2-heading}}</h2>
-              </div>
-
-              <div class="col-12 center">
-                <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
-                <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
-              </div>
-            </section>
-
+             
+            
                
 
               <!-- Social Links -->
@@ -159,7 +130,39 @@
                 <!-- <p>{{site.data.navigation.textarea_html}}</p> -->
             </nav>
 
-            
+             <!-- Mobile Menu -->
+             <section class = "mobile-menu menu page-nav" id = "#mobile-menu">
+              <section class = "grid-right hamburger-menu large-hide tablet-hide" style = "display: block;">
+                <div class = "col-12 right padded-sides-xlg">
+                  <a href = "/" class = "exit" style = "display:block;padding: 1%;">
+                    <img src="{{site.data.general.basics.submark}}"  width = "20%" >
+                  </a>
+                </div>
+                <!-- first div -->
+                <div class = "grid-left-middle col-12" style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
+                  <h2 class = "col-12 left" style="
+              ">{{site.data.general.mobile-menu.section-1-heading}}</h2>
+                  <div class = "col-6  background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-1}}');    padding-bottom: 50%;"></div>
+                  <div class = "col-6 padded-sides exit">{{site.data.blogs.dropdown.textarea_html}}</div>
+                </div>
+                <!-- second div -->
+                <div class = "grid-right-middle col-12"style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
+                  <h2 class = "col-12 right" style="
+              ">{{site.data.general.mobile-menu.section-2-heading}}</h2>
+                  <div class = "col-6 exit">{{site.data.navigation.textarea_html}}</div>
+                  
+                  <div class = "col-6 background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-2}}'); padding-bottom: 50%;"></div>
+                  
+                </div>
+  
+                <div class="col-12 center">
+                  <a href = "{{site.data.general.social-links.instagram}}" target = "_blank" style = "padding: 1%; display: inline-block;">{{site.data.general.social-links-icons.instagram}}</a>
+                  <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank" style = "padding: 1%; display: inline-block;"> {{site.data.general.social-links-icons.tik-tok}} </a>
+                </div>
+              </section>
+  
+
+            </section>
            
     </header>
 
