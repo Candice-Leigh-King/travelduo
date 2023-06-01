@@ -1,14 +1,24 @@
 $(document).ready(function() {
 	//make sure the page is ready befor running the scripts
 	// This is the hamburger menu
-	$(".hamburger").click(function(){
+	$(".blog-dropdown").click(function(){
 	  $(this).toggleClass('active');
-	  $(".mobile-menu").fadeToggle();
+	  $(".dropdown-content").fadeToggle();
 	});
 
 	$(".exit").click(function(){
 		$(this).toggleClass('active');
 		$(".page-nav").fadeToggle();
+	});
+
+	$(".menu-button").click(function(){
+		$(this).toggleClass('active');
+		$(".mobile-menu").fadeToggle();
+	  });
+
+	$(".leave").click(function(){
+		$(this).toggleClass('active');
+		$(".navigation").fadeToggle();
 	});
 
 // put class of exit on elements to make them navigate back to page-nav
