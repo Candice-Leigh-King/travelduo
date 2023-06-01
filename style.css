@@ -636,7 +636,8 @@ footer nav p{
 .blog-header nav a:hover {border-bottom: 5px solid #ECE2D9;}
 
 .blog-header nav p {
-    /* white-space: nowrap; */
+    margin-bottom: 0;
+    white-space: nowrap;
     padding: 0% 4%;
 }
 
@@ -949,6 +950,12 @@ footer nav p{
     }
     
   }
+
+  @media(max-width: 670px){
+    .blog-header nav p {
+      padding: 0% 2%;
+  }
+  }
 /* Small Screen - Mobile */
 @media(max-width:550px){
     .mob-hide { display: none; }
@@ -981,6 +988,10 @@ footer nav p{
         margin: 0.5%;
             
         }
+
+        .blog-header {
+          margin-top: 12%;
+      }
 }
 
 /* Extra Small*/
