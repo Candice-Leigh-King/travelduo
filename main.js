@@ -70,11 +70,11 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   // Scroll up
   if (prevScrollpos > currentScrollPos) {
-    hideHeader.style.top = "-1.5rem";
+    hideHeader.style.top = "-0.5rem";
 	hideHeader.classList.remove("headerBackgroundInitial");
 	hideHeader.classList.add("headerBackgroundNew");
 	logo.classList.remove("hide");
-	logo.classList.add("logo-show")
+	logo.classList.add("logo-show");
   } 
   // Scroll down
   else {

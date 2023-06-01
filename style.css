@@ -330,13 +330,14 @@ p:last-child {
 
 
 .header-to-hide{
-  position: absolute;
+  position: fixed;
   top: 1rem;
   z-index: 2;
   width: 100%;
   transition: all 1s;
   /* padding: 0% 2%; */
 }
+
 
 .hide{display: none;}
 .show{display: block;}
@@ -386,7 +387,7 @@ p:last-child {
 .mobile-menu a {
   text-decoration: none; 
   color: inherit; 
-  padding: 1vh 5%;
+  padding: 1% 5%;
   display: block;
   font-weight: normal;
   font-size: 1.5rem;
@@ -635,7 +636,7 @@ footer nav p{
 .blog-header nav a:hover {border-bottom: 5px solid #ECE2D9;}
 
 .blog-header nav p {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     padding: 0% 4%;
 }
 
@@ -964,6 +965,10 @@ footer nav p{
 
     .dropdown-title, nav a {
         font-size: 0.9rem;
+    }
+
+    .header-new{
+      top: -2.5rem;
     }
     .logo-show{
       display: none;

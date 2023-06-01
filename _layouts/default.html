@@ -90,6 +90,10 @@
 
     .header-to-hide nav a:hover{color: {{page.navigation-hover-text-color}};}
 
+    @media(max-width:550px){
+      .headerBackgroundNew{background-color: none;}
+    }
+
   </style>
 
     <!-- Header Styles -->
@@ -116,7 +120,7 @@
 
         
               <!-- Hamburger -->
-              <div class = "col-10-middle-right right menu-button mob-show " style = "color: {{page.navigation-text-color}};"> &#9776;</div>
+              <div class = "col-2-middle-right center menu-button mob-show " style = "color: {{page.navigation-text-color}}; border-radius: 100%; background-color: {{page.hamburger-background-colour}};"> &#9776;</div>
 
              
             
@@ -135,17 +139,17 @@
               <section class = "grid-right hamburger-menu large-hide tablet-hide" style = "display: block;">
                 <div class = "col-12 right padded-sides-xlg">
                   <a href = "/" class = "leave" style = "display:block;padding: 1%;">
-                    <img src="{{site.data.general.basics.submark}}"  width = "20%" >
+                    <img src="{{site.data.general.basics.submark}}"  width = "10%" >
                   </a>
                 </div>
                 <!-- first div -->
-                <div class = "grid-left-middle col-12" style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
+                <div class = "grid-left-middle col-12" style = "padding: 2% 10%; border-bottom: 1.5px solid #444444;">
                   <h2 class = "col-12 left v-small" style=""> {{site.data.general.mobile-menu.section-1-heading}}</h2>
                   <div class = "col-6  background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-1}}');    padding-bottom: 50%;"></div>
                   <div class = "col-6 padded-sides leave">{{site.data.blogs.dropdown.textarea_html}}</div>
                 </div>
                 <!-- second div -->
-                <div class = "grid-right-middle col-12"style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
+                <div class = "grid-right-middle col-12"style = "padding: 2% 10%; border-bottom: 1.5px solid #444444; ">
                   <h2 class = "col-12 right v-small" style="
               ">{{site.data.general.mobile-menu.section-2-heading}}</h2>
                   <div class = "col-6 leave">{{site.data.navigation.textarea_html}}</div>
