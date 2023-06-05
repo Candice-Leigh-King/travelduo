@@ -495,8 +495,12 @@ header nav p{
   padding: 1%;
 } */
 
-.nav-link .active {
-  border-bottom: 1.5px solid white; /* Set your desired active link background color */
+.nav-link.active {
+  border-bottom: 1.5px solid white; 
+}
+
+.blog-nav.blog-active{
+  border-bottom: 4px solid #856A52;
 }
 
 

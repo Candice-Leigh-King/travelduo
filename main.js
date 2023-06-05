@@ -90,7 +90,7 @@ window.onscroll = function() {
 
 window.onload = function() {
 	// Get the current page URL or set a flag indicating the active page
-	var currentPage = "/"; // Example: Use the appropriate method to get the current page URL dynamically
+	var currentPage = window.location.pathname; // Example: Use the appropriate method to get the current page URL dynamically
 	
 	// Find all navigation links
 	var navLinks = document.getElementsByClassName("nav-link");
@@ -101,7 +101,18 @@ window.onload = function() {
 		navLinks[i].classList.add("active");
 	  }
 	}
+  
+	// Find all blog navigation links
+	var blogNavLinks = document.getElementsByClassName("blog-nav");
+  
+	// Loop through the blog navigation links and check if the href matches the current page
+	for (var i = 0; i < blogNavLinks.length; i++) {
+	  if (blogNavLinks[i].getAttribute("href") === currentPage) {
+		blogNavLinks[i].classList.add("blog-active");
+	  }
+	}
   };
+  
 
 //   End .js
 });
