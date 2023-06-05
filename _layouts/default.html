@@ -91,7 +91,7 @@
     .header-to-hide nav a:hover{color: {{page.navigation-hover-text-color}};}
 
     @media(max-width:550px){
-      .headerBackgroundNew{background-color: none;}
+      .headerBackgroundNew{background-color: transparent;}
     }
 
   </style>
@@ -108,7 +108,7 @@
               <!-- Normal Nav -->
               <div class="col-9_sm-10 mob-hide">
                 <div class="dropdown">
-                    <a class="dropdown-title blog-dropdown"> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
+                    <a class="dropdown-title blog-dropdown nav-link"> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
                     <div class="dropdown-content mobile-menu page-nav exit">
                       
                       {{site.data.blogs.dropdown.textarea_html}}
@@ -120,9 +120,16 @@
 
         
               <!-- Hamburger -->
-              <div class = "col-10-middle-right right menu-button mob-show " style = "color: {{page.navigation-text-color}};">
+              <div class = "col-10-middle-right  grid-right right menu-button mob-show " style = "color: #856A52; margin-right: 10%;">
+
+                <i class="fa-solid fa-bars" style = "padding: 2%;
+                border-radius: 100%;
+                font-size: 1.8rem; background-color: #ECE2D9;"></i>
+                <!-- <div class = "col-1" style = "background-color: #ECE2D9"> -->
+
+                  <!-- &#9776; -->
+                <!-- </div> -->
                 
-                &#9776;
               </div>
 
              

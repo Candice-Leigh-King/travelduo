@@ -70,7 +70,7 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   // Scroll up
   if (prevScrollpos > currentScrollPos) {
-    hideHeader.style.top = "-0.5rem";
+    hideHeader.style.top = "0rem";
 	hideHeader.classList.remove("headerBackgroundInitial");
 	hideHeader.classList.add("headerBackgroundNew");
 	logo.classList.remove("hide");
@@ -83,6 +83,25 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 };
+
+
+
+// Highligh nav on current page
+
+window.onload = function() {
+	// Get the current page URL or set a flag indicating the active page
+	var currentPage = "/"; // Example: Use the appropriate method to get the current page URL dynamically
+	
+	// Find all navigation links
+	var navLinks = document.getElementsByClassName("nav-link");
+  
+	// Loop through the navigation links and check if the href matches the current page
+	for (var i = 0; i < navLinks.length; i++) {
+	  if (navLinks[i].getAttribute("href") === currentPage) {
+		navLinks[i].classList.add("active");
+	  }
+	}
+  };
 
 //   End .js
 });
