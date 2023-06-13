@@ -90,6 +90,10 @@
 
     .header-to-hide nav a:hover{color: {{page.navigation-hover-text-color}};}
 
+    @media(max-width:550px){
+      .headerBackgroundNew{background-color: transparent;}
+    }
+
   </style>
 
     <!-- Header Styles -->
@@ -100,11 +104,11 @@
                 <img src="{{site.data.general.basics.submark}}" style = "background-color: {{page.scroll-background-color}};" class = "hide" width = "25%" id = "logo">
               </a>
             </div>
-            <nav class = "col-9_sm-12-center grid-middle center" style = "margin-top: 0rem; justify-content: center;">
+            <nav class = "col-9_sm-12-center grid-middle center" style = "margin-top: 0rem;">
               <!-- Normal Nav -->
               <div class="col-9_sm-10 mob-hide">
                 <div class="dropdown">
-                    <a class="dropdown-title hamburger "> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
+                    <a class="dropdown-title blog-dropdown nav-link"> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
                     <div class="dropdown-content mobile-menu page-nav exit">
                       
                       {{site.data.blogs.dropdown.textarea_html}}
@@ -116,14 +120,24 @@
 
         
               <!-- Hamburger -->
-              <div class = "col-9-middle right hamburger menu-button mob-show " style = "color: {{page.navigation-text-color}};"> &#9776;</div>
+              <div class = "col-10-middle-right  grid-right right menu-button mob-show " style = "color: #856A52; margin-right: 10%;">
+
+                <i class="fa-solid fa-bars" style = "padding: 2%;
+                border-radius: 100%;
+                font-size: 1.8rem; background-color: #ECE2D9;"></i>
+                <!-- <div class = "col-1" style = "background-color: #ECE2D9"> -->
+
+                  <!-- &#9776; -->
+                <!-- </div> -->
+                
+              </div>
 
              
             
                
 
               <!-- Social Links -->
-              <div class="col-3_sm-2-middle">
+              <div class="col-3_sm-2-middle mob-hide">
                     <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
                     <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
               </div>
@@ -131,24 +145,24 @@
             </nav>
 
              <!-- Mobile Menu -->
-             <section class = "mobile-menu menu page-nav" id = "#mobile-menu">
+             <section class = "mobile-menu navigation" id = "#mobile-menu" style = "display: none;">
               <section class = "grid-right hamburger-menu large-hide tablet-hide" style = "display: block;">
                 <div class = "col-12 right padded-sides-xlg">
-                  <a href = "/" class = "exit" style = "display:block;padding: 1%;">
-                    <img src="{{site.data.general.basics.submark}}"  width = "20%" >
+                  <a href = "/" class = "leave" style = "display:block;padding: 1%;">
+                    <img src="{{site.data.general.basics.submark}}"  width = "10%" >
                   </a>
                 </div>
                 <!-- first div -->
-                <div class = "grid-left-middle col-12" style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
+                <div class = "grid-left-middle col-12" style = "padding: 2% 10%; border-bottom: 1.5px solid #444444;">
                   <h2 class = "col-12 left v-small" style=""> {{site.data.general.mobile-menu.section-1-heading}}</h2>
                   <div class = "col-6  background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-1}}');    padding-bottom: 50%;"></div>
-                  <div class = "col-6 padded-sides exit">{{site.data.blogs.dropdown.textarea_html}}</div>
+                  <div class = "col-6 padded-sides leave">{{site.data.blogs.dropdown.textarea_html}}</div>
                 </div>
                 <!-- second div -->
-                <div class = "grid-right-middle col-12"style = "padding: 5% 10%; border-bottom: 1.5px solid #444444; margin-bottom: 2rem;">
+                <div class = "grid-right-middle col-12"style = "padding: 2% 10%; border-bottom: 1.5px solid #444444; ">
                   <h2 class = "col-12 right v-small" style="
               ">{{site.data.general.mobile-menu.section-2-heading}}</h2>
-                  <div class = "col-6 exit">{{site.data.navigation.textarea_html}}</div>
+                  <div class = "col-6 leave">{{site.data.navigation.textarea_html}}</div>
                   
                   <div class = "col-6 background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-2}}'); padding-bottom: 50%;"></div>
                   

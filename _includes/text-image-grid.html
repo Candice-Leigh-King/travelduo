@@ -9,7 +9,7 @@
     @media(max-width: 500px){
         #content-blocks-{{forloop.index0}} img
         {
-            margin: -19% 0% 0% 70%;
+            margin: -19% 0% 0% 60%;
             width: 26%;
             rotate: 16deg;
         }
@@ -31,7 +31,7 @@
             <div class = "col-6_sm-8_xs-9 reveal fade-in">{{item.heading.textarea_html}}</div>
             <div class = "col-3_sm-2_xs-1"><hr></div>
             <div class = "col-6_sm-8_xs-9 reveal fade-in">{{item.body.textarea_html}}</div>
-            <img class = "" src = "{{item.icon_image}}">
+            <img class = "mob-hide" src = "{{item.icon_image}}">
         </div>
     </section>
 </section>
