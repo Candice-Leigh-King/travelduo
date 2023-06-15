@@ -984,6 +984,10 @@ footer nav p{
     .mob-hide { display: none; }
     .mob-show { display: block; }
 
+    .square-sm {
+      padding-bottom: 40%;
+     }
+
     /* Font Sizes */
 
     h1{font-size: 2rem;}
