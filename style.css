@@ -1007,6 +1007,8 @@ footer nav p{
     .shop-requirements a {
       font-size: 0.5rem;
   }
+
+  .margin-lr-sm { margin-left: 2%; margin-right: 2%; }
   /* Text Left */
   .quote p {
     font-size: 1.5rem;}

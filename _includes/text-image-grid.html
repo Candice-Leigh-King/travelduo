@@ -20,10 +20,15 @@
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "" id = "{{item.content-block-link}}">
         <!-- image Grid -->
-        <div class = "grid-center ">
-            {% for grid in item.grid %}
+        <div class = "grid-center">
+            <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{item.1_image}}');"></div>
+            <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{item.2_image}}');"></div>
+            <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{item.3_image}}');"></div>
+            <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{item.4_image}}');"></div>
+            <div class = " col-2 margin-lr-sm square-sm background-image mob-hide" style = "background-image: url('{{item.5_image}}');"></div>
+            <!-- {% for grid in item.grid %}
                 <div class = " col-2 margin-lr-sm square-sm background-image" style = "background-image: url('{{grid.image}}');"></div>
-            {% endfor %}
+            {% endfor %} -->
         </div>
 
         <div class = "grid-middle-center margin-t-2 center">
