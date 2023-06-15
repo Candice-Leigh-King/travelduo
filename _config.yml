@@ -214,12 +214,11 @@ _array_structures:
           body:
             textarea_html: >- 
               <p> Are you looking for high-quality, unique and memorable content?</p><p> Look no futher!</p><p>We are a photo- and videographer couple, making content showcasing luxury hotels, products, and experiences around the world. Do you want to see our portfolio or read what past clients have to say about us?</p>
-          grid:
-            - image: /images/work-with-us-1.webp 
-            - image: /images/work-with-us-2.webp 
-            - image: /images/work-with-us-3.webp 
-            - image: /images/work-with-us-4.webp 
-            - image: /images/work-with-us-5.webp 
+            1_image: /images/work-with-us-1.webp 
+            2_image: /images/work-with-us-2.webp 
+            3_image: /images/work-with-us-3.webp 
+            4_image: /images/work-with-us-4.webp 
+            5_image: /images/work-with-us-5.webp 
           content-block-link:
       - label: Not your plain Jane
         icon: draw
