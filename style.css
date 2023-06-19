@@ -64,7 +64,7 @@ hr, img{border: 1px solid blue;}  */
     src: url('/fonts/Agrandir/Agrandir-ThinItalic.otf');
 }
 @font-face {
-    font-family: Tight Grand  Font;
+    font-family: Tight Grand Font;
     src: url('/fonts/Agrandir/Agrandir-Tight.otf');
 }
 @font-face {
@@ -983,6 +983,10 @@ footer nav p{
 @media(max-width:550px){
     .mob-hide { display: none; }
     .mob-show { display: block; }
+
+    .square-sm {
+      padding-bottom: 40%;
+     }
 
     /* Font Sizes */
 
