@@ -74,9 +74,9 @@
   
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
-  {{site.data.head.frist-script-to-go-in-the-head}}
+  {{site.data.head.first-script-to-go-in-the-head}}
   {{site.data.head.second-script-to-go-in-the-head}}
-  {{site.data.head.thrid-script-to-go-in-the-head}}
+  {{site.data.head.third-script-to-go-in-the-head}}
 
 </head>
 
@@ -84,11 +84,11 @@
 <body>
 <!--  -->
   <style>
-    .headerBackgroundInitial{background-color: {{page.default-background-color}};}
-    .headerBackgroundNew{background-color: {{page.scroll-background-color}};}
-    .header-to-hide nav a{color: {{page.navigation-text-color}};}
+    .headerBackgroundInitial{background-color: {{page.header-colors.default-background-color}};}
+    .headerBackgroundNew{background-color: {{page.header-colors.scroll-background-color}};}
+    .header-to-hide nav a{color: {{page.header-colors.navigation-text-color}};}
 
-    .header-to-hide nav a:hover{color: {{page.navigation-hover-text-color}};}
+    .header-to-hide nav a:hover{color: {{page.header-colors.navigation-hover-text-color}};}
 
     @media(max-width:550px){
       .headerBackgroundNew{background-color: transparent;}
@@ -156,8 +156,8 @@
                   <div class = "col-6 padded-sides leave">{{site.data.blogs.dropdown.textarea_html}}</div>
                 </div>
                 <!-- second div -->
-                <div class = "grid-right-middle col-12"style = "padding: 2% 10%; border-bottom: 1.5px solid #444444; ">
-                  <h2 class = "col-12 right v-small" style="
+                <div class = "grid-right-middle col-12"style = "padding: 10%; border-bottom: 1.5px solid #444444; ">
+                  <h2 class = "col-12 right v-small padded-tb" style="
               ">{{site.data.general.mobile-menu.section-2-heading}}</h2>
                   <div class = "col-6 leave">{{site.data.navigation.textarea_html}}</div>
                   
@@ -165,7 +165,7 @@
                   
                 </div>
   
-                <div class="col-12 center">
+                <div class="col-12 center padded">
                   <a href = "{{site.data.general.social-links.instagram}}" target = "_blank" style = "padding: 1%; display: inline-block;">{{site.data.general.social-links-icons.instagram}}</a>
                   <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank" style = "padding: 1%; display: inline-block;"> {{site.data.general.social-links-icons.tik-tok}} </a>
                 </div>
