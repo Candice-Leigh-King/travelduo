@@ -63,11 +63,11 @@ $(document).ready(function() {
 
 // Header Styles
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = window.scrollY;
 var hideHeader = document.getElementById("hideHeader");
 var logo = document.getElementById("logo");
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+  var currentScrollPos = window.scrollY;
   // Scroll up
   if (prevScrollpos > currentScrollPos) {
     hideHeader.style.top = "0rem";
