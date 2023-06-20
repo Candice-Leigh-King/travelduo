@@ -334,7 +334,8 @@ p:last-child {
   top: 1rem;
   z-index: 2;
   width: 100%;
-  transition: all 1s;
+  opacity: 1;
+  transition: all 1s ease;
   /* padding: 0% 2%; */
 }
 
