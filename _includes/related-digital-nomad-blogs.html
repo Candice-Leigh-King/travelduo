@@ -1,34 +1,37 @@
 
 <style>
 
+  #content-blocks-{{forloop.index0}} .background-image {min-height: 300px;}
   
-    #content-blocks-{{forloop.index0}} h3 
-    {
-    font-size: 1.7rem;
-    margin-bottom: 5%;
-    
-    }
+  #content-blocks-{{forloop.index0}} h3 
+  {
+  font-size: 1.2rem;
+  margin-bottom: 5%;
+  
+  }
 
 
-    
-    @media(max-width:550px) 
+  
+  @media(max-width:780px) 
+  {
+  
+  #content-blocks-{{forloop.index0}} h3
     {
-    
-    #content-blocks-{{forloop.index0}} h3
-      {
-      font-size: 1.3rem;
-      }
+    font-size: 1rem;
     }
 
-    @media(max-width:400px) 
+  #content-blocks-{{forloop.index0}} .background-image {min-height: 200px;}
+  }
+
+  @media(max-width:400px) 
+  {
+  
+  #content-blocks-{{forloop.index0}} h3
     {
-    
-    #content-blocks-{{forloop.index0}} h3
-      {
-      font-size: 1rem;
-      }
+    font-size: 1rem;
     }
- </style>   
+  }
+</style> 
 
 <section id="content-blocks-{{forloop.index0}}">
   <!-- div background of blue -->
@@ -41,11 +44,11 @@
         <section class="grid-center col-12 padded-sides recent-blog-background-color">
           <div class="col-12 grid-center blog-loop blog-masonry">
               {% for post in site.categories.digital-nomad limit:3 %}
-              <div class="masonry-item col-3 padded-xsm ">
+              <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
                 
                     <a class="padded"href="{{post.url}}">
                         <div class = "recent-blog">
-                            <div class="hover-container background-image" style="background-image:url('{{post.blog_image}}');min-height: 300px; border-radius: 2rem 2rem 0 0 ;">
+                            <div class="hover-container background-image" style="background-image:url('{{post.blog_image}}'); border-radius: 2rem 2rem 0 0 ;">
                             </div>
                             <div class = "blog-preview">
                                 <h3 class="no-margin blog-heading text-center padded" style = "background-color: white; border-radius: 0 0 2rem 2rem;"> {{post.title}} </h3>
