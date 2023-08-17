@@ -7,9 +7,14 @@ permalink:
 
   h1 {font-size: 2.5rem;}
 
-  @media(max-width:770px){
+  @media(max-width:770px)
+  {
     .blog-hero{border-radius: 0% ;}
 
+  }
+  @media(max-width: 550px)
+  {
+    h1 {font-size: 1.5rem;}
   }
 </style>
 <section class = "grid  background-image blog-hero" style = "background-image: url('{{page.blog_image}}'); min-height: 55vh; "id = "{{item.content-block-link}}">
