@@ -426,8 +426,8 @@ p:last-child {
     display: block;
     padding: 0.2rem;
     border-bottom: 3.5px solid #F5F0EB;
-    border-bottom-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    /* border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 20%; */
     margin: 0.5rem 0;
     color: #000000;
 }
