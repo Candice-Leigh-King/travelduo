@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	//make sure the page is ready befor running the scripts
 	// This is the hamburger menu
-	$(".blog-dropdown").click(function(){
+	$(".blog-dropdown").hover(function(){
 	  $(this).toggleClass('active');
 	  $(".dropdown-content").fadeToggle();
 	});
 
-	$(".exit").click(function(){
+	$(".exit").hover(function(){
 		$(this).toggleClass('active');
 		$(".page-nav").fadeToggle();
 	});
