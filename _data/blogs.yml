@@ -1,10 +1,15 @@
 dropdown-navigation-name: Blog ⌵
 dropdown:
-  textarea_html: >-
-    <p><a href="/blog-categories/blogs" class = "blog-nav" >All</a></p>
-    <p><a href="/blog-categories/digital-nomad" class = "blog-nav">Digital Nomad</a></p>
-    <p><a href="/blog-categories/hotspots" class = "blog-nav">Hotspots</a></p>
-    <p><a href="/blog-categories/travel" class = "blog-nav">Travel</a></p>
+  blog-topic-link:
+    link-1: /blog-categories/blogs
+    link-2: /blog-categories/digital-nomad
+    link-3: /blog-categories/hotspots
+    link-4: /blog-categories/travel
+  blog-topic-name:
+    link-1: All
+    link-2: Digital Nomad
+    link-3: Hotspots
+    link-4: Travel
 blog-hot-topics:  
   blog-link: 
     link-one: 

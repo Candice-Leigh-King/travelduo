@@ -11,21 +11,21 @@ $(document).ready(function() {
 	// 	$(".page-nav").fadeToggle();
 	// });
 
-	$(".blog-dropdown").mouseenter(function(){
-		$(this).addClass('active');
-		$(".dropdown-content").fadeIn();
-	  }).mouseleave(function(){
-		$(this).removeClass('active');
-		$(".dropdown-content").fadeOut();
-	  });
+	// $(".blog-dropdown").mouseenter(function(){
+	// 	$(this).addClass('active');
+	// 	$(".dropdown-content").fadeIn();
+	//   }).mouseleave(function(){
+	// 	$(this).removeClass('active');
+	// 	$(".dropdown-content").fadeOut();
+	//   });
 	  
-	  $(".exit").mouseenter(function(){
-		$(this).addClass('active');
-		$(".page-nav").fadeIn();
-	  }).mouseleave(function(){
-		$(this).removeClass('active');
-		$(".page-nav").fadeOut();
-	  });
+	//   $(".exit").mouseenter(function(){
+	// 	$(this).addClass('active');
+	// 	$(".page-nav").fadeIn();
+	//   }).mouseleave(function(){
+	// 	$(this).removeClass('active');
+	// 	$(".page-nav").fadeOut();
+	//   });
 	  
 
 	$(".menu-button").click(function(){

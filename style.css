@@ -6,8 +6,8 @@
 }
 
 /* To be Deleted */ 
-/* 
-div, nav, header, footer {border: 1px solid red;}
+
+/* div, nav, header, footer {border: 1px solid red;}
 section{border: 1px solid green;}
 h3, h4, h5, h6 {border: 1px solid yellow;}
 h1, h2 {border: 1px solid grey;}
@@ -386,19 +386,7 @@ p:last-child {
   min-height: 100vh;
 }
 
-.dropdown-content {
-  position: absolute;
-  top: 95%;
-  left: -1rem;
-  padding: 0.5rem;
-  display: none;
-  background-color: #fff;
-  z-index: 2;
-  text-align: left;
-  min-width: 10rem;
-  min-height: 16rem;
-  border-radius: 0 0 1.2rem 1.2rem;
-}
+
 
 
 .mobile-menu a {
@@ -409,6 +397,9 @@ p:last-child {
   font-weight: normal;
   font-size: 1.5rem;
 }
+
+/* Drop Down */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -422,12 +413,23 @@ p:last-child {
     cursor: pointer;
 }
 
+.dropdown-content {
+  position: absolute;
+  top: 95%;
+  left: -1rem;
+  padding: 0.5rem 0;
+  display: none;
+  background-color: #fff;
+  z-index: 2;
+  text-align: left;
+  min-width: 10rem;
+  min-height: 16rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+}
+
 .dropdown-content a {
     display: block;
-    padding: 0.2rem;
-    border-bottom: 3.5px solid #F5F0EB;
-    /* border-bottom-right-radius: 20%;
-    border-bottom-right-radius: 20%; */
+    padding: 0.5rem;
     margin: 0.5rem 0;
     color: #000000;
 }
@@ -447,14 +449,14 @@ nav a{
     transition: 1s all;
 }
 
-.header-wrapper .dropdown-content p{
+/* .header-wrapper .dropdown-content p{
     display: block;
-}
+} */
 .header-wrapper .dropdown-content a {
     font-family: Regular Grand Font;
     font-weight: lighter;
     display: block;
-    padding: 0.2rem;
+    padding: 0.9rem;
     margin: 0.5rem 0;
     color: #000000;
 }
@@ -467,6 +469,18 @@ header nav p{
     transition: 1s all;
 }
 
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  display: block;
+}
+
+
+
 .dropdown-title:hover, .header-wrapper nav a:hover, footer nav a {border-bottom: 1.7px solid transparent;}
 
 .dropdown-title:hover, .header-wrapper nav a:hover, footer nav a:hover{
@@ -474,14 +488,13 @@ header nav p{
     border-bottom: 1.7px solid #856A52;
 }
 
-
-
-.dropdown-content a {
-    display: block;
-    padding: 0.2rem;
-    margin: 0.5rem 0;
-    color: #000000;
+.header-wrapper .dropdown-content a:hover {
+  background-color: #dcdbdb;
+  color: black;
+  border-bottom: none;
 }
+
+
 
 .social-links-icons {
 
