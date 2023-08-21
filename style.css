@@ -7,13 +7,13 @@
 
 /* To be Deleted */ 
 
-div, nav, header, footer {border: 1px solid red;}
+/* div, nav, header, footer {border: 1px solid red;}
 section{border: 1px solid green;}
 h3, h4, h5, h6 {border: 1px solid yellow;}
 h1, h2 {border: 1px solid grey;}
 p{ border: 1px solid black;}
 a{border: 1px solid pink;}
-hr, img{border: 1px solid blue;} 
+hr, img{border: 1px solid blue;}  */
 
 /* General Code Starts here */
 * {
