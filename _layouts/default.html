@@ -97,29 +97,29 @@
   </style>
 
     <!-- Header Styles -->
-    <header class = "headerBackgroundInitial grid-middle  header-to-hide header-wrapper"  id = "hideHeader"> 
+    <header class = "headerBackgroundInitial grid  header-to-hide header-wrapper"  id = "hideHeader"> 
      
             <div class = "col-3 center">
               <a href = "/" class = "center" style = "display:block;">
                 <img src="{{site.data.general.basics.submark}}"  class = "hide" width = "20%" id = "logo" style = "transition: 1s all;">
               </a>
             </div>
-            <nav class = "col-9_sm-12-center grid-middle center" style = "margin-top: -1.5rem;">
+            <nav class = "col-9_sm-12-center grid-middle center navigation-menu" >
               <!-- Normal Nav -->
-              <div class="col-9_sm-10 mob-hide">
+              <div class="col-9_sm-10 tablet-hide">
                 <div class="dropdown">
                     <a class="dropdown-title blog-dropdown nav-link"> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
                     <div class="dropdown-content mobile-menu page-nav exit">
                       
                       <!-- {{site.data.blogs.dropdown.textarea_html}} -->
                       <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-1}}">{{site.data.blogs.dropdown.blog-topic-name.link-1}}</a>
-                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; margin-top: -10%;">
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto;">
                       <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-2}}">{{site.data.blogs.dropdown.blog-topic-name.link-2}}</a>
-                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; margin-top: -10%;">
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto;">
                       <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-3}}">{{site.data.blogs.dropdown.blog-topic-name.link-3}}</a>
-                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; margin-top: -10%;">
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; ">
                       <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-4}}">{{site.data.blogs.dropdown.blog-topic-name.link-4}}</a>
-                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; margin-top: -10%;">
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; ">
                     
             
                     </div> 
@@ -129,7 +129,7 @@
 
         
               <!-- Hamburger -->
-              <div class = "col-10-middle-right  grid-right right menu-button mob-show " style = "color: #856A52; margin-right: 10%;">
+              <div class = "col-10-middle-right  grid-right right menu-button tablet-show " style = "color: #856A52; margin-right: 10%; margin-top: 9%; ">
 
                 <i class="fa-solid fa-bars" style = "padding: 2%;
                 border-radius: 100%;
@@ -143,7 +143,7 @@
                
 
               <!-- Social Links -->
-              <div class="col-3-center center right padded-sides mob-hide social-link">
+              <div class="col-3-center center right padded-sides tablet-hide social-link">
                     <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
                     <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
               </div>
@@ -162,7 +162,18 @@
                 <div class = "grid-left-middle col-12" style = "padding: 2% 10%; border-bottom: 1.5px solid #444444;">
                   <h2 class = "col-12 left v-small" style=""> {{site.data.general.mobile-menu.section-1-heading}}</h2>
                   <div class = "col-6  background-image" style = "border-radius: 20rem; background-image: url('{{site.data.general.mobile-menu.image-1}}');    padding-bottom: 50%;"></div>
-                  <div class = "col-6 padded-sides leave">{{site.data.blogs.dropdown.textarea_html}}</div>
+                  <div class = "col-6 padded-sides leave">
+                    
+                    <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-1}}">{{site.data.blogs.dropdown.blog-topic-name.link-1}}</a>
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto;">
+                      <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-2}}">{{site.data.blogs.dropdown.blog-topic-name.link-2}}</a>
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto;">
+                      <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-3}}">{{site.data.blogs.dropdown.blog-topic-name.link-3}}</a>
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; ">
+                      <a href = "{{site.data.blogs.dropdown.blog-topic-link.link-4}}">{{site.data.blogs.dropdown.blog-topic-name.link-4}}</a>
+                      <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; ">
+                  
+                  </div>
                 </div>
                 <!-- second div -->
                 <div class = "grid-right-middle col-12"style = "padding: 10%; border-bottom: 1.5px solid #444444; ">

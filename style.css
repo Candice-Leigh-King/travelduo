@@ -7,12 +7,13 @@
 
 /* To be Deleted */ 
 
-/* div, nav, header, footer {border: 1px solid red;}
+div, nav, header, footer {border: 1px solid red;}
 section{border: 1px solid green;}
 h3, h4, h5, h6 {border: 1px solid yellow;}
 h1, h2 {border: 1px solid grey;}
-p, a{border: 1px solid pink;}
-hr, img{border: 1px solid blue;}  */
+p{ border: 1px solid black;}
+a{border: 1px solid pink;}
+hr, img{border: 1px solid blue;} 
 
 /* General Code Starts here */
 * {
@@ -341,7 +342,7 @@ p:last-child {
 
 .header-to-hide{
   position: fixed;
-  top: 1rem;
+  top: -0.3rem;
   z-index: 2;
   width: 100%;
   height: 3.5rem;
@@ -349,6 +350,11 @@ p:last-child {
   transition: all 1s ease;
   /* padding: 0% 2%; */
 }
+
+.headerBackgroundNew .navigation-menu{
+  margin-top: -2.7%;
+}
+
 
 
 .hide{display: none;}
@@ -465,7 +471,7 @@ header nav p{
     display: inline-block;
     white-space: nowrap;
     margin: 0%;
-    padding: 3% 5%;
+    padding: 0% 5%;
     transition: 1s all;
 }
 
@@ -502,22 +508,44 @@ header nav p{
     color:#856A52;
     background-color: white;
     font-size: 1rem;
-    padding: 3%;
+    
     margin: 0%;
     transition: 1s all;
 }
 
-.social-link a{
+.social-links-icons:hover{
+  color: white;
+  background-color: #856A52;
+}
+
+header .social-links-icons{
+  padding: 50% ;
+  font-size: 1rem;
+}
+
+header .social-link a{
+  margin: 1% 8%;
+}
+footer .social-links-icons{
+  padding: 5% ;
+  font-size: 1rem;
+}
+
+
+/* .social-link a{
   display: inline-block;
   background-color: white;
   padding: 4% 5% 0% 5%;
   border-radius: 100%;
 }
-
-.social-links-icons:hover{
+.social-link a:hover{
+  color: white;
+  background-color: #856A52;
+} */
+/* .social-links-icons:hover{
     color: white;
     background-color: #856A52;
-}
+} */
 
 /* .mobile-menu .hamburger-menu {
   position: absolute;
@@ -696,7 +724,7 @@ footer nav p{
 /* ".med-" = tablet specific settings < */
 /* ".large-" = desktop specific settings */
 /* Mobile Settings */
-.xs-mob-show, .mob-show, .tabelet-show, .large-show{
+.xs-mob-show, .mob-show, .tablet-show, .large-show{
     display: none; 
   }
   
@@ -818,6 +846,10 @@ footer nav p{
       transition: 1s all;
   }
 
+  .header-to-hide .navigation-menu{
+    margin-top: -18%;
+  }
+
   .shop-requirements a {
     font-size: 0.8rem;
 }
@@ -827,7 +859,7 @@ footer nav p{
     translate: 0 -1%;
     width: 10%; */
     
-    translate: 0 90%;
+    translate: 0 50%;
 }
 
 /* Blogs  */
