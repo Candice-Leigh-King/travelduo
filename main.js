@@ -1,15 +1,32 @@
 $(document).ready(function() {
 	//make sure the page is ready befor running the scripts
 	// This is the hamburger menu
-	$(".blog-dropdown").hover(function(){
-	  $(this).toggleClass('active');
-	  $(".dropdown-content").fadeToggle();
-	});
+	// $(".blog-dropdown").hover(function(){
+	//   $(this).toggleClass('active');
+	//   $(".dropdown-content").fadeToggle();
+	// });
 
-	$(".exit").hover(function(){
-		$(this).toggleClass('active');
-		$(".page-nav").fadeToggle();
-	});
+	// $(".exit").hover(function(){
+	// 	$(this).toggleClass('active');
+	// 	$(".page-nav").fadeToggle();
+	// });
+
+	$(".blog-dropdown").mouseenter(function(){
+		$(this).addClass('active');
+		$(".dropdown-content").fadeIn();
+	  }).mouseleave(function(){
+		$(this).removeClass('active');
+		$(".dropdown-content").fadeOut();
+	  });
+	  
+	  $(".exit").mouseenter(function(){
+		$(this).addClass('active');
+		$(".page-nav").fadeIn();
+	  }).mouseleave(function(){
+		$(this).removeClass('active');
+		$(".page-nav").fadeOut();
+	  });
+	  
 
 	$(".menu-button").click(function(){
 		$(this).toggleClass('active');
