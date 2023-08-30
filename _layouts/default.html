@@ -89,8 +89,16 @@
     .header-to-hide nav a{color: {{page.header-colors.navigation-text-color}};}
     
 
-    .header-to-hide nav a:hover {background: linear-gradient(180deg,transparent 80%, {{page.header-colors.navigation-text-color}} 20%);}
+    .header-to-hide .nav-link:hover {background: linear-gradient(180deg,transparent 80%, {{page.header-colors.navigation-text-color}} 20%);}
 
+    /* .header-to-hide nav .header-social-link a:hover {
+    border-bottom: none ;
+} */
+
+@media(max-width:850px){
+      .headerBackgroundNew{background-color: transparent;}
+      .headerBackgroundInitial {background-color: transparent;}
+    }
 
     @media(max-width:550px){
       .headerBackgroundNew{background-color: transparent;}
@@ -109,8 +117,8 @@
             <nav class = "col-9_sm-12-center grid-middle center navigation-menu" >
               <!-- Normal Nav -->
               <div class="col-9_sm-10 tablet-hide">
-                <div class="dropdown">
-                    <a class="dropdown-title blog-dropdown nav-link"> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
+                <div class="dropdown ">
+                    <a class="dropdown-title blog-dropdown "> <p>{{site.data.blogs.dropdown-navigation-name}}</p> </a>
                     <div class="dropdown-content mobile-menu page-nav exit">
                       
                       <!-- {{site.data.blogs.dropdown.textarea_html}} -->
@@ -127,11 +135,13 @@
                     </div> 
                 </div>
                   {{site.data.navigation.textarea_html}}
+
+                  
               </div>
 
         
               <!-- Hamburger -->
-              <div class = "col-10-middle-right  grid-right right menu-button tablet-show " style = "color: #856A52; margin-right: 10%; margin-top: 14%; ">
+              <div class = "col-10-middle-right  grid-right right menu-button tablet-show " style = "color: #856A52; margin-right: 10%; margin-top: 5%; ">
 
                 <i class="fa-solid fa-bars" style = "padding: 2%;
                 border-radius: 100%;
@@ -144,8 +154,8 @@
             
                
 
-              <!-- Social Links -->
-              <div class="col-3-center center right padded-sides tablet-hide social-link">
+              <!-- Header Social Links -->
+              <div class="col-3-center center right padded-sides tablet-hide social-link header-social-link">
                     <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
                     <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
               </div>
@@ -187,7 +197,7 @@
                   
                 </div>
   
-                <div class="col-12 center padded">
+                <div class="col-12 center padded header-social-link">
                   <a href = "{{site.data.general.social-links.instagram}}" target = "_blank" style = "padding: 1%; display: inline-block;">{{site.data.general.social-links-icons.instagram}}</a>
                   <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank" style = "padding: 1%; display: inline-block;"> {{site.data.general.social-links-icons.tik-tok}} </a>
                 </div>
@@ -215,7 +225,8 @@
                 <nav class = "col-6_sm-12-middle-center grid-middle center" style="justify-content: center;">
                     <p>{{site.data.footer.navigation.textarea_html}}</p>
                 </nav>
-                <div class = "col-3-center center right padded-sides social-link">
+                <!-- Footer Social Links -->
+                <div class = "col-3-center center right padded-sides social-link footer">
                     <a href = "{{site.data.general.social-links.instagram}}" target = "_blank">{{site.data.general.social-links-icons.instagram}}</a>
                     <a href = "{{site.data.general.social-links.tik-tok}}" target = "_blank"> {{site.data.general.social-links-icons.tik-tok}} </a>
                 </div>
