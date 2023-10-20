@@ -58,6 +58,32 @@ $(document).ready(function() {
 		}
 
 	);
+
+	// Portfolio Slick Slider:
+	$('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		autoplay: true,
+		asNavFor: '.slider-nav'
+
+	  });
+	  $('.slider-nav').slick({
+		slidesToShow: 7,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		autoplay: true,
+		arrows: true,
+		dots: false,
+		centerMode: true,
+		focusOnSelect: true,
+		centerPadding: '0',
+		nextArrow: '<p class = "next-right"> > </p>',
+  		prevArrow: '<p class = "prev-left"> < </p>'
+	  });
+
+
 // Animations
   // on scroll
 			// on scroll

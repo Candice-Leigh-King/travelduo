@@ -300,7 +300,15 @@ p:last-child {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.bg-temporary{
+  background-image: url('/images/mission.jpg');
+}
+.bg-temporary-2{
+  background-image: url('/images/about-us.webp');
+}
+.bg-temporary-3{
+  background-image: url('/images/work-with-us-3.webp');
+}
 .bg-pale{ 
     background-color: #F5F0EB;
 }
@@ -308,6 +316,7 @@ p:last-child {
 .bg-beige{
     background-color: #ECE2D9;
 }
+
 
 
 
