@@ -76,11 +76,32 @@ $(document).ready(function() {
 		autoplay: true,
 		arrows: true,
 		dots: false,
-		centerMode: true,
+		centerMode: false,
 		focusOnSelect: true,
 		centerPadding: '0',
 		nextArrow: '<p class = "next-right"> > </p>',
-  		prevArrow: '<p class = "prev-left"> < </p>'
+  		prevArrow: '<p class = "prev-left"> < </p>',
+		responsive: [
+			// Add responsive setting one
+		{
+			breakpoint: 990, // Set a breakpoint for mobile devices (adjust as needed)
+			settings: {
+			slidesToShow: 5, // Number of slides to show on mobile
+			}
+		},
+			// Add responsive setting two	
+		{
+			breakpoint: 500, // Set a breakpoint for mobile devices (adjust as needed)
+			settings: {
+			slidesToShow: 4, // Number of slides to show on mobile
+			}
+		},
+
+
+			// End Responsive settings	
+
+
+		]
 	  });
 
 

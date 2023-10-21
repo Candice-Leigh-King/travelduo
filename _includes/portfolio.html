@@ -1,5 +1,14 @@
 <style>
 
+    #content-blocks-{{forloop.index0}} .slick-slide {
+    opacity: 0.5; /* Adjust the opacity as needed for the faded-out slides */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+    }
+
+    #content-blocks-{{forloop.index0}} .slick-current {
+    opacity: 1; /* Keep the currently focused slide at full opacity */
+    }
+
     #content-blocks-{{forloop.index0}} hr{
         border: 10px solid #ECE2D9;
         border-radius: 20px;
@@ -9,7 +18,7 @@
     }
 
     #content-blocks-{{forloop.index0}} h1{
-        font-size: 2rem;
+        font-size: 3rem;
         text-transform: uppercase;
     }
   #content-blocks-{{forloop.index0}}  h3{
@@ -18,14 +27,14 @@
     margin: 4% 0;
   }
   #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image{
-    padding-bottom: 30rem;
+    padding-bottom: 25rem;
   }
 
   #content-blocks-{{forloop.index0}} .portfolio-block .slider-for{
     padding: 2% 30%;
   }
   #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image{
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
     margin: 0.1%;
     }
 
@@ -63,6 +72,97 @@
     }
 
 
+    /* Large Screen */
+
+    @media(max-width:990px){
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image{
+            padding-bottom: 25rem;
+        }
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for{
+            padding: 2% 25%;
+        }
+
+        #content-blocks-{{forloop.index0}}  h3{
+            font-size: 1.1rem;
+        }
+        #content-blocks-{{forloop.index0}} h1{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        }
+
+
+    }
+
+    @media(max-width: 850px){
+        #content-blocks-{{forloop.index0}}  h3{
+            font-size: 1rem;
+        }
+    }
+
+    @media(max-width: 750px){
+
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image {padding-bottom: 20rem;}
+
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image{
+            padding-bottom: 5rem;
+            }
+
+        #content-blocks-{{forloop.index0}} .portfolio-slider {
+            padding: 5% 13%;
+        }
+
+        #content-blocks-{{forloop.index0}} h1{
+        font-size: 2rem;
+        text-transform: uppercase;
+        }
+    
+        }
+
+    @media(max-width: 450px){
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for {
+             padding: 2% 20%;
+        }
+
+        #content-blocks-{{forloop.index0}} .portfolio-slider {
+            margin-top: 1rem;
+        }
+    }
+
+    @media(max-width: 400px){
+
+        #content-blocks-{{forloop.index0}} h1 {
+            font-size: 1.5rem;
+        }
+
+        #content-blocks-{{forloop.index0}}  h3{
+            font-size: 0.8rem;
+        }
+
+        #content-blocks-{{forloop.index0}} hr {
+            border: 7px solid #ECE2D9;
+            margin-top: -7%;
+        }
+
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image {
+            padding-bottom: 15rem;
+        }
+        #content-blocks-{{forloop.index0}} .portfolio-slider {
+            padding: 5% 9%;
+        }
+
+        #content-blocks-{{forloop.index0}} .prev-left, 
+        #content-blocks-{{forloop.index0}} .next-right{
+            font-size: 1.5rem;
+        }
+
+        #content-blocks-{{forloop.index0}} .prev-left{
+            left: -8%;
+        }
+        #content-blocks-{{forloop.index0}} .next-right{
+            right: -8%;
+        }
+    }
+
 </style>
 
 
@@ -70,54 +170,26 @@
     <section class = "portfolio-slider" id = "{{item.content-block-link}}">
 
         <h1 class = "center">
-            Ronja
+            {{item.heading}}
         </h1>
         <hr>
-        <h3>Requested: aesthetic Instagram content with full creative freedom</h3>
+        <h3>{{item.textarea_html}}</h3>
 
         <section class = "portfolio-block">
 
             <div class="slider-for">
-				<div class = "background-image bg-temporary
-                 "></div>
-                 <div class = "background-image bg-temporary-2
-                 "></div>
-                 <div class = "background-image bg-temporary-3
-                 "></div>
-                 <div class = "background-image bg-temporary
-                 "></div>
-                 <div class = "background-image bg-temporary-2
-                 "></div>
-                 <div class = "background-image bg-temporary-3
-                 "></div>
-                 <div class = "background-image bg-temporary
-                 "></div>
-                 <div class = "background-image bg-temporary-2
-                 "></div>
-                 <div class = "background-image bg-temporary-3
-                 "></div>
             
-				
+                 {% for slideshow in item.slideshow %}
+                    <div class = "background-image
+                    " style = "background-image: url('{{slideshow.image}}');"></div>
+                {% endfor %}
+
 			</div>
 			<div class=" slider-nav ">
-				<div class = "background-image bg-temporary
-                 "></div>
-                 <div class = "background-image bg-temporary-2
-                 "></div>
-                 <div class = "background-image bg-temporary-3
-                 "></div>
-                 <div class = "background-image bg-temporary
-                 "></div>
-                 <div class = "background-image bg-temporary-2
-                 "></div>
-                 <div class = "background-image bg-temporary-3
-                 "></div>
-                 <div class = "background-image bg-temporary
-                 "></div>
-                 <div class = "background-image bg-temporary-2
-                 "></div>
-                 <div class = "background-image bg-temporary-3
-                 "></div>
+                {% for slideshow in item.slideshow %}
+                    <div class = "background-image
+                    " style = "background-image: url('{{slideshow.image}}');"></div>
+                {% endfor %}
 			</div>
 
 
