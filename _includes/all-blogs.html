@@ -1,10 +1,10 @@
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "" id = "{{item.content-block-link}}">
-        <section class="grid-center padded-sides">
+        <section class="grid-center blog-preview-spacing">
             <div class="">
               <h1 class = "center margin-b-2">{{item.heading}}</h1>
                 {% for post in site.posts %}
-                <div class= "border-bottom">
+                <div class= "border-bottom ">
                     <a class="grid-center margin-tb-sm"href="{{post.url}}">
                       <div class = "col-3_sm-8 tall-30 padded-sides background-image margin-lr-sm" style="background-image:url('{{post.blog_image}}');">
                       </div>

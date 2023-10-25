@@ -300,15 +300,7 @@ p:last-child {
     background-position: center;
     background-repeat: no-repeat;
 }
-.bg-temporary{
-  background-image: url('/images/mission.jpg');
-}
-.bg-temporary-2{
-  background-image: url('/images/about-us.webp');
-}
-.bg-temporary-3{
-  background-image: url('/images/work-with-us-3.webp');
-}
+
 .bg-pale{ 
     background-color: #F5F0EB;
 }
@@ -626,7 +618,12 @@ footer nav p{
 
 /* ---------------------------------//----------------------------Blogs---------------------------------//---------------------------- */
 .blog-padding-sides{
-  padding: 0 25%;
+  padding: 0 32.5%;
+}
+
+.blog-preview-spacing{
+  padding: 2% 15.5%;
+
 }
 /* Recent Blogs Content Block*/
 .blog-loop .blog-item
@@ -952,7 +949,7 @@ footer nav p{
       }
 
       .blog-padding-sides{
-        padding: 0 15%;
+        padding: 0 20%;
       }
 }
 
