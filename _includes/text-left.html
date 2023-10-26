@@ -9,6 +9,11 @@
     padding-bottom: 52%;
 }}
 
+@media(max-width:500px){
+#content-blocks-{{forloop.index0}} .text-image {
+    padding-bottom: 85%;
+}}
+
 </style>
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "grid-center " id = "{{item.content-block-link}}" style = "background-color: {{item.background-color}};">

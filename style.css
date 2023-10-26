@@ -124,6 +124,7 @@ html
 
 .padded-t  { padding-top: 5%; }
 .padded-b  { padding-bottom: 5%; }
+
 .padded-l  { padding-left: 5%; }
 .padded-r  { padding-right: 5%; }
 
@@ -909,6 +910,8 @@ footer nav p{
       padding-bottom: 40%;
      }
 
+     .padded-b-sm  { padding-bottom: 5%; }
+
     /* Font Sizes */
 
     h1{font-size: 2rem;}
@@ -936,7 +939,7 @@ footer nav p{
   .margin-lr-sm { margin-left: 2%; margin-right: 2%; }
   /* Text Left */
   .quote p {
-    font-size: 1.5rem;}
+    font-size: 1.1rem;}
 
     /* Blog */
 
@@ -951,7 +954,7 @@ footer nav p{
       }
 
       .blog-padding-sides{
-        padding: 0 20%;
+        padding: 0 10%;
       }
 }
 
