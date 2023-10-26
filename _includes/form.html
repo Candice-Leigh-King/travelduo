@@ -1,7 +1,7 @@
 <style>
 
         #content-blocks-{{forloop.index0}} .form{
-            margin-top: 3rem;
+            margin-top: -1.2rem;
         }
 
         #content-blocks-{{forloop.index0}} input,
@@ -11,6 +11,7 @@
             border: 0.5px solid #848282;
             border-radius: 0.5rem;
             min-height: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         #content-blocks-{{forloop.index0}} label{
@@ -26,7 +27,7 @@
 
        #content-blocks-{{forloop.index0}} .text-image
         {
-            padding-bottom: 50%;
+            padding-bottom: 45%;
             border-radius: 65% 0% 44% 55% / 60% 10% 16% 39%;
         } 
 
@@ -65,10 +66,10 @@
 <section class = "" id="content-blocks-{{forloop.index0}}">
     <section class = "grid-center form " id = "{{item.content-block-link}}">
         
-        <div class = "col-7_sm-10_xs-12-center padded-sides-lg margin-t-2">
-            <h1>{{item.heading}}</h1>
+        <div class = "col-7_sm-10_xs-12-center padded-sides-lg ">
+            <h1 class = "center padded-t-1">{{item.heading}}</h1>
             <hr>
-            <div class = "margin-tb ">
+            <div class = "margin-t-5 margin-b-1">
                 {{item.textarea_html}}
             </div>
             <!---------- Simple Contact Form Elements  ------------->
