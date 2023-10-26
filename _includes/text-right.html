@@ -4,6 +4,20 @@
         border-radius: 56% 44% 70% 30% / 70% 47% 53% 30% ;
         padding-bottom: 30%;
     }
+
+    #content-blocks-{{forloop.index0}} a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-family: Bold Grand Font;
+        background-color: #ECE2D9;
+        border-radius: 20rem;
+        font-size: 1rem;
+        display: inline-block;
+        padding: 1% 3% !important;
+        margin: 1%;
+        transition: all 0.7s;
+    }
     /* X-Large Screen: Larger than typical laptop */
     @media(min-width:1920px){
         .large-hide { display: none; }
@@ -58,7 +72,7 @@
     <div class = "col-7_md-12 padded-sides center  ">
         <h3 class="">{{item.heading}}</h3>
         <div class="">{{item.textarea_html}}</div>
-        <a href = "{{item.cta-link}}" class = " button">{{item.cta}}</a>
+        <!-- <a href = "{{item.cta-link}}" class = " button">{{item.cta}}</a> -->
     </div>
     </section>
 </section>
