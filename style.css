@@ -304,6 +304,8 @@ p:last-child {
     background-repeat: no-repeat;
 }
 
+.blog-bg-image {border-radius: 1rem; margin-bottom: 25px;}
+
 .bg-pale{ 
     background-color: #F5F0EB;
 }
