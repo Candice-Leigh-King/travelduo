@@ -108,44 +108,44 @@ html
 
 
 
-.padded-xsm { padding: 1.5%; }
-.padded-sm { padding: 2.5%; }
-.padded    { padding: 5%;   }
-.padded-lg { padding: 10%;  }
+.padded-xsm { padding: 1.5% !important; }
+.padded-sm { padding: 2.5% !important; }
+.padded    { padding: 5% !important;   }
+.padded-lg { padding: 10% !important;  }
 
-.padded-sides-sm {padding: 0% 2.5%;}
+.padded-sides-sm {padding: 0% 2.5% !important;}
 .padded-sides {padding: 0% 5% !important;}
-.padded-sides-lg {padding: 0% 10%;}
-.padded-sides-xlg {padding: 0% 25%;}
+.padded-sides-lg {padding: 0% 10% !important;}
+.padded-sides-xlg {padding: 0% 25% !important;}
 
-.padded-05 { padding: 0.5rem; }
-.padded-1  { padding: 1rem; }
-.padded-2  { padding: 2rem; }
+.padded-05 { padding: 0.5rem !important; }
+.padded-1  { padding: 1rem !important; }
+.padded-2  { padding: 2rem !important; }
 
-.padded-t  { padding-top: 5%; }
-.padded-b  { padding-bottom: 5%; }
+.padded-t  { padding-top: 5% !important; }
+.padded-b  { padding-bottom: 5% !important; }
 
-.padded-l  { padding-left: 5%; }
-.padded-r  { padding-right: 5%; }
+.padded-l  { padding-left: 5% !important; }
+.padded-r  { padding-right: 5% !important; }
 
-.padded-tb-sm  { padding-top: 2.5%; padding-bottom: 2.5%; }
-.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
-.padded-lr  { padding-left: 5%; padding-right: 5%; }
+.padded-tb-sm  { padding-top: 2.5%; padding-bottom: 2.5% !important; }
+.padded-tb  { padding-top: 5%; padding-bottom: 5% !important; }
+.padded-lr  { padding-left: 5%; padding-right: 5% !important; }
 
-.padded-t-1 { padding-top: 1rem; }
-.padded-b-1 { padding-bottom: 1rem; }
-.padded-l-1 { padding-left: 1rem; }
-.padded-r-1 { padding-right: 1rem; }
+.padded-t-1 { padding-top: 1rem !important; }
+.padded-b-1 { padding-bottom: 1rem !important; }
+.padded-l-1 { padding-left: 1rem !important; }
+.padded-r-1 { padding-right: 1rem !important; }
 
-.padded-t-2 { padding-top: 2rem; }
-.padded-b-2 { padding-bottom: 2rem; }
-.padded-l-2 { padding-left: 2rem; }
-.padded-r-2 { padding-right: 2rem; }
+.padded-t-2 { padding-top: 2rem !important; }
+.padded-b-2 { padding-bottom: 2rem !important; }
+.padded-l-2 { padding-left: 2rem !important; }
+.padded-r-2 { padding-right: 2rem !important; }
 
-.padded-t-0 { padding-top: 0; }
-.padded-b-0 { padding-bottom: 0; }
-.padded-l-0 { padding-left: 0; }
-.padded-r-0 { padding-right: 0; }
+.padded-t-0 { padding-top: 0 !important; }
+.padded-b-0 { padding-bottom: 0 !important; }
+.padded-l-0 { padding-left: 0 !important; }
+.padded-r-0 { padding-right: 0 !important; }
 
 /* Margin Utility Classes */ 
 
