@@ -1,10 +1,33 @@
-<section id="content-blocks-{{forloop.index0}}">
-    <section class = " grid-middle-center logo background-image " 
-    style = " background-image: url('{{item.background_image}}'); min-height: 90vh;
-    " 
-    id = "{{item.content-block-link}}">
+<style>
+    #content-blocks-{{forloop.index0}} h1
+    {
+    font-family:Tan Meringue;
+    font-weight: lighter;
+    text-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    color: white;
+    }
 
-        <img class = "col-6-center-middle_xs-12" src = "{{item.logo_image}}">
+    #content-blocks-{{forloop.index0}} h3 
+    {
+    font-family: Regular Glacial Indifference Font;
+    font-weight: lighter;
+    text-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    color: white; 
+    font-size: 1rem; 
+    }
+
+    #content-blocks-{{forloop.index0}} .bump {margin-top: -200px;}
+
+</style>    
+
+<section id="content-blocks-{{forloop.index0}}">
+    <section class = " grid-center-middle background-image "style = " background-image: url('{{item.background_image}}'); min-height: 80vh;"  id = "{{item.content-block-link}}">
+
+        <!-- <img class = "col-6-center-middle_xs-12" src = "{{item.logo_image}}"> -->
+        <div class="col-12 grid bump">
+            <h1 class="col-12 center">{{item.heading}}</h1>
+            <h3 class="col-12 center">{{item.subheading}}</h3>
+        </div>
         
     </section>
 </section>
