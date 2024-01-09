@@ -1,5 +1,10 @@
 <style>
-
+        #content-blocks-{{forloop.index0}} h1
+        {
+        font-size: 2rem;
+        font-weight: lighter;
+        }
+        
         #content-blocks-{{forloop.index0}} .form{
             margin-top: -1.2rem;
         }
@@ -7,7 +12,7 @@
         #content-blocks-{{forloop.index0}} input,
         #content-blocks-{{forloop.index0}} textarea
         {
-            width: 80%;
+            width: 100%;
             border: 0.5px solid #848282;
             border-radius: 0.5rem;
             min-height: 2rem;
@@ -27,8 +32,8 @@
 
        #content-blocks-{{forloop.index0}} .text-image
         {
-            padding-bottom: 45%;
-            border-radius: 65% 0% 44% 55% / 60% 10% 16% 39%;
+            /* padding-bottom: 45%; */
+            border-radius: 65% 38% 44% 55% / 60% 50% 56% 39%;
         } 
 
         #content-blocks-{{forloop.index0}} .form hr{
@@ -66,10 +71,10 @@
 <section class = "" id="content-blocks-{{forloop.index0}}">
     <section class = "grid-center form " id = "{{item.content-block-link}}">
         
-        <div class = "col-7_sm-10_xs-12-center padded-sides-lg ">
-            <h1 class = "center padded-t-1">{{item.heading}}</h1>
-            <hr>
-            <div class = "margin-t-5 margin-b-1">
+        <div class = "col-6_sm-10_xs-12-center padded-sides-lg ">
+            <h1 class = "padded-t-1">{{item.heading}}</h1>
+            <!-- <hr> -->
+            <div class = "margin-t margin-b-1">
                 {{item.textarea_html}}
             </div>
             <!---------- Simple Contact Form Elements  ------------->
@@ -80,11 +85,9 @@
             
                 <label for="_replyto">{{item.form.label-2}}</label><br>   
                 <input type="email" name="_replyto" id="_replyto"  required=""/><br>   
-                
-                <label for="subject">{{item.form.label-3}}</label><br>   
-                <textarea name="{{item.form.label-3}}" id="subject"></textarea><br>   
+         
 
-                <label for="message">{{item.form.label-4}}</label><br>   
+                <label for="message">{{item.form.label-3}}</label><br>   
                 <textarea name="{{item.form.label-4}}" id="message"></textarea><br>   
 
                 <input type="hidden" name="inbox_key" value="#">

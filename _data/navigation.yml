@@ -1,4 +1,3 @@
 textarea_html: >-
-  <p><a href="/work-with-us" class = "nav-link">Work With Us</a></p>
-  <p><a href="/about" class = "nav-link">About</a></p>
+  <p><a href="/contact-us" class = "nav-link">Portfolio</a></p>
   <p><a href="/contact-us" class = "nav-link">Contact</a></p>
