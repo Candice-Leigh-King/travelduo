@@ -221,6 +221,11 @@ h1, h2{
     font-weight: lighter;
     padding-top: 1%;
 }
+
+h2 { 
+  font-family: Editors Note Light;
+  color: #545454;
+  }
 h3, h4, h5, h6 {
     font-family: Editors Note Light;
     color: #545454;
@@ -297,6 +302,17 @@ p:last-child {
     padding: 10px 15px!important;
     margin: 1%;
     transition: all 0.7s;
+}
+
+.button-ig {
+  background-color: #ECE2D9; 
+  border-radius: 20rem;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px 15px!important;
+  margin: 1%;
+  transition: all 0.7s;
+  font-family: Editors Note;
 }
 
 .button:hover {background-color: #DEE9EA;}
@@ -647,6 +663,8 @@ footer nav p{
 /* ---------------------------------//----------------------------Instagram grid ---------------------------------//----------------------------*/
 .underline{
     text-decoration: underline;
+    padding-left: 15px;
+    font-family:  Editors Note;
 }
 
 
