@@ -1,5 +1,19 @@
 <style>
+
+#content-blocks-{{forloop.index0}} .split-bg 
+    {
+    background: linear-gradient(180deg, {{item.colors.top-color}} 45px,{{item.colors.bottom-color}} 0%)  
+    }
 #content-blocks-{{forloop.index0}} h3 {font-size: 2rem;}  
+
+#content-blocks-{{forloop.index0}} h4
+    {
+    font-size: 1.4rem;
+    font-family: 'Editors Note Light';
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: black;
+    }
 
 #content-blocks-{{forloop.index0}} .text-image {
     padding-bottom: 25%;}
@@ -16,8 +30,8 @@
 
 </style>
 <section id="content-blocks-{{forloop.index0}}">
-    <section class = "grid-center " id = "{{item.content-block-link}}" style = "background-color: {{item.background-color}};">
-        <section class = "padded-sides grid-center col-12">
+    <section class = "grid-center " id = "{{item.content-block-link}}" style = "background-color: {{item.colors.background-color}};">
+        <section class = "padded-sides split-bg grid-center col-12">
                 <!-- text block -->
             <div class = "col-7-middle_md-9_xs-12 padded-sides ">
                 {{item.body.textarea_html}}
