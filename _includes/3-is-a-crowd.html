@@ -1,6 +1,6 @@
 <style>
 
-  #content-blocks-{{forloop.index0}} .background-image {min-height: 300px;}
+  #content-blocks-{{forloop.index0}} .background-image {min-height: 330px;}
   
   #content-blocks-{{forloop.index0}} h3 
   {
@@ -16,10 +16,6 @@
   @media(max-width:780px) 
   {
   
-  #content-blocks-{{forloop.index0}} h3
-    {
-    font-size: 1rem;
-    }
 
   #content-blocks-{{forloop.index0}} .background-image {min-height: 200px;}
   }
@@ -29,7 +25,7 @@
   
   #content-blocks-{{forloop.index0}} h3
     {
-    font-size: 1rem;
+    font-size: 2.5rem;
     }
   }
 </style> 
@@ -44,22 +40,39 @@
       <!-- recent blog link -->
       <section class="grid-center col-12 padded-sides">
         <div class="col-12 grid-center blog-loop blog-masonry">
-            {% for post in site.posts limit:3 %}
             <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
-              
-                  <a class="padded"href="{{post.url}}">
-                      <div class = "recent-blog">
-                          <div class="hover-container background-image" style="background-image:url('{{post.blog_image}}');">
+                  <a class="padded"href="{{item.left-block.link}}">
+                      <div class = "">
+                          <h5>{{item.left-block.subheading}}</h5>
+                          <div class="hover-container background-image" style="background-image:url('{{item.left-block.image}}');">
                           </div>
                           <div class = "blog-preview">
-                             
                           </div>
                       </div>
                     </a>
-              
-                
               </div>
-            {% endfor %}
+              <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
+                <a class="padded"href="{{item.middle-block.link}}">
+                    <div class = "">
+                        <h5>{{item.middle-block.subheading}}</h5>
+                        <div class="hover-container background-image" style="background-image:url('{{item.middle-block.image}}');">
+                        </div>
+                        <div class = "blog-preview">
+                        </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
+              <a class="padded"href="{{item.right-block.link}}">
+                  <div class = "">
+                      <h5>{{item.right-block.subheading}}</h5>
+                      <div class="hover-container background-image" style="background-image:url('{{item.right-block.image}}');">
+                      </div>
+                      <div class = "blog-preview">
+                      </div>
+                  </div>
+                </a>
+          </div>
           </div>
       </section>    
   </section>
