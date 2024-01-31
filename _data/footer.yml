@@ -5,7 +5,6 @@ shop-requirements:
   privacy-link: /privacy-policy.html
 navigation:
   textarea_html: >-
-    <p><a href="/blog-categories/blogs">Blog</a></p><p><a href="/work-with-us">Work With Us</a></p><p><a
-    href="/#about">About</a></p><p><a
-    href="/contact-us">Contact</a></p>
+    <p><a href="/portfolio">portfolio</a></p>
+    <p><ahref="/contact-us">Contact</a></p>
 

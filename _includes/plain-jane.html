@@ -1,0 +1,31 @@
+<style>
+    #content-blocks-{{forloop.index0}} img
+        {
+        margin: -7% 0% 0% 71%;
+        width: 17%;
+        }
+    
+
+    @media(max-width: 500px){
+        #content-blocks-{{forloop.index0}} img
+        {
+            margin: -19% 0% 0% 60%;
+            width: 26%;
+            rotate: 16deg;
+        }
+
+    }
+</style>
+
+<section id="content-blocks-{{forloop.index0}}">
+    <section class = "" id = "{{item.content-block-link}}">
+
+        <div class = "grid-middle-center padded-t padded-b center">
+            <div class = "col-3_sm-2_xs-1"><hr></div>
+            <div class = "col-6_sm-8_xs-9 padded-sides padded-b">{{item.heading.textarea_html}}</div>
+            <div class = "col-3_sm-2_xs-1"><hr></div>
+            <div class = "col-6_sm-8_xs-9 padded-sides">{{item.body.textarea_html}}</div>
+        </div>
+        <div class="center"><a href="{{item.button-link}}" class="blue-button">{{item.button-cta}}</a></div>
+    </section>
+</section>
