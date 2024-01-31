@@ -553,21 +553,28 @@ header nav p{
 }
 
 
-
-.dropdown-title:hover, .header-wrapper nav a:hover, footer nav a {border-bottom: 1.7px solid transparent; }
+footer nav a
+  {
+  font-family: EB Garamond;
+  font-weight: lighter;
+  color: #4f4f4f;
+  font-size: 1.5rem;
+  transition: 1s all;
+  letter-spacing: -1px;
+  transition: 1s all;
+  }
 
 .header-wrapper .nav-link{
   transition: 1s all;
 }
 
 .header-wrapper .nav-link:hover {
-  color: #fff ;
+  
   background: linear-gradient(180deg,transparent 80%,#ECE2D9 20%);
   transition: 1s all;
 }
 
 footer nav a:hover{
-  color: #fff ;
   background: linear-gradient(180deg,transparent 80%,white 20%);
   transition: 0s;
 }
@@ -646,11 +653,6 @@ footer .social-links-icons{
   color: white;
   transition: 0s;
   } 
-
-footer nav a{
-    font-family: Regular Grand Font;
-    transition: 1s all;
-}
 footer nav p{
     display: inline-block;
     white-space: nowrap;
