@@ -58,6 +58,12 @@ hr, img{border: 1px solid blue;}  */
   src: url('/fonts/Editor_sNote-Extralight.otf');
 }
 
+@font-face {
+  font-family: Editors Note Light Italic;
+  src: url('/fonts/Editor_sNote-LightItalic.otf');
+}
+
+
 
 /* Agrandir Font */
 @font-face {
@@ -153,6 +159,7 @@ html
 .padded-l  { padding-left: 5%; }
 .padded-r  { padding-right: 5%; }
 
+.padded-tb-xsm  { padding-top: 1.5%; padding-bottom: 1.5%; }
 .padded-tb-sm  { padding-top: 2.5%; padding-bottom: 2.5%; }
 .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
 .padded-lr  { padding-left: 5%; padding-right: 5%; }

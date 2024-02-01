@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 	$('.single-item').slick(
 		{
-			dots: true,
+			dots: false,
 			speed: 500,
 			arrows: true,
 			infinite: true,
@@ -62,7 +62,7 @@ $(document).ready(function() {
 	// Portfolio Slick Slider:
 	$('.slider-for').slick({
 		slidesToShow: 4,
-		slidesToScroll: 4,
+		slidesToScroll: 1,
 		asNavFor: '.slider-nav',
 		rows: 1,
 		slidesPerRow: 4,
@@ -91,7 +91,7 @@ $(document).ready(function() {
 	  });
 	  $('.slider-nav').slick({
 		slidesToShow: 8,
-		slidesToScroll: 4,
+		slidesToScroll: 1,
 		asNavFor: '.slider-for',
 		autoplay: true,
 		arrows: true,

@@ -1,10 +1,10 @@
 <style>
     #content-blocks-{{forloop.index0}} .slick-prev:before {
         content: "<";
-        color: white;
-        font-size: 5rem;
-        font-weight: bolder;
-        font-family: 'Pacifico', cursive;
+        color: black;
+        font-size: 3rem;
+        font-weight: lighter;
+        font-family: 'Nanum Myeongjo', serif;
         opacity: 1;
    
         
@@ -12,10 +12,10 @@
 
     #content-blocks-{{forloop.index0}} .slick-next:before {
         content: ">";
-        color: white;
-        font-size: 5rem;
-        font-weight: bolder;
-        font-family: 'Pacifico', cursive;
+        color: black;
+        font-size: 3rem;
+        font-weight: lighter;
+        font-family: 'Nanum Myeongjo', serif;
         opacity: 1;
     }
     #content-blocks-{{forloop.index0}} .slick-next, 
@@ -25,6 +25,9 @@
         opacity: 1;
     }
 
+    #content-blocks-{{forloop.index0}} h4{
+        font-family: Editors Note Light Italic;
+    }
 
     #content-blocks-{{forloop.index0}}  .slick-dots li {margin: 0 0.8rem;}
     
@@ -68,7 +71,7 @@
 
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "bg-pale" id = "{{item.content-block-link}}">
-        <section class="grid-center-middle scroll-block padded-sides-lg" id="{{item.content-block-link}}">
+        <section class="grid-center-middle scroll-block padded-sides-lg padded-tb-xsm" id="{{item.content-block-link}}">
             <div class="col-12 center ">
                 <h4 class = "featured" style = "margin-bottom: 0rem;">{{item.heading}}</h4>
             </div>
