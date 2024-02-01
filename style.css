@@ -323,7 +323,8 @@ p:last-child {
     background-color: #DEE9EA;
     border-radius: 20rem;
     display: inline-block;
-    padding: 0.2% 1.5% !important;
+    padding: 1% 2% !important;
+    margin: 0.2% 0% !important;
     transition: all 0.7s;
     font-family: Editors Note;
     vertical-align: middle;

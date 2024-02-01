@@ -49,6 +49,12 @@ _array_structures:
           _section-type: 1-image-block
           1_image: /images/mission.jpg
           content-block-link:
+      - label: Wide Image
+        icon: image
+        value: 
+          _section-type: wide-image
+          1_image: /images/mission.jpg
+          content-block-link:
       - label: two image grid
         icon: photo_library
         value: 
