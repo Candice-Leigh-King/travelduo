@@ -10,6 +10,30 @@
   letter-spacing: -1px;
   
   }
+  #content-blocks-{{forloop.index0}} .hover-container{
+    position: relative;
+    overflow: hidden;
+  }
+
+  #content-blocks-{{forloop.index0}} .hover-container:hover .portfolio-hover{
+      opacity: 1;
+  }
+
+  #content-blocks-{{forloop.index0}} .portfolio-hover{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(245, 240, 235, 0.5); /* Adjust the overlay color and opacity as needed */
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white; /* Adjust the text color as needed */
+      text-align: center;
+    }
 
   @media(max-width:1024px) 
   {
@@ -57,10 +81,11 @@
       <section class="grid-center col-12 padded-sides">
         <div class="col-12 grid-center blog-loop blog-masonry">
             <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
-                  <a class="padded"href="{{item.left-block.link}}">
+                  <a class="padded portfolio-link"href="{{item.left-block.link}}">
                       <div class = "">
                           <h5>{{item.left-block.subheading}}</h5>
                           <div class="hover-container background-image" style="background-image:url('{{item.left-block.image}}');">
+                            <div class = "portfolio-hover"></div>
                           </div>
                           <div class = "blog-preview">
                           </div>
@@ -68,10 +93,11 @@
                     </a>
               </div>
               <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
-                <a class="padded"href="{{item.middle-block.link}}">
+                <a class="padded portfolio-link"href="{{item.middle-block.link}}">
                     <div class = "">
                         <h5>{{item.middle-block.subheading}}</h5>
                         <div class="hover-container background-image" style="background-image:url('{{item.middle-block.image}}');">
+                          <div class = "portfolio-hover"></div>
                         </div>
                         <div class = "blog-preview">
                         </div>
@@ -83,6 +109,7 @@
                   <div class = "">
                       <h5>{{item.right-block.subheading}}</h5>
                       <div class="hover-container background-image" style="background-image:url('{{item.right-block.image}}');">
+                        <div class = "portfolio-hover"></div>
                       </div>
                       <div class = "blog-preview">
                       </div>
