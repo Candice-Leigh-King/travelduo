@@ -61,17 +61,19 @@ $(document).ready(function() {
 
 	// Portfolio Slick Slider:
 	$('.slider-for').slick({
-		slidesToShow: 1,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
 		autoplay: true,
-		asNavFor: '.slider-nav'
+		asNavFor: '.slider-nav',
+		rows: 1,
+		slidesPerRow: 4,
 
 	  });
 	  $('.slider-nav').slick({
-		slidesToShow: 7,
-		slidesToScroll: 1,
+		slidesToShow: 8,
+		slidesToScroll: 4,
 		asNavFor: '.slider-for',
 		autoplay: true,
 		arrows: true,
