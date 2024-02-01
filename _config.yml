@@ -293,4 +293,39 @@ _array_structures:
             - image: /images/mission.jpg
             - image: /images/about-us.webp
             - image: /images/work-with-us-3.webp
+      - label: Fancy Three is a crowd
+        icon: 
+        value: 
+          _section-type: 3-is-a-crowd-split-background 
+          heading: VIDEO PORTFOLIO
+          left-block: 
+            image:  /images/homepage/portfolio/Oman-00797.webp
+            link: /contact-us
+          middle-block: 
+            image:  /images/homepage/portfolio/Oman-00338.webp
+            link: /contact-us
+          right-block: 
+            image:  /images/homepage/portfolio/siargao--3.webp
+            link: /contact-us
+          colors:
+            top-color: '#F5F0EB'
+            bottom-color: '#fff'
+      - label: Plain Three is a crowd
+        icon: 
+        value: 
+        _section-type: 3-is-a-crowd
+        heading: PORTFOLIO
+        left-block: 
+          subheading: Hospitality
+          image:  /images/homepage/portfolio/Oman-00797.webp
+          link: /contact-us
+        middle-block: 
+          subheading: Products
+          image:  /images/homepage/portfolio/Oman-00338.webp
+          link: /contact-us
+        right-block: 
+          subheading: Travel
+          image:  /images/homepage/portfolio/siargao--3.webp
+          link: /contact-us
+        content-block-link: portfolio  
       

@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 	// Portfolio Slick Slider:
 	$('.slider-for').slick({
-		slidesToShow: 4,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
