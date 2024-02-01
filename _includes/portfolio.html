@@ -1,7 +1,7 @@
 <style>
 
     #content-blocks-{{forloop.index0}} .slick-slide {
-    opacity: 0.5; /* Adjust the opacity as needed for the faded-out slides */
+    /* opacity: 0.5; Adjust the opacity as needed for the faded-out slides */
     transition: opacity 0.3s ease; /* Add a smooth transition effect */
     }
 
@@ -27,11 +27,18 @@
     margin: 4% 0;
   }
   #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image{
-    padding-bottom: 25rem;
+    padding-bottom: 20rem;
+    margin: 0.1%;
   }
 
   #content-blocks-{{forloop.index0}} .portfolio-block .slider-for{
-    padding: 2% 30%;
+    padding: 2% 0%;
+    
+  }
+
+  #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav{
+    padding: 2% 10%;
+    
   }
   #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image{
     padding-bottom: 8rem;
@@ -51,7 +58,7 @@
         color: black;
         font-weight: lighter;
         position: absolute;
-        left: -10%; /* Adjust as needed */
+        left: 0%; /* Adjust as needed */
         top: 50%; /* Adjust as needed */
         transform: translate(0, -50%); /* Center vertically */
         z-index: 2; /* Ensure it's above the slider */
@@ -65,7 +72,7 @@
         color: black;
         font-weight: lighter;
         position: absolute;
-        right: -10%; /* Adjust as needed */
+        right: 0%; /* Adjust as needed */
         top: 50%; /* Adjust as needed */
         transform: translate(0, -50%); /* Center vertically */
         z-index: 2; /* Ensure it's above the slider */
@@ -76,7 +83,7 @@
 
     @media(max-width:990px){
         #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image{
-            padding-bottom: 25rem;
+            padding-bottom: 18rem;
         }
         #content-blocks-{{forloop.index0}} .portfolio-block .slider-for{
             padding: 2% 25%;
@@ -101,7 +108,7 @@
 
     @media(max-width: 750px){
 
-        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image {padding-bottom: 20rem;}
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image {padding-bottom: 10rem;}
 
         #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image{
             padding-bottom: 5rem;
@@ -175,9 +182,9 @@
         <hr>
         <h3>{{item.textarea_html}}</h3>
 
-        <section class = "portfolio-block">
+        <section class = "portfolio-block ">
 
-            <div class="slider-for">
+            <div class="slider-for ">
             
                  {% for slideshow in item.slideshow %}
                     <div class = "background-image
@@ -185,7 +192,7 @@
                 {% endfor %}
 
 			</div>
-			<div class=" slider-nav ">
+			<div class=" slider-nav">
                 {% for slideshow in item.slideshow %}
                     <div class = "background-image
                     " style = "background-image: url('{{slideshow.image}}');"></div>

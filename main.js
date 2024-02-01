@@ -61,15 +61,33 @@ $(document).ready(function() {
 
 	// Portfolio Slick Slider:
 	$('.slider-for').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		fade: true,
-		autoplay: true,
+		slidesToShow: 4,
+		slidesToScroll: 4,
 		asNavFor: '.slider-nav',
 		rows: 1,
 		slidesPerRow: 4,
 
+		responsive: [
+			// Add responsive setting one
+		{
+			breakpoint: 990, // Set a breakpoint for mobile devices (adjust as needed)
+			settings: {
+			slidesToShow: 3, // Number of slides to show on mobile
+			}
+		},
+			// Add responsive setting two	
+		{
+			breakpoint: 500, // Set a breakpoint for mobile devices (adjust as needed)
+			settings: {
+			slidesToShow: 1, // Number of slides to show on mobile
+			}
+		},
+
+
+			// End Responsive settings	
+
+
+		]
 	  });
 	  $('.slider-nav').slick({
 		slidesToShow: 8,
