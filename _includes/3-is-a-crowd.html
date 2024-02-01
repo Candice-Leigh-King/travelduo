@@ -1,6 +1,6 @@
 <style>
 
-  #content-blocks-{{forloop.index0}} .background-image {min-height: 330px;}
+  #content-blocks-{{forloop.index0}} .background-image {min-height: 420px;}
   
   #content-blocks-{{forloop.index0}} h3 
   {
@@ -11,13 +11,29 @@
   
   }
 
-
+  @media(max-width:1024px) 
+  {
   
+
+    #content-blocks-{{forloop.index0}} .background-image {min-height: 320px;}
+  
+  }
+  
+
+  @media(max-width: 990px) 
+  {
+  
+
+    #content-blocks-{{forloop.index0}} .background-image {min-height: 300px;}
+  
+  }
+
   @media(max-width:780px) 
   {
   
 
-  #content-blocks-{{forloop.index0}} .background-image {min-height: 200px;}
+  #content-blocks-{{forloop.index0}} .background-image {min-height: 280px;}
+
   }
 
   @media(max-width:400px) 

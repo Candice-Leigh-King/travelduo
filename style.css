@@ -50,7 +50,7 @@ hr, img{border: 1px solid blue;}  */
 
 @font-face {
   font-family: Editors Note;
-  src: url('/fonts/Editor_sNote-Regular.ttf');
+  src: url('/fonts/Editor_sNote-Regular.otf');
 }
 
 @font-face {
@@ -323,9 +323,10 @@ p:last-child {
     background-color: #DEE9EA;
     border-radius: 20rem;
     display: inline-block;
-    padding: 1% 3% !important;
+    padding: 0.2% 1.5% !important;
     transition: all 0.7s;
     font-family: Editors Note;
+    vertical-align: middle;
 }
 .blue-button:hover{
     background-color: #ECE2D9;
