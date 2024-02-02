@@ -458,7 +458,6 @@ p:last-child {
 .mobile-menu {
 
   position: absolute;
-  top: -1rem;
   left: 0rem;
   padding: 0.5rem;
   display: none;

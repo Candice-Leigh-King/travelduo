@@ -8,8 +8,8 @@ basics:
   browser-tag_image: /images/logos/submark-4.png
   summary-of-brand: We are a photo- and videographer couple who make content showcasing luxury hotels, products, and experiences anywhere in the world
 mobile-menu:
-  section-1-heading: Blogs
-  section-2-heading: Get to know Travel Duo
+  # section-1-heading: Blogs
+  section-2-heading: Quick Links
   image-1: /images/contact.webp
   image-2: /images/our-mission.webp
 social-links:
