@@ -649,14 +649,16 @@ footer .social-links-icons{
 
 /* Footer Styles */
 .shop-requirements{
-    display: inline-block;
+    /* display: inline-block; */
 
 }
 
 .shop-requirements a{
     transition: 1s all;
-    font-size: 1rem;
-    font-family: Regular Grand Font;
+    font-size: 0.8rem;
+    color: #856a52;
+    font-weight: 300;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 .shop-requirements a:hover
   {
@@ -870,9 +872,9 @@ footer nav p{
 
     /* Footer */
 
-    footer nav a {
+    /* footer nav a {
       font-size: 1.2rem;
-  }
+  } */
     /* Recent Blogs */
 
     .blog-masonry 
@@ -910,10 +912,10 @@ footer nav p{
       margin-top: 3%;
   }
     /* Footer */
-
+/* 
     footer nav a {
       font-size: 1rem;
-  }
+  } */
 
 }
 
@@ -942,9 +944,9 @@ footer nav p{
     margin-top: -4%;
 }
 
-  .shop-requirements a {
+  /* .shop-requirements a {
     font-size: 0.8rem;
-}
+} */
 
   .logo-show {
     /* margin: 0 43%;
@@ -995,8 +997,8 @@ footer nav p{
     h2{font-size: 1.5rem;}
     h3,h4,h5,h6{font-size: 1.5rem;}
     p, a{font-size: 1rem;}
-    .v-small  {font-size: 1.1rem;}
-    .mobile-menu a {font-size: 1rem;}
+    /* .v-small  {font-size: 1.1rem;}
+    .mobile-menu a {font-size: 1rem;} */
 
     .dropdown-title, nav a {
         font-size: 0.9rem;
@@ -1009,9 +1011,9 @@ footer nav p{
       display: none;
     }
 
-    .shop-requirements a {
+    /* .shop-requirements a {
       font-size: 0.5rem;
-  }
+  } */
 
   .margin-lr-sm { margin-left: 2%; margin-right: 2%; }
   /* Text Left */
