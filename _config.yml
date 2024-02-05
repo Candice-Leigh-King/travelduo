@@ -145,8 +145,9 @@ _array_structures:
         icon: star
         value: 
           _section-type: hero
-          background_image: /images/banner.webp
-          logo_image: /images/logos/primary-logo.png
+          background_image: /images/homepage/Oman-00472-3.webp
+          heading: TRENDY TRAVEL
+          subheading: CREATIVE AGENCY
           content-block-link:
       - label: Hotspots Blogs
         icon: article
