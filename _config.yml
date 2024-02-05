@@ -178,21 +178,21 @@ _array_structures:
       - label: Fancy 3 is a Crowd
         icon: timer_3_select
         value:
-        _section-type: 3-is-a-crowd-split-background 
-        heading: VIDEO PORTFOLIO
-        left-block: 
-          image:  /images/homepage/portfolio/Oman-00797.webp
-          link: /
-        middle-block: 
-          image:  /images/homepage/portfolio/Oman-00338.webp
-          link: /
-        right-block: 
-          image:  /images/homepage/portfolio/siargao--3.webp
-          link: /
-        colors:
-          top-color: '#F5F0EB'
-          bottom-color: '#fff'
-        content-block-link: 
+          _section-type: 3-is-a-crowd-split-background 
+          heading: VIDEO PORTFOLIO
+          left-block: 
+            image:  /images/homepage/portfolio/Oman-00797.webp
+            link: /
+          middle-block: 
+            image:  /images/homepage/portfolio/Oman-00338.webp
+            link: /
+          right-block: 
+            image:  /images/homepage/portfolio/siargao--3.webp
+            link: /
+          colors:
+            top-color: '#F5F0EB'
+            bottom-color: '#fff'
+          content-block-link: 
       - label: Special Heading
         icon: stars
         value:
