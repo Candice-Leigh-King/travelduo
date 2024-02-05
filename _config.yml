@@ -215,7 +215,18 @@ _array_structures:
           cta: Contact Us
           background-image:
           background-color: '#FFFFFF'
-          content-block-link:    
+          content-block-link: 
+      - label: Scroll
+        icon: steppers
+        value:
+          _section-type: scroll
+          heading: What they're saying about us
+          scroll:
+            - textarea_html: <p>Roel and Eline were such a pleasure to work with. They created beautiful content that we’ve been using over and over again in our marketing. They are super easy going, chill and always open to feedback. We couldn’t get enough of the beautiful shots. JUST WOW!<br> <br> <br> Rita Duarte | marketing manager | Ronja</p>
+            - textarea_html: <p>Roel and Eline were a delight to work with! They are dedicated, hardworking and consistently go above and beyond, delivering quality content. The commitment to their work is truly commendable, and it's evident that they take pride in what they do.<br> <br> <br> Nabila Zaffar | Marketing Communications Executive | YTL Hotels</p>
+            - textarea_html: <p>Eline and Roel were very easy to work with during their stay in Seychelles. They provided us with beautiful content for our social media! The edit was matching our guidelines, as we are looking for natural colors on the content we repost.<br> <br> <br> Elise Quiniou | marketing manager | Four Seasons Seychelles</p>
+            - textarea_html: <p>This was one of the best projects that we've had for Desa Hay Canggu. They matched perfectly with our mood board! It's so rare to find photographers that can really match with our concept and be able to deliver it out there. Thank you so much!<br> <br> <br> Yohanes Barlianto | owner | Desa Hay</p>
+          content-block-link:       
       - label: Hotspots Blogs
         icon: article
         value:
@@ -254,14 +265,6 @@ _array_structures:
         value:
           _section-type: subscribe
           add-script-here:    
-      - label: Scroll
-        icon: person
-        value:
-          _section-type: scroll
-          heading: What they're saying about us
-          scroll:
-            textarea_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium exercitationem est, soluta modi quam pariatur placeat vitae voluptate veniam fugit. Eos eligendi eum ut dolorum a, laboriosam quasi modi optio! <br> Name and surname</p>
-          content-block-link:
       - label: Space Block
         icon: check_box_outline_blank
         value:
