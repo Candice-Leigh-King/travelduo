@@ -172,6 +172,31 @@ _array_structures:
           button-link: /contact-us
           button-cta: Contact us
           content-block-link:
+      - label: 3 is a Crowd
+        icon: timer_3
+        value: 
+          _section-type: three-is-a-crowd
+          heading: PORTFOLIO
+          left-block: 
+            subheading: Hospitality
+            image:  /images/homepage/portfolio/Oman-00797.webp
+            link: /portfolio/hospitality
+          middle-block: 
+            subheading: Products
+            image:  /images/homepage/portfolio/Oman-00338.webp
+            link: /portfolio/products
+          right-block: 
+            subheading: Travel
+            image:  /images/homepage/portfolio/siargao--3.webp
+            link: /portfolio/travel
+          content-block-link: portfolio 
+      - label: Special Heading
+        icon: stars
+        value:
+          _section-type: special-heading 
+          background-color: 'white'
+          textarea_html: <h3>OUR MISSION</h3>
+          content-block-link:
       - label: Hotspots Blogs
         icon: article
         value:
@@ -324,9 +349,9 @@ _array_structures:
             - image: /images/about-us.webp
             - image: /images/work-with-us-3.webp
       - label: Fancy Three is a crowd
-        icon: 
+        icon: timer_3_select
         value: 
-          _section-type: 3-is-a-crowd-split-background 
+          _section-type: three-is-a-crowd-split-background 
           heading: VIDEO PORTFOLIO
           left-block: 
             image:  /images/homepage/portfolio/Oman-00797.webp
@@ -340,22 +365,4 @@ _array_structures:
           colors:
             top-color: '#F5F0EB'
             bottom-color: '#fff'
-      - label: Three is a Crowed
-        icon: 
-        value: 
-        _section-type: 3-is-a-crowd
-        heading: PORTFOLIO
-        left-block: 
-          subheading: Hospitality
-          image:  /images/homepage/portfolio/Oman-00797.webp
-          link: /contact-us
-        middle-block: 
-          subheading: Products
-          image:  /images/homepage/portfolio/Oman-00338.webp
-          link: /contact-us
-        right-block: 
-          subheading: Travel
-          image:  /images/homepage/portfolio/siargao--3.webp
-          link: /contact-us
-        content-block-link: portfolio  
       
