@@ -197,6 +197,25 @@ _array_structures:
           background-color: 'white'
           textarea_html: <h3>OUR MISSION</h3>
           content-block-link:
+      - label: Portfolio 
+        icon: photo_library
+        value: 
+          _section-type: portfolio
+          heading: The Four Seasons <i>Budapest</i>
+          slideshow: 
+            - image: /images/hospitality/four-seasons-budapest/budapest-1.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-2.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-3.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-4.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-1.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-2.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-3.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-4.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-1.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-2.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-3.jpg
+            - image: /images/hospitality/four-seasons-budapest/budapest-4.jpg
+          content-block-link:
       - label: Hotspots Blogs
         icon: article
         value:
@@ -333,23 +352,6 @@ _array_structures:
           background_image: /images/signup.png
           add-script-here: >- 
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-      - label: Portfolio 
-        icon: photo_library
-        value: 
-          _section-type: portfolio
-          heading: THE INSIDE HOUSE 
-          textarea_html: >- 
-            Requested: aesthetic Instagram content with full creative freedom
-          slideshow: 
-            - image: /images/mission.jpg
-            - image: /images/about-us.webp
-            - image: /images/work-with-us-3.webp
-            - image: /images/mission.jpg
-            - image: /images/about-us.webp
-            - image: /images/work-with-us-3.webp
-            - image: /images/mission.jpg
-            - image: /images/about-us.webp
-            - image: /images/work-with-us-3.webp
       - label: Fancy Three is a crowd
         icon: timer_3_select
         value: 
