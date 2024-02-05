@@ -175,7 +175,7 @@ _array_structures:
       - label: 3 is a Crowd
         icon: timer_3
         value: 
-          _section-type: three-is-a-crowd
+          _section-type: 3-is-a-crowd
           heading: PORTFOLIO
           left-block: 
             subheading: Hospitality
@@ -353,7 +353,7 @@ _array_structures:
       - label: Fancy Three is a crowd
         icon: timer_3_select
         value: 
-          _section-type: three-is-a-crowd-split-background 
+          _section-type: 3-is-a-crowd-split-background 
           heading: VIDEO PORTFOLIO
           left-block: 
             image:  /images/homepage/portfolio/Oman-00797.webp
