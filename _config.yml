@@ -229,7 +229,7 @@ _array_structures:
           background-color: '#FFFFFF'
           content-block-link: 
       - label: Scroll
-        icon: steppers
+        icon: page_control
         value:
           _section-type: scroll
           heading: What they're saying about us
