@@ -222,12 +222,13 @@ body {
     color: #2b2b2b;
     
 }
-h1,{
+h1
+    {
     font-family: Editors Note;
     color: #545454;
     font-weight: lighter;
     padding-top: 1%;
-}
+    }
 
 h2 { 
   font-family: Editors Note Light;
@@ -646,12 +647,6 @@ footer .social-links-icons{
 }
 
 
-
-/* Footer Styles */
-.shop-requirements{
-    /* display: inline-block; */
-
-}
 
 .shop-requirements a{
     transition: 1s all;

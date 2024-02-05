@@ -316,7 +316,7 @@ _array_structures:
           colors:
             top-color: '#F5F0EB'
             bottom-color: '#fff'
-      - label: Plain Three is a crowd
+      - label: Three is a Crowed
         icon: 
         value: 
         _section-type: 3-is-a-crowd
