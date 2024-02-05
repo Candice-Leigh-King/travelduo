@@ -286,6 +286,7 @@ _array_structures:
           heading: Work With Us
           textarea_html: >-
             <p>Hi, nice to (digitally) meet you! We are Roel and Eline, also known as Trendy Travel Duo on social media. We are a photo- and videographer couple who make content showcasing luxury hotels, products, and experiences around the world.</p><p>We don’t hesitate to set our alarm at 4AM to climb a mountain, swim in an ice cold pool or even shoot in a tropical storm and risk our equipment to get that perfect shot for you (true story)!</p> <p>Do you want high quality content for your business to post on our personal Instagram or to use on your (booking) websites and social media? Look no further!</p>
+          content-block-link:
       - label: Text on the left
         icon: east
         value:
@@ -299,7 +300,8 @@ _array_structures:
               <h4><b>As professional photo and videographers,</b></h4><p class="justify">We curate high-quality content exclusively for the luxury segment, aiming not just to meet but exceed expectations. Our unwavering commitment to excellence sets new benchmarks for visual storytelling. Smooth communication is key, prioritizing openness and efficiency in understanding your vision and requirements throughout the entire creative process.</p> <p class="justify">To provide an all-encompassing experience, we can serve as models in our photos and videos, ensuring a seamless integration of our artistic vision with your brand while alleviating the workload for you. Tailoring to your unique needs, we offer bespoke and custom packages to cater to your distinct requirements.</p><p class="justify">Embark on a journey where visual excellence meets unparalleled luxury, capturing your brand's unique story with precision and elegance.</p>
           quote: 
             textarea_html: >-
-               <p class = "center">"We are more than photographers and videographers; we are storytellers crafting a visual narrative that captivates, resonates and leaves a lasting impression."</p>
+              <p class = "center">"We are more than photographers and videographers; we are storytellers crafting
+                a visual narrative that captivates, resonates and leaves a lasting impression."</p>
           image: /images/about-us-edited.jpg
           content-block-link:
       - label: Text on the Right
