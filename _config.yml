@@ -90,15 +90,6 @@ _array_structures:
           image: /images/mission.jpg
           sub-heading: Hot Topics
           content-block-link:
-      - label: Button in the center
-        icon: smart_button
-        value:
-          _section-type: button-center
-          cta-link: /contact-us
-          cta: Inquire
-          background-image:
-          background-color: '#FFFFFF'
-          content-block-link:
       - label: Button on the right
         icon: smart_button
         value:
@@ -216,6 +207,15 @@ _array_structures:
             - image: /images/hospitality/four-seasons-budapest/budapest-3.jpg
             - image: /images/hospitality/four-seasons-budapest/budapest-4.jpg
           content-block-link:
+      - label: Just a Button
+        icon: adjust
+        value:
+          _section-type: button-center 
+          cta-link: /contact-us
+          cta: Contact Us
+          background-image:
+          background-color: '#FFFFFF'
+          content-block-link:    
       - label: Hotspots Blogs
         icon: article
         value:
