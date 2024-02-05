@@ -149,7 +149,7 @@ _array_structures:
           heading: TRENDY TRAVEL
           subheading: CREATIVE AGENCY
           content-block-link:
-       - label: Plain Jane
+      - label: Plain Jane
         icon: sentiment_satisfied
         value: 
           _section-type: plain-jane
