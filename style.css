@@ -64,6 +64,11 @@ hr, img{border: 1px solid blue;}  */
 }
 
 
+@font-face {
+  font-family: Open Sans;
+  src: url('/fonts/open-sans.ttf');
+}
+
 
 /* Agrandir Font */
 @font-face {

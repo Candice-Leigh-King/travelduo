@@ -28,6 +28,14 @@
     #content-blocks-{{forloop.index0}} h4{
         font-family: Editors Note Light Italic;
     }
+    #content-blocks-{{forloop.index0}} p{
+        font-family: Editors Note Light;
+    }
+
+    #content-blocks-{{forloop.index0}} .name {
+        font-family: Open Sans;
+        text-transform: uppercase;
+    }
 
     #content-blocks-{{forloop.index0}}  .slick-dots li {margin: 0 0.8rem;}
     
@@ -78,7 +86,8 @@
             <div class=" grid-center col-9_sm-10-center background-color border-left single-item" style = "padding: 2.5%;">
                 {% for scroll in item.scroll %}
                 <div class="grid-middle text-center scroll col-12_md-8 center">
-                  {{scroll.textarea_html}}
+                  {{scroll.quote.textarea_html}}
+                  <p class = "name">{{scroll.name.textarea_html}}</p>
                 </div>
                 {% endfor %}
               </div>
