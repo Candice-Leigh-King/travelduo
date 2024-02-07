@@ -64,7 +64,7 @@ $(document).ready(function() {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		asNavFor: '.slider-nav',
-		// infinite: true,
+		infinite: true,
 		rows: 1,
 		// slidesPerRow: 8,
 
