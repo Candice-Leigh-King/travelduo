@@ -62,6 +62,7 @@ $(document).ready(function() {
 	// Portfolio Slick Slider:
 	$('.slider-for').slick({
 		slidesToShow: 4,
+		autoplay: false,
 		slidesToScroll: 1,
 		asNavFor: '.slider-nav',
 		infinite: true,
@@ -95,7 +96,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		asNavFor: '.slider-for',
 		infinite: true,
-		autoplay: true,
+		autoplay: false,
 		arrows: true,
 		dots: false,
 		centerMode: false,
