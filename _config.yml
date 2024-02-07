@@ -228,7 +228,7 @@ _array_structures:
           background-color: '#FFFFFF'
           content-block-link: 
       - label: Scroll
-        icon: arrows_outward
+        icon: switch_left
         value:
           _section-type: scroll
           scroll:
