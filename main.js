@@ -64,8 +64,9 @@ $(document).ready(function() {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		asNavFor: '.slider-nav',
+		// infinite: true,
 		rows: 1,
-		slidesPerRow: 4,
+		// slidesPerRow: 8,
 
 		responsive: [
 			// Add responsive setting one
@@ -93,12 +94,14 @@ $(document).ready(function() {
 		slidesToShow: 8,
 		slidesToScroll: 1,
 		asNavFor: '.slider-for',
+		infinite: true,
 		autoplay: true,
 		arrows: true,
 		dots: false,
 		centerMode: false,
 		focusOnSelect: true,
 		centerPadding: '0',
+		// speed: 1,
 		nextArrow: '<p class = "next-right"> > </p>',
   		prevArrow: '<p class = "prev-left"> < </p>',
 		responsive: [
