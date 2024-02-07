@@ -230,6 +230,7 @@ _array_structures:
       - label: Scroll
         icon: arrows_outward
         value:
+          _section-type: scroll
           scroll:
             - quote:
                 textarea_html: >-
