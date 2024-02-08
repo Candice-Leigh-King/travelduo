@@ -37,9 +37,11 @@
 
 <section id="content-blocks-{{forloop.index0}}" style = "background-color: {{item.background-color}};">
     <section class = "" id = "{{item.content-block-link}}" >
-        <div class = "padded-sides-lg center">
-            <h4 class ="">{{item.heading}}</h4>
-            <a class = "button-ig" href = "{{site.data.general.social-links.instagram}}" target = "_blank" > <i class="fa-brands fa-instagram"></i><span class = "underline">{{item.cta}}</span></a>
+        <div class = "grid-middle-center padded-b center">
+            <hr class="col-4">
+            <h4 class ="col-4 padded-sm">{{item.heading}}</h4>
+            <hr class="col-4">
+            <a class = "button-ig grid-middle" href = "{{site.data.general.social-links.instagram}}" target = "_blank" > <i class="fa-brands fa-instagram"></i><span class = "underline">{{item.cta}}</span></a>
         </div>
         <section class = " center" style = "background-color: #F5F0EB">
             <!-- LightWidget WIDGET -->
