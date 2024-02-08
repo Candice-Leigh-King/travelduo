@@ -349,7 +349,7 @@ p:last-child {
 .quote p{ 
     color: #856A52;
     font-size: 1.8rem;
-    font-family: Editors Note;
+    font-family: Editors Note Light;
     letter-spacing: -1px}
 
 .tall-30{min-height: 30vh;}
@@ -1020,8 +1020,11 @@ footer nav p{
 
   .margin-lr-sm { margin-left: 2%; margin-right: 2%; }
   /* Text Left */
-  .quote p {
-    font-size: 1.1rem;}
+  .quote p 
+    {
+    font-family: 'Editors Note Light';
+    font-size: 1.4rem;
+    }
 
     /* Blog */
 
