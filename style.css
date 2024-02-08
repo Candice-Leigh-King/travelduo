@@ -325,7 +325,7 @@ p:last-child {
   padding: 10px 15px!important;
   margin: 1%;
   transition: all 0.7s;
-  font-family: Editors Note;
+  font-family: Editors Note Light;
 }
 
 .button:hover {background-color: #DEE9EA;}
@@ -679,7 +679,7 @@ footer nav p{
 .underline{
     text-decoration: underline;
     padding-left: 15px;
-    font-family:  Editors Note;
+    font-family:  Editors Note Light;
     font-size: 1.4rem;
 }
 
