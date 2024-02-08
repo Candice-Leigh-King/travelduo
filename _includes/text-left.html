@@ -2,14 +2,14 @@
 
 #content-blocks-{{forloop.index0}} .split-bg 
     {
-    background: linear-gradient(180deg, {{item.colors.top-color}} 25%,{{item.colors.bottom-color}} 0%);
+    background: linear-gradient(180deg, {{item.colors.top-color}} 11%,{{item.colors.bottom-color}} 0%);
     min-height: 50vh;
     }
 #content-blocks-{{forloop.index0}} h3 {font-size: 2rem;}  
 
 #content-blocks-{{forloop.index0}} h4
     {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: 'Editors Note Light';
     letter-spacing: 0.5px;
     margin-bottom: 10px;
@@ -17,7 +17,7 @@
     }
 
     #content-blocks-{{forloop.index0}} .text-block{
-        margin-top: 8rem;
+        margin-top: 1rem;
     }
 #content-blocks-{{forloop.index0}} .text-image {
     padding-bottom: 25%;}
@@ -58,7 +58,7 @@
         <section class = "padded-sides split-bg grid-center col-12">
 
                 <!-- text block -->
-            <div class = "col-7-middle_md-9_xs-12 padded-sides text-block">
+            <div class = "col-7-middle_md-9_xs-12 padded-sides padded-t text-block">
                 {{item.body.textarea_html}}
             </div>
 
