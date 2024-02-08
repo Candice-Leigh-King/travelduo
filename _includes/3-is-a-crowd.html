@@ -1,6 +1,12 @@
 <style>
 
   #content-blocks-{{forloop.index0}} .background-image {min-height: 420px;}
+
+  #content-blocks-{{forloop.index0}} h5 
+    {
+    font-size: 1.6rem;
+    /* font-family: 'Editors Note'; */
+    }
   
   #content-blocks-{{forloop.index0}} h3 
   {
@@ -83,7 +89,7 @@
             <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
                   <a class="padded portfolio-link"href="{{item.left-block.link}}">
                       <div class = "">
-                          <h5>{{item.left-block.subheading}}</h5>
+                          <h5 class="padded-b">{{item.left-block.subheading}}</h5>
                           <div class="hover-container background-image" style="background-image:url('{{item.left-block.image}}');">
                             <div class = "portfolio-hover"></div>
                           </div>
@@ -95,7 +101,7 @@
               <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
                 <a class="padded portfolio-link"href="{{item.middle-block.link}}">
                     <div class = "">
-                        <h5>{{item.middle-block.subheading}}</h5>
+                        <h5 class="padded-b">{{item.middle-block.subheading}}</h5>
                         <div class="hover-container background-image" style="background-image:url('{{item.middle-block.image}}');">
                           <div class = "portfolio-hover"></div>
                         </div>
@@ -107,7 +113,7 @@
             <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
               <a class="padded"href="{{item.right-block.link}}">
                   <div class = "">
-                      <h5>{{item.right-block.subheading}}</h5>
+                      <h5 class="padded-b">{{item.right-block.subheading}}</h5>
                       <div class="hover-container background-image" style="background-image:url('{{item.right-block.image}}');">
                         <div class = "portfolio-hover"></div>
                       </div>
