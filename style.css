@@ -145,6 +145,8 @@ html
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
 
+.padding-b-s {padding-bottom: 2%;}
+
 .padded-sides-sm {padding: 0% 2.5%;}
 .padded-sides 
   {
