@@ -50,6 +50,14 @@
         opacity: 1;  
     }
 
+    #content-blocks-{{forloop.index0}} .scroll p {font-size: 1.4rem;}
+
+    #content-blocks-{{forloop.index0}} .name 
+        {
+        font-size: 1rem !important;
+        padding-top: 20px;
+        }
+
     #content-blocks-{{forloop.index0}}  .slick-dots li.slick-active button:before{
         background-color: white;
         color: white;
@@ -79,11 +87,11 @@
 
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "bg-pale" id = "{{item.content-block-link}}">
-        <section class="grid-center-middle scroll-block padded-sides-lg padded-tb-xsm" id="{{item.content-block-link}}">
+        <section class="grid-center-middle scroll-block padded" id="{{item.content-block-link}}">
             <div class="col-12 center ">
                 <h4 class = "featured" style = "margin-bottom: 0rem;">{{item.heading}}</h4>
             </div>
-            <div class=" grid-center col-9_sm-10-center background-color border-left single-item" style = "padding: 2.5%;">
+            <div class=" grid-center col-9_sm-10-center background-color border-left single-item padded-sides"style="padding-top: 2.5%;">
                 {% for scroll in item.scroll %}
                 <div class="grid-middle text-center scroll col-12_md-8 center">
                   {{scroll.quote.textarea_html}}
