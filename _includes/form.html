@@ -22,20 +22,20 @@
         }
 
         #content-blocks-{{forloop.index0}} label{
-            font-family: Bold Grand Font;}
+            font-family: Open Sans;}
 
         #content-blocks-{{forloop.index0}} .button{
             /* margin-left: 40%; */
             border: none;
-            font-family: Bold Grand Font;
+            /* font-family: Bold Grand Font; */
         }
         
 
 
        #content-blocks-{{forloop.index0}} .text-image
         {
-            /* padding-bottom: 45%; */
-            border-radius: 65% 38% 44% 55% / 60% 50% 56% 39%;
+            padding-bottom: 35%;
+            border-radius: 65% 38% 44% 45% / 60% 50% 56% 35%;
         } 
 
         #content-blocks-{{forloop.index0}} .form hr{
@@ -94,7 +94,10 @@
 
                 <input type="hidden" name="inbox_key" value="#">
                 <input type="text" name="_gotcha" style="display: none;" />
-                <button class = "blue-button huge-left-margin right" type="submit"> {{item.form.button}} </button>
+                <div class = "center">
+                    <button class = "blue-button huge-left-margin" type="submit"> {{item.form.button}} </button>
+                </div>
+                
                 
             </form>
             
@@ -103,6 +106,6 @@
         </div>
          <!-- Image Block -->
         <!-- Oval class temporary -->
-        <div class = "col-5_sm-9-center padded text-image background-image margin-b-1" style = " background-image: url('{{item.image}}'); "></div>
+        <div class = "col-4_sm-9-center padded text-image background-image margin-b-1" style = " background-image: url('{{item.image}}'); "></div>
     </section>
 </section>

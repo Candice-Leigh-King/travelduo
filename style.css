@@ -63,6 +63,11 @@ hr, img{border: 1px solid blue;}  */
   src: url('/fonts/Editor_sNote-LightItalic.otf');
 }
 
+@font-face {
+  font-family: Editors Note Medium;
+  src: url('/fonts/Editor_sNote-Medium.ttf');
+}
+
 
 @font-face {
   font-family: Open Sans;
@@ -225,7 +230,7 @@ html
 
 /* Font Families */
 body {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: Open Sans;
     color: #2b2b2b;
     
 }
@@ -248,8 +253,10 @@ h3, h4, h5, h6 {
     letter-spacing: -1px;
 }
 
+
+
 a{
-    font-family: EB Garamond;
+    font-family: Editors Note;
     letter-spacing: -1px;
 }
 
@@ -267,7 +274,7 @@ h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: Open Sans;
     font-weight: 300;
     line-height: 1.4; 
     margin-bottom: 1rem;
@@ -341,7 +348,7 @@ p:last-child {
     padding: 10px 20px !important;
     margin: 0.2% 0% !important;
     transition: all 0.7s;
-    font-family: Editors Note;
+    font-family: Editors Note Medium;
     vertical-align: middle;
 }
 .blue-button:hover{
