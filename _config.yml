@@ -130,6 +130,7 @@ _array_structures:
         value: 
           _section-type: hero
           background_image: /images/homepage/Oman-00472-3.webp
+          logo_image: images/logos/Trendy Travel - creative agency.png
           heading: TRENDY TRAVEL
           subheading: CREATIVE AGENCY
           content-block-link:
