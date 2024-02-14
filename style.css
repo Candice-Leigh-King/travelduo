@@ -337,7 +337,9 @@ p:last-child {
   font-family: Editors Note Light;
 }
 
-.button:hover {background-color: #DEE9EA;}
+.button-ig:hover {background-color: #DEE9EA;}
+
+.button:hover {background-color: #97aeb0;}
 
 .blue-button{
     margin: 1%;
@@ -634,7 +636,7 @@ footer nav a:hover{
 }
 
 .header-social-link .social-links-icons{
-  padding: 5% ;
+  padding: 5% 6%;
   font-size: 1rem;
 }
 
