@@ -19,13 +19,15 @@
 
     #content-blocks-{{forloop.index0}} .bump {margin-top: -200px;}
 
+    #content-blocks-{{forloop.index0}} .hero img {margin-top: -100px;}
+
 </style>    
 
 <section id="content-blocks-{{forloop.index0}}">
     <section class = " grid-center-middle background-image "style = " background-image: url('{{item.background_image}}'); min-height: 80vh;"  id = "{{item.content-block-link}}">
 
 
-        <div class="col-12 grid-middle-center ">
+        <div class="col-12 hero grid-middle-center ">
             <img class = "col-6-center-middle_xs-12" width = "50%" src = "{{item.logo_image}}">
             <h1 class="col-12 center">{{item.heading}}</h1>
             <h3 class="col-12 center">{{item.subheading}}</h3>
