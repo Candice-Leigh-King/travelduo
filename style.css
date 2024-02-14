@@ -341,14 +341,14 @@ p:last-child {
 
 .blue-button{
     margin: 1%;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     background-color: #DEE9EA;
     border-radius: 20rem;
     display: inline-block;
     padding: 10px 20px !important;
     margin: 0.2% 0% !important;
     transition: all 0.7s;
-    font-family: Editors Note Medium;
+    font-family: Editors Note Light;
     vertical-align: middle;
 }
 .blue-button:hover{
