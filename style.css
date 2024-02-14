@@ -352,6 +352,7 @@ p:last-child {
     transition: all 0.7s;
     font-family: Editors Note Light;
     vertical-align: middle;
+    letter-spacing: 10px;
 }
 .blue-button:hover{
     background-color: #ECE2D9;
