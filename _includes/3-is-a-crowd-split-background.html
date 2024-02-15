@@ -6,7 +6,7 @@
     min-height: 50vh;
     }
 
-  #content-blocks-{{forloop.index0}} .background-image {min-height: 300px;}
+  #content-blocks-{{forloop.index0}} .background-image {min-height: 420px;}
   
   #content-blocks-{{forloop.index0}} h3 
   {
@@ -91,9 +91,9 @@
       <div class = "col-3_sm-2_xs-2-middle"><hr></div>
   </div>
       <!-- recent blog link -->
-      <section class="grid-center col-12 split-bg">
-        <div class="col-12 grid-center blog-loop blog-masonry">
-            <div class="masonry-item col-2_sm-4_xs-12 padded-xsm ">
+      <section class="grid-center padded-sides col-12 split-bg">
+        <div class="col-12 grid-center padded-sides blog-loop blog-masonry">
+            <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
                   <a class="padded portfolio-link"href="{{item.left-block.link}}">
                       <div class = "">
                           <div class="hover-container background-image" style="background-image:url('{{item.left-block.image}}');">
@@ -104,7 +104,7 @@
                       </div>
                     </a>
               </div>
-              <div class="masonry-item col-2_sm-4_xs-12 padded-xsm ">
+              <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
                 <a class="padded portfolio-link"href="{{item.middle-block.link}}">
                     <div class = "">
                         <div class="hover-container background-image" style="background-image:url('{{item.middle-block.image}}');">
@@ -117,7 +117,7 @@
                     </div>
                   </a>
             </div>
-            <div class="masonry-item col-2_sm-4_xs-12 padded-xsm ">
+            <div class="masonry-item col-3_sm-4_xs-12 padded-xsm ">
               <a class="padded"href="{{item.right-block.link}}">
                   <div class = "">
                       <div class="hover-container background-image" style="background-image:url('{{item.right-block.image}}');">
