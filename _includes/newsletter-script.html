@@ -24,7 +24,7 @@ type="text/css">
     padding: 2px;
     }
 
-#mc_embed_signup .blue-button 
+#mc_embed_signup .s-blue-button 
     {
     border-radius: 100px;
     padding: 0px 30px;
@@ -35,7 +35,7 @@ type="text/css">
 #mc_embed_signup input:focus {
     border: 0px;}
 
-#mc_embed_signup .blue-button input 
+#mc_embed_signup .s-blue-button input 
     {
     font-family: Bold Grand Font;
     font-weight: bolder;
@@ -53,7 +53,7 @@ type="text/css">
     margin-top: 0px;
     padding: 0px;
     }
-#mc_embed_signup .blue-button:hover {background-color: #ECE2D9;}
+#mc_embed_signup .s-blue-button:hover {background-color: #ECE2D9;}
 
 #mc_embed_signup h2
     {
@@ -124,7 +124,7 @@ HTML file. */
         <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
     </div>
     <div class="padded-sides-sm grid col-4_xs-12">
-        <div class="clear col-12 blue-button">
+        <div class="clear col-12 s-blue-button">
             <input type="submit" value="{{item.call-to-action-button}}" name="subscribe" id="mc-embedded-subscribe" class="">
         </div>
     </div>
@@ -152,6 +152,8 @@ name="b_a0b50d2157ee6b14911dc8556_383167d06a" tabindex="-1" value=""></div>
 
 #mc_embed_signup input 
     {
+    color: black;   
+    font-family: Bold Grand Font;
     border-bottom: 1px solid transparent;
     border-top: none;
     border-left: none;
@@ -163,10 +165,10 @@ name="b_a0b50d2157ee6b14911dc8556_383167d06a" tabindex="-1" value=""></div>
     padding: 2px;
     }
 
-#mc_embed_signup .blue-button 
+#mc_embed_signup .s-blue-button 
     {
     border-radius: 100px;
-    padding: 0px 30px;
+    padding: 17px 30px;
     margin: 0px !important;
     background-color: #DEE9EA;
     }
@@ -212,12 +214,6 @@ name="b_a0b50d2157ee6b14911dc8556_383167d06a" tabindex="-1" value=""></div>
      font-weight: lighter;
     }
 
-#mc_embed_signup input
-    {
-    font-family: 'Merriweather Sans', sans-serif;
-    color: #848282;
-    font-size: 15px;
-    }
 
 #mc_embed_signup .asterisk
     {
@@ -227,7 +223,27 @@ name="b_a0b50d2157ee6b14911dc8556_383167d06a" tabindex="-1" value=""></div>
     #mc-embedded-subscribe {
     display: inline; }
 
-#mc_embed_signup .foot {}
+#mc_embed_signup  .s-blue-button
+{
+
+}
+
+#mc_embed_signup .foot 
+    {
+    color: black;   
+    font-family: Bold Grand Font;
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+    }
+
+ @media(max-width: 450px){
+#mc_embed_signup .foot 
+    {
+    padding-top: 30px;
+    padding-right: 10px;
+    }
+}
 
 
 #mc_embed_signup .mc-field-group input {
@@ -269,7 +285,7 @@ name="b_a0b50d2157ee6b14911dc8556_383167d06a" tabindex="-1" value=""></div>
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_256818add38b750550ddc9aaf_574e842ebd" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="blue-button">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="s-blue-button">
                 <!-- <p class="brandingLogo"><a href="http://eepurl.com/itd0T6" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p> -->
             </div>
         </div>
