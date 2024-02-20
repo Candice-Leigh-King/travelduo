@@ -9,55 +9,54 @@
     opacity: 1; /* Keep the currently focused slide at full opacity */
     }
 
-    #content-blocks-{{forloop.index0}} hr{
-        border: 15px solid #F5F0EB;
-        border-radius: 20px;
-        position: relative;
-        z-index: -1;
-        margin-top: -3%;
+    #content-blocks-{{forloop.index0}} hr
+    {
+    border: 15px solid #F5F0EB;
+    border-radius: 20px;
+    position: relative;
+    z-index: -1;
+    margin-top: -3%;
     }
 
-    #content-blocks-{{forloop.index0}} h1{
-        font-size: 3rem;
-        font-family: Editors Note Light;
-        color: #545454;
+    #content-blocks-{{forloop.index0}} h1
+    {
+    font-size: 3rem;
+    font-family: Editors Note Light;
+    color: #545454;
     }
-  #content-blocks-{{forloop.index0}}  h3{
+
+    #content-blocks-{{forloop.index0}}  h3
+    {
     font-family: Editors Note Light;
     font-size: 1.2rem;
     text-align: center;
     margin: 4% 0;
-  }
+    }
 
-  #content-blocks-{{forloop.index0}}  i {
-    font-family: Editors Note Light Italic;
-  }
-  #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image{
+    #content-blocks-{{forloop.index0}}  i {font-family: Editors Note Light Italic;}
+
+    #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image
+    {
     padding-bottom: 20rem;
     margin: 0.1%;
-  }
+    }
 
-  #content-blocks-{{forloop.index0}} .portfolio-block .slider-for{
-    padding: 2% 0%;
-    
-  }
+  #content-blocks-{{forloop.index0}} .portfolio-block .slider-for { padding: 2% 0%;}
 
-  #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav{
-    padding: 2% 10%;
-    
-  }
-  #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image{
+  #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav { padding: 2% 10%;}
+
+  #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image
+    {
     padding-bottom: 8rem;
     margin: 0.1%;
     }
 
-    #content-blocks-{{forloop.index0}} .portfolio-slider{
-        padding: 5% 20%;
-    }
+    #content-blocks-{{forloop.index0}} .portfolio-slider{padding: 5% 20%;}
 
 
     /* Position the left arrow to the left of the slider */
-    #content-blocks-{{forloop.index0}} .prev-left {
+    #content-blocks-{{forloop.index0}} .prev-left 
+        {
         /* font-family: 'Nanum Gothic', sans-serif; */
         font-family: 'Nanum Myeongjo', serif;
         font-size: 3rem;
@@ -68,10 +67,11 @@
         top: 50%; /* Adjust as needed */
         transform: translate(0, -50%); /* Center vertically */
         z-index: 2; /* Ensure it's above the slider */
-    }
+     }
 
     /* Position the right arrow to the right of the slider */
-    #content-blocks-{{forloop.index0}} .next-right {
+    #content-blocks-{{forloop.index0}} .next-right 
+        {
         /* font-family: 'Nanum Gothic', sans-serif; */
         font-family: 'Nanum Myeongjo', serif;
         font-size: 3rem;
@@ -82,62 +82,57 @@
         top: 50%; /* Adjust as needed */
         transform: translate(0, -50%); /* Center vertically */
         z-index: 2; /* Ensure it's above the slider */
-    }
+         }
 
 
     /* Large Screen */
 
-    @media(max-width:990px){
-        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image{
-            padding-bottom: 18rem;
-        }
-        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for{
-            padding: 2% 25%;
-        }
+    @media(max-width:990px)
+    {
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image { padding-bottom: 18rem;}
 
-        #content-blocks-{{forloop.index0}}  h3{
-            font-size: 1.1rem;
-        }
-        #content-blocks-{{forloop.index0}} h1{
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for {padding: 2% 25%;}
+
+        #content-blocks-{{forloop.index0}}  h3{ font-size: 1.1rem;}
+
+        #content-blocks-{{forloop.index0}} h1
+        {
         font-size: 2.5rem;
         text-transform: uppercase;
         }
 
-
     }
 
     @media(max-width: 850px){
-        #content-blocks-{{forloop.index0}}  h3{
-            font-size: 1rem;
-        }
+        #content-blocks-{{forloop.index0}}  h3 {font-size: 1rem;}
     }
 
-    @media(max-width: 750px){
+    @media(max-width: 750px)
+        {
 
         #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image {padding-bottom: 10rem;}
 
-        #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image{
-            padding-bottom: 5rem;
-            }
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-nav .background-image {padding-bottom: 5rem;}
 
-        #content-blocks-{{forloop.index0}} .portfolio-slider {
-            padding: 5% 13%;
-        }
+        #content-blocks-{{forloop.index0}} .portfolio-slider { padding: 5% 13%; }
 
-        #content-blocks-{{forloop.index0}} h1{
+        #content-blocks-{{forloop.index0}} h1
+        {
         font-size: 2rem;
         text-transform: uppercase;
         }
-    
+
         }
 
     @media(max-width: 450px){
-        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for {
-             padding: 2% 20%;
+        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for 
+        {
+        padding: 2% 20%;
         }
 
-        #content-blocks-{{forloop.index0}} .portfolio-slider {
-            margin-top: 1rem;
+        #content-blocks-{{forloop.index0}} .portfolio-slider 
+        {
+        margin-top: 1rem;
         }
     }
 
@@ -156,24 +151,35 @@
             margin-top: -7%;
         }
 
-        #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image {
-            padding-bottom: 15rem;
-        }
-        #content-blocks-{{forloop.index0}} .portfolio-slider {
-            padding: 5% 9%;
+    #content-blocks-{{forloop.index0}} .portfolio-block .slider-for .background-image 
+        {
+        padding-bottom: 15rem;
         }
 
-        #content-blocks-{{forloop.index0}} .prev-left, 
-        #content-blocks-{{forloop.index0}} .next-right{
-            font-size: 1.5rem;
+        #content-blocks-{{forloop.index0}} .portfolio-slider
+        {
+        padding: 5% 9%;
         }
 
-        #content-blocks-{{forloop.index0}} .prev-left{
-            left: -8%;
-        }
-        #content-blocks-{{forloop.index0}} .next-right{
-            right: -8%;
-        }
+    #content-blocks-{{forloop.index0}} .prev-left, 
+    {
+    font-size: 1.5rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .next-right
+    {
+    font-size: 1.5rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .prev-left
+    {
+    left: -8%;
+    }
+    
+    #content-blocks-{{forloop.index0}} .next-right
+    {
+    right: -8%;
+    }
     }
 
 </style>
