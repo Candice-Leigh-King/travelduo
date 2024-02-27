@@ -193,6 +193,8 @@ html
 
 /* Margin Utility Classes */ 
 
+.margin-sm{ margin: 0.2% !important; }
+
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
 .margin-l { margin-left: 5%; }

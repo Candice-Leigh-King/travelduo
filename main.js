@@ -67,6 +67,9 @@ $(document).ready(function() {
 		asNavFor: '.slider-nav',
 		infinite: true,
 		rows: 1,
+		arrows: true,
+		nextArrow: '<p class = "next-right"> > </p>',
+  		prevArrow: '<p class = "prev-left"> < </p>',
 		// slidesPerRow: 8,
 
 		responsive: [
@@ -97,14 +100,13 @@ $(document).ready(function() {
 		asNavFor: '.slider-for',
 		infinite: true,
 		autoplay: false,
-		arrows: true,
+		arrows: false,
 		dots: false,
 		centerMode: false,
 		focusOnSelect: true,
 		centerPadding: '0',
 		// speed: 1,
-		nextArrow: '<p class = "next-right"> > </p>',
-  		prevArrow: '<p class = "prev-left"> < </p>',
+
 		responsive: [
 			// Add responsive setting one
 		{
@@ -126,7 +128,11 @@ $(document).ready(function() {
 
 
 		]
+
+
 	  });
+
+
 
 
 // Animations
