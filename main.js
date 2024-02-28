@@ -67,9 +67,9 @@ $(document).ready(function() {
 		asNavFor: '.slider-nav',
 		infinite: true,
 		rows: 1,
-		arrows: true,
-		nextArrow: '<p class = "next-right"> > </p>',
-  		prevArrow: '<p class = "prev-left"> < </p>',
+		// arrows: true,
+		// nextArrow: '<p class = "next-right"> > </p>',
+  		// prevArrow: '<p class = "prev-left"> < </p>',
 		// slidesPerRow: 8,
 
 		responsive: [
@@ -95,19 +95,19 @@ $(document).ready(function() {
 		]
 	  });
 	  $('.slider-nav').slick({
-		slidesToShow: 8,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		asNavFor: '.slider-for',
 		infinite: true,
 		autoplay: false,
-		arrows: false,
+		arrows: true,
 		dots: false,
-		centerMode: false,
+		centerMode: true,
 		focusOnSelect: true,
-		centerPadding: '0',
+		// centerPadding: '0',
 		// speed: 1,
-		// nextArrow: '<p class = "next-right"> > </p>',
-		// prevArrow: '<p class = "prev-left"> < </p>',
+		nextArrow: '<p class = "next-right"> > </p>',
+		prevArrow: '<p class = "prev-left"> < </p>',
 		responsive: [
 			// Add responsive setting one
 		{
