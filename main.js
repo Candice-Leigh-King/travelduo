@@ -106,7 +106,8 @@ $(document).ready(function() {
 		focusOnSelect: true,
 		centerPadding: '0',
 		// speed: 1,
-
+		// nextArrow: '<p class = "next-right"> > </p>',
+		// prevArrow: '<p class = "prev-left"> < </p>',
 		responsive: [
 			// Add responsive setting one
 		{
