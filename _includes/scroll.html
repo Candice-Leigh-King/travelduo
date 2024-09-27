@@ -35,6 +35,15 @@
     #content-blocks-{{forloop.index0}} .name {
         font-family: Open Sans;
         text-transform: uppercase;
+        font-size: 1rem !important;
+        padding-top: 20px;
+    }
+
+    #content-blocks-{{forloop.index0}} .name p {
+        font-family: Open Sans;
+        text-transform: uppercase;
+        font-size: 1rem !important;
+        padding-top: 20px;
     }
 
     #content-blocks-{{forloop.index0}}  .slick-dots li {margin: 0 0.8rem;}
@@ -52,11 +61,6 @@
 
     #content-blocks-{{forloop.index0}} .scroll p {font-size: 1.4rem;}
 
-    #content-blocks-{{forloop.index0}} .name 
-        {
-        font-size: 1rem !important;
-        padding-top: 20px;
-        }
 
     #content-blocks-{{forloop.index0}}  .slick-dots li.slick-active button:before{
         background-color: white;
@@ -95,7 +99,7 @@
                 {% for scroll in item.scroll %}
                 <div class="grid-middle text-center scroll col-12_md-8 center">
                   {{scroll.quote.textarea_html}}
-                  <p class = "name">{{scroll.name.textarea_html}}</p>
+                  <div class = "name">{{scroll.name.textarea_html}}</div>
                 </div>
                 {% endfor %}
               </div>
