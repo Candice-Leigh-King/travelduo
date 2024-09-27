@@ -228,7 +228,7 @@ _array_structures:
           background-image:
           background-color: '#FFFFFF'
           content-block-link: 
-      - label: Scroll
+      - label: Steppers
         icon: switch_left
         value:
           _section-type: scroll
