@@ -232,13 +232,15 @@ _array_structures:
         icon: switch_left
         value:
           _section-type: scroll
+          heading: What they're saying about us
           scroll:
             - quote:
                 textarea_html: >-
                   <p>Roel and Eline were such a pleasure to work with. They created
                   beautiful content that we’ve been using over and over again in our
                   marketing. They are super easy going, chill and always open to
-                  feedback. We couldn’t get enough of the beautiful shots. JUST WOW!
+                  feedback. We couldn’t get enough of the beautiful shots. JUST
+                  WOW!</p>
               name:
                 textarea_html: Rita Duarte | marketing manager | Ronja
             - quote:
@@ -265,7 +267,7 @@ _array_structures:
                   able to deliver it out there. Thank you so much!</p>
               name:
                 textarea_html: Yohanes Barlianto | owner | Desa Hay
-          content-block-link:  
+                content-block-link:  
       - label: Wide Image
         icon: vrpano
         value:
