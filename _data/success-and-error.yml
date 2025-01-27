@@ -1,7 +1,7 @@
 colors:
-  background-color: '#ECE2D9'
+  background-color: '#ece2d9'
   text-color: '#000000'
-  heading-color: '#856A52'
+  heading-color: '#856a52'
 fonts:
-  heading-font: 'Regular Grand Font'
-  subheading-font: 'Heavy Font'
+  heading-font: Regular Grand Font
+  subheading-font: Heavy Font
